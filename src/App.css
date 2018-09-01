@@ -1,0 +1,95 @@
+.main-container{
+  height: 100vh;
+  width: 100%;
+}
+.navbar{
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+  height: 65px;
+}
+.container-fluid{
+  align-items: center;
+}
+.navbar-home{
+  margin: 8px 0px 0px 10px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+}
+.navbar-default .navbar-nav > a, .navbar-default .navbar-nav > a:hover, .navbar-default .navbar-nav > a:focus {
+  background-color: transparent;
+}
+#nb-collapse{
+  margin-right: 1%;
+  float: right;
+}
+.navbar-toggle:active:hover {
+  background-color: transparent;
+}
+.navbar-default .navbar-brand {
+  color: white;
+}
+.navbar-default .navbar-brand:hover {
+  color: white;
+}
+.navbar-default .navbar-nav > li > a {
+  color: white !important;
+  margin: 8px 5px 5px 5px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+  color: rgb(91, 148, 255);
+}
+.navbar.solid {
+  background-color: #313131;
+  transition: background-color 0.75s ease 0s;
+}
+.navbar.solid .navbar-brand {
+  color: white;
+  transition: color 1s ease 0s;
+}
+/* .navbar.solid ul.nav.navbar-nav{
+  background-color: aliceblue;
+} */
+.navbar.solid .navbar-nav > li > a {
+  color: white !important;
+  transition: color 1s ease 0s;
+}
+
+.intro-box{
+  display: flex;
+  text-align: center;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  background: 
+    linear-gradient(
+      -40deg,
+      rgba(0,0,0,0.3),
+      rgba(0, 40, 105, 0.3)
+    )
+  ;
+  /* background-size: cover; */
+}
+.main-body-box{
+  height: auto;
+}
+
+.to-about{
+  cursor: pointer;
+}
+.to-projects{
+  cursor: pointer;
+}
+.to-skills{
+  cursor: pointer;
+}
+.to-experience{
+  cursor: pointer;
+}
+.navbar-static-top .navbar-collapse.in {
+  overflow-y: visible; 
+}

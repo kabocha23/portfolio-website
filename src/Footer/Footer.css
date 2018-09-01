@@ -1,0 +1,49 @@
+.footer-container{
+    border-top: 1px solid lightgrey;
+    padding-top: 10px;
+    background-color: #363636;
+    color: aliceblue;
+}
+.footer-subtitle{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    cursor: default;
+}
+.foot-contact-links{
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.email-link{
+    flex: 0 1 auto;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+.email-link :hover{
+    text-decoration: none;
+}
+
+.linkedin-link{
+    flex: 0 1 auto;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+.linkedin-link :hover{
+    text-decoration: none;
+}
+.github-icon2{
+    width: 2.5em;
+}
+.github-link{
+    flex: 0 1 auto;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+.github-link :hover{
+    text-decoration: none;
+}

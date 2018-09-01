@@ -1,0 +1,98 @@
+.about-content-box{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 30px;
+    background-color: #eee;
+    cursor: default;
+}
+.profile-photo-box{
+    flex: 0 1 auto;
+    justify-content: center;
+    margin-left: 6%;
+}
+.profile-photo{
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.about-title{
+    width: 100%;
+    display: block;
+}
+.about-content{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 2 2 auto;
+    width: 50%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    margin-left: 5%;
+    margin-right: 6%;
+    color: #636363;
+}
+.please-note{
+    font-size: 1.0em;
+}
+/* Email, LinkedIn, Github section begins */
+.single-link{
+    margin-bottom: 5%;
+}
+.contact-links{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+.email-link{
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+.email-icon{
+    width: 2.5em;
+    margin: 0px 0px 0px 0px;
+}
+.email-text-link{
+    color: grey;
+}
+.email-link :hover{
+    text-decoration: none;
+}
+.linkedin-link{
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    margin-left: 8%;
+}
+.linkedin-icon{
+    width: 3.5em;
+    margin: 0px 0px 0px 0px;
+}
+.linkedin-link :hover{
+    text-decoration: none;
+}
+.github-link{
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    margin-left: 8%;
+}
+.github-icon{
+    width: 2.5em;
+    margin: 0px 0px 0px 0px;
+}
+.github-link :hover{
+    text-decoration: none;
+}
+.git-text-link{
+    color: black;
+}

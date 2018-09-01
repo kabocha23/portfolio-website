@@ -1,0 +1,62 @@
+.card {
+    max-width: 345px;
+}
+
+.media {
+    height: 0;
+    padding-top: 56.25%;
+}
+
+.projects-header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+    background: 
+        linear-gradient(
+            -45deg, 
+            rgba(0,0,0,0.3), 
+            rgba(0, 40, 105, 0.3)
+        );
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+.projects-header {
+    color: aliceblue;
+    font-size: 3.5em;
+    font-family: 'Open Sans', sans-serif;
+    cursor: default;
+}
+
+.projects-content-box {
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    padding: 30px;
+    background-color: #eee;
+}
+
+.indi-proj {
+    margin: 10px auto;
+    width: 300px;
+    cursor: default;
+}
+
+.more-to-come {
+    background-color: #eee;
+    color: grey;
+    font-size: 0.8em;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    cursor: default;
+}
+
+p {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+

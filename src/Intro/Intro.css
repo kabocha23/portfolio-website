@@ -1,0 +1,29 @@
+
+.intro-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+    color: aliceblue;
+}
+.intro-name{
+    margin: auto;
+    display: block;
+    font-size: 3.8em;
+    font-family: 'Francois One', sans-serif;
+    cursor: default;
+}
+.intro-title{
+    margin: auto;
+    font-size: 2.8em;
+    /* font-family: 'Anton', sans-serif; */
+    /* font-family: 'Audiowide', cursive; */
+    /* font-family: 'Bungee', cursive; */
+    /* font-family: 'Faster One', cursive; */
+    /* font-family: 'Carrois Gothic SC', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Francois One', sans-serif;
+    cursor: default;
+}

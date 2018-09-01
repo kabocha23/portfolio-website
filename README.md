@@ -1,3 +1,15 @@
+A personal website with some information about me, and a portfolio of my projects.
+
+Live site link: https://jasonkobuchi.com
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

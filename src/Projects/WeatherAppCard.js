@@ -1,42 +1,3 @@
-// import React from 'react';
-// import Card from '@material-ui/core/Card';
-// import CardTitle from '@material-ui/core/CardMedia';
-// import CardMedia from '@material-ui/core/CardMedia';
-// import CardActions from '@material-ui/core/CardActions';
-// import CardContent from '@material-ui/core/CardContent';
-// import Typography from '@material-ui/core/Typography';
-// import Button from '@material-ui/core/Button';
-
-// export const WeatherAppCard = () => (
-//   <Card className='card'>
-//     <CardMedia>
-//       <img 
-//         src={ require('../Static/img/react-weather-app.png') } 
-//         alt="reactweather"
-//       />
-//     </CardMedia>
-
-//     <CardTitle 
-//       title="Weather Forecast App" 
-//       subtitle="Technologies: React & Open Weather API" 
-//     />
-
-//     <CardContent>
-//       <Typography gutterBottom variant="headline" component="h2">
-//         Weather!
-//       </Typography>
-//       <Typography component="p">
-//         Application created with React and OpenWeatherMap API to look up the current weather, or a five day forecast.
-//       </Typography>
-//     </CardContent>
-    
-//     <CardActions>
-//       <Button href='https://bitbucket.org/Kabocha23/react-weather/src/master/' target='blank'>
-//         View Source Code
-//       </Button>
-//     </CardActions>
-//   </Card>
-// );
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -58,7 +19,7 @@ const styles = {
   },
 };
 
-function WeatherAppCard(props) {
+const WeatherAppCard = (props) => {
   const { classes } = props;
   return (
     <div>
@@ -80,7 +41,7 @@ function WeatherAppCard(props) {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button color='prmary' href='https://bitbucket.org/Kabocha23/react-weather/src/master/' target='blank'>
+        <Button color='primary' href='https://bitbucket.org/Kabocha23/react-weather/src/master/' target='blank'>
           View Source Code
         </Button>
         </CardActions>

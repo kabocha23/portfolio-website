@@ -13,7 +13,7 @@ export const Footer = () => (
                 <a href='mailto:jekobuchi@gmail.com'>
                     <img 
                         src={ require('../Static/img/email-icon2.png') } 
-                        className='email-icon' 
+                        className='email-icon foot-icon' 
                         alt='email-icon' 
                     />
                 </a>
@@ -23,7 +23,7 @@ export const Footer = () => (
                 <a href='https://www.linkedin.com/in/jason-kobuchi-5aa45811/'>
                     <img 
                         src={ require('../Static/img/linkedin-icon-circle2.png') } 
-                        className='linkedin-icon' 
+                        className='linkedin-icon foot-icon' 
                         alt='linkedin-icon' 
                     />
                 </a>
@@ -33,7 +33,7 @@ export const Footer = () => (
                 <a href='https://github.com/kabocha23'>
                     <img 
                         src={ require('../Static/img/github-icon2.png') } 
-                        className='github-icon2' 
+                        className='github-icon2 foot-icon' 
                         alt='github-icon2' 
                     />
                 </a>

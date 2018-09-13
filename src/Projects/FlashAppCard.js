@@ -1,26 +1,4 @@
 
-// export const FlashAppCard = () => (
-//   <Card className='card'>
-//     <CardMedia>
-//       <img 
-//         src={ require('../Static/img/react-flashcards-app.png') } 
-//         alt="reactnotes"
-//       />
-//     </CardMedia>
-//     <CardTitle 
-//       title="Flashcards App" 
-//       subtitle="Technologies: React & Firebase" 
-//     />
-//     <CardText>
-//       Application utilizing React and Firebase to have virtual flashcards for studying Chinese.
-//     </CardText>
-//     <CardActions>
-//       <FlatButton label="View Source Code" href='https://bitbucket.org/Kabocha23/react-flashcards/src/master/' target='blank' />
-//     </CardActions>
-//   </Card>
-// );
-
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -41,7 +19,7 @@ const styles = {
   },
 };
 
-function FlashAppCard(props) {
+const FlashAppCard = (props) => {
   const { classes } = props;
   return (
     <div>
@@ -65,6 +43,9 @@ function FlashAppCard(props) {
         <CardActions>
         <Button color='primary' href='https://bitbucket.org/Kabocha23/react-flashcards/src/master/' target='blank'>
           View Source Code
+        </Button>
+        <Button color='primary' href='https://reactflashcards-fb1d7.firebaseapp.com/' target='blank'>
+          Live Demo
         </Button>
         </CardActions>
       </Card>

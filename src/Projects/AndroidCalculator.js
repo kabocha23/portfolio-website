@@ -1,21 +1,3 @@
-// import React from 'react';
-// import {Card, CardActions, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-// import FlatButton from 'material-ui/FlatButton';
-
-// export const AndroidCalculator = () => (
-//   <Card className='card'>
-//     <CardMedia>
-//       <img src={ require('../Static/img/react-native-calc.png') } alt="androidcalculator" />
-//     </CardMedia>
-//     <CardTitle title="Calculator for Android" subtitle="Technologies: React & Android Studios" />
-//     <CardText>
-//       Android calculator built with React Native.
-//     </CardText>
-//     <CardActions>
-//       <FlatButton label="View Source Code" href='https://github.com/kabocha23/React-Native-Calculator' target='blank' />
-//     </CardActions>
-//   </Card>
-// );
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -37,7 +19,7 @@ const styles = {
   },
 };
 
-function AndroidCalculator(props) {
+const AndroidCalculator = (props) => {
   const { classes } = props;
   return (
     <div>

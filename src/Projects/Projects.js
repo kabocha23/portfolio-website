@@ -14,6 +14,7 @@ import IndecisiveEaters from './IndecisiveEaters';
 class Projects extends Component{
 
     render(){
+        const { handleImageZoom } = this.props;
         return(
             <div className='projects-container'>
             <Parallax
@@ -28,7 +29,9 @@ class Projects extends Component{
             </Parallax>
                 <div className='projects-content-box'>
                     <div className='eaters-app indi-proj'>
-                        <IndecisiveEaters />
+                        <IndecisiveEaters 
+                            handleImageZoom={handleImageZoom}
+                        />
                     </div>
                     <div className='notes-app indi-proj'>
                         <NotesAppCard />
@@ -45,7 +48,7 @@ class Projects extends Component{
                     <div className='dragon-go-craft-app indi-proj'>
                         <DragonGoCraft />
                     </div>
-                    <div className='calculator-app indi-proj'>
+                    <div className='crypto-app indi-proj'>
                         <AndroidCryptoTracker />
                     </div>
                     <div className='calculator-app indi-proj'>

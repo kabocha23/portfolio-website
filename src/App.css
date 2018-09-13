@@ -13,6 +13,23 @@
 .container-fluid{
   align-items: center;
 }
+.container-fluid button{
+  border: none;
+  background-color: transparent;
+  margin: 12px 0px 0px 0px;
+}
+.container-fluid button .icon-bar{
+  height: 3px;
+}
+.container-fluid button.navbar-toggle:hover{
+  background-color: transparent;
+}
+.container-fluid button.navbar-toggle:active{
+  background-color: transparent;
+}
+.container-fluid button.navbar-toggle:focus{
+  background-color: transparent;
+}
 .navbar-home{
   margin: 8px 0px 0px 10px;
   display: inline-block;
@@ -22,18 +39,16 @@
 .navbar-default .navbar-nav > a, .navbar-default .navbar-nav > a:hover, .navbar-default .navbar-nav > a:focus {
   background-color: transparent;
 }
-#nb-collapse{
-  margin-right: 1%;
+div#nb-collapse{
   float: right;
-}
-.navbar-toggle:active:hover {
-  background-color: transparent;
+  border-color: transparent;
 }
 .navbar-default .navbar-brand {
   color: white;
+  font-weight: bolder;
 }
 .navbar-default .navbar-brand:hover {
-  color: white;
+  color: rgb(155, 155, 155);
 }
 .navbar-default .navbar-nav > li > a {
   color: white !important;
@@ -42,20 +57,40 @@
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
   color: rgb(91, 148, 255);
 }
+div.show#nb-collapse {
+  float: none;
+}
+
+/* after navbar transitions to color */
 .navbar.solid {
-  background-color: #313131;
+  background-color: #313131d0;
   transition: background-color 0.75s ease 0s;
 }
 .navbar.solid .navbar-brand {
   color: white;
+  font-weight: bolder;
+}
+.navbar.solid .navbar-brand:hover {
+  color: rgb(158, 158, 187);
   transition: color 1s ease 0s;
 }
-/* .navbar.solid ul.nav.navbar-nav{
-  background-color: aliceblue;
-} */
-.navbar.solid .navbar-nav > li > a {
+.navbar.solid div #nb-collapse{
+  background-color: transparent;
+  transition: background-color 0.75s ease 0s;
+}
+.navbar.solid div.show#nb-collapse{
+  background-color: #313131d0;
+  transition: background-color 0.75s ease 0s;
+}
+.navbar.solid .navbar-nav > li > a{
   color: white !important;
   transition: color 1s ease 0s;
+}
+.navbar.solid .navbar-nav > li{
+  background-color: transparent;
+}
+.navbar-static-top .navbar-collapse.in {
+  overflow-y: visible; 
 }
 
 .intro-box{
@@ -72,7 +107,15 @@
       rgba(0, 40, 105, 0.3)
     )
   ;
-  /* background-size: cover; */
+}
+.intro-container {
+  width: 100%;
+}
+.intro-name{
+  font-size: 3.5em;
+}
+.intro-title{
+  font-size: 2.0em;
 }
 .main-body-box{
   height: auto;
@@ -89,7 +132,4 @@
 }
 .to-experience{
   cursor: pointer;
-}
-.navbar-static-top .navbar-collapse.in {
-  overflow-y: visible; 
 }

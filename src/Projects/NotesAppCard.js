@@ -19,7 +19,7 @@ const styles = {
   },
 };
 
-function NotesAppCard(props) {
+const NotesAppCard = (props) => {
   const { classes } = props;
   return (
     <div>
@@ -41,7 +41,7 @@ function NotesAppCard(props) {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button color='prmary' href='https://bitbucket.org/Kabocha23/react-notes/src/master/' target='blank'>
+        <Button color='primary' href='https://bitbucket.org/Kabocha23/react-notes/src/master/' target='blank'>
           View Source Code
         </Button>
         </CardActions>

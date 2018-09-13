@@ -1,26 +1,4 @@
 
-
-// export const DragonGoCraft = () => (
-//   <Card className='card'>
-//     <CardMedia>
-//       <img 
-//         src={ require('../Static/img/dragon-1.png') } 
-//         alt="dragongocraft"
-//       />
-//     </CardMedia>
-//     <CardTitle 
-//       title="Dragon Go Craft" 
-//       subtitle="Technologies: Swift, XCode, Core Location, Google Maps API" 
-//     />
-//     <CardText>
-//       An iOS application created for a 24-hour hackathon; Find Dragons to defeat and capture with GPS tracking your movement through Google Maps API.    
-//     </CardText>
-//     <CardActions>
-//       <FlatButton label="Private Repo" />
-//     </CardActions>
-//   </Card>
-// );
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -41,7 +19,7 @@ const styles = {
   },
 };
 
-function DragonGoCraft(props) {
+const DragonGoCraft = (props) => {
   const { classes } = props;
   return (
     <div>

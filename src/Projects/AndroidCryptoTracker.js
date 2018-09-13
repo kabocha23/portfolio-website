@@ -19,7 +19,7 @@ const styles = {
   },
 };
 
-function AndroidCryptoTracker(props) {
+const AndroidCryptoTracker = (props) => {
   const { classes } = props;
   return (
     <div>

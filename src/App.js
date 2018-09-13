@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-// import bootstrap from 'bootstrap';
+import bootstrap from 'bootstrap';
 import Intro from './Intro/Intro';
 import Projects from './Projects/Projects';
 import AboutMe from './AboutMe/AboutMe';
@@ -14,10 +14,6 @@ import './App.css';
 window.jQuery = $;
 
 class App extends Component {
-  constructor(props){
-    super(props);
-
-  }
 
 
   componentDidMount() {
@@ -102,7 +98,7 @@ class App extends Component {
                   onClick={this.scrollToTop} 
                   className='navbar-brand'
                 >
-                  Jason Kobuchi
+                  JK
                 </Link>
               </div>
                 <button 

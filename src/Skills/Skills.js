@@ -39,16 +39,25 @@ class Skills extends Component{
                             <li className='skills-item'><p>jQuery</p></li>
                             <li className='skills-item'><p>AJAX, JSON</p></li>
                             <li className='skills-item'><p>RESTful APIs</p></li>
+                            <li className='skills-item'><p>Responsive Web Design</p></li>
                             <li className='skills-item'><p>Bootstrap</p></li>
                         </ul>
                     </div>
                     <div className='backend-box skill-box'>
                         <ul>
                             <li className='skills-subhead'><h3>Back End</h3></li>
-                            <li className='skills-item'><p>Node.js, Express</p></li>
+                            <li className='skills-item'><p>Node.js</p></li>
+                            <li className='skills-item'><p>Express</p></li>
+                            <li className='skills-item'><p>AWS</p></li>
+                            <li className='skills-item'><p>Firebase</p></li>
+                            <li className='skills-item'><p>Heroku</p></li>
+                            <li className='skills-item'><p>Gunicorn</p></li>
+                            <li className='skills-item'><p>NPM / Yarn</p></li>
+                            <li className='skills-item'><p>Postman</p></li>
+                            <li className='skills-item'><p>Socket.io</p></li>
+                            <li className='skills-item'><p>Auth0</p></li>
                             <li className='skills-item'><p>Django</p></li>
                             <li className='skills-item'><p>Flask</p></li>
-                            <li className='skills-item'><p>AWS</p></li>
                         </ul>
                     </div>
                     <div className='database-box skill-box'>
@@ -58,6 +67,7 @@ class Skills extends Component{
                             <li className='skills-item'><p>Firebase</p></li>
                             <li className='skills-item'><p>MySQL</p></li>
                             <li className='skills-item'><p>SQLite</p></li>
+                            <li className='skills-item'><p>GraphQL</p></li>
                         </ul>
                     </div>
                     <div className='mobile-box skill-box'>

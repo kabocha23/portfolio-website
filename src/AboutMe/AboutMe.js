@@ -14,9 +14,9 @@ class AboutMe extends Component{
                     />
                 </div>
                 <div className='about-content'>
-                    <h1 className='about-title'>Who am I...</h1>
-                    <p>Hi there and thanks for checking out my portfolio! I'm a self-taught web developer currently focused on building an learning with the MERN stack (among other technologies).</p>
-                    <p>I've been pursuing self-taught skills since I was young: whether it was breaking my toys apart to see how they work, building calluses on my fingertips so I could hold chords on the guitar, or submerging myself in documentation and stack overflow to integrate a small (but <span className='extreme'>extremely</span> important) feature on a project, I've always loved to give myself new challenges to conquer. </p>
+                    <h1 className='about-title'>About Me</h1>
+                    <p>Hello! I'm a self-taught web developer focused on building projects meaningful to the user. My strongest skills are with MERN stack, and I continue to pursue learning new technologies on a daily basis. Combined with my professional experience, I strive to create applications from the users' perspective.</p>
+                    <p>Since I was young I had a strong curiosity to see how things work behind the design. Whether it was breaking my toys apart to see the mechanics, building calluses on my fingertips so I could hold chords on the guitar, or submerging myself in documentation and stack overflow to integrate a small (but extremely important) feature on a project, I've always loved to give myself new challenges to conquer.</p>
                     <p className='please-note'>*All Photos on this site are taken by me and not sourced from other sites.</p>
                 </div>
                 <div className='contact-links'>

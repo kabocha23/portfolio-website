@@ -74,6 +74,10 @@ class App extends Component {
     );
   }
 
+  imageZoom = () => {
+    
+  }
+
   componentWillUnmount() {
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
@@ -184,7 +188,9 @@ class App extends Component {
           <div className='projects-box'>
             <Element name="scroll-projects" className="projects" >
               <MuiThemeProvider>
-                <Projects />
+                <Projects 
+                  handleImageZoom={this.imageZoom}
+                />
               </MuiThemeProvider>
             </Element>
           </div>

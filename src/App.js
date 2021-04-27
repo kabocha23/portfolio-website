@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 import $ from 'jquery';
 import bootstrap from 'bootstrap';
 import Intro from './Intro/Intro';
@@ -16,7 +16,7 @@ window.jQuery = $;
 class App extends Component {
 
 
-  componentDidMount() {
+  componentDidMount = () => {
     Events.scrollEvent.register('begin', () => {
       console.log("begin", arguments);
     });
@@ -78,14 +78,17 @@ class App extends Component {
     
   }
 
-  componentWillUnmount() {
+  componentWillUnmount = () => {
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
     window.removeEventListener('scroll', this.handleScroll);
   }
 
+  
 
-  render() {
+
+  render = () => {
+    
     return (
       <div className="main-container">
         {/* navbar begin */}

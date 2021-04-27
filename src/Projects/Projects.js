@@ -29,9 +29,7 @@ class Projects extends Component{
             </Parallax>
                 <div className='projects-content-box'>
                     <div className='eaters-app indi-proj'>
-                        <IndecisiveEaters 
-                            handleImageZoom={handleImageZoom}
-                        />
+                        <IndecisiveEaters />
                     </div>
                     <div className='notes-app indi-proj'>
                         <NotesAppCard />

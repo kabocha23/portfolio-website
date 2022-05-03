@@ -5,7 +5,7 @@ import './Footer.css';
 export const Footer = () => (
     <div className='footer-container'>
         <div className='footer-subtitle'>
-            <p>2018 - Jason Kobuchi</p>
+            <p>2022 - Jason Kobuchi</p>
         </div>
         <div className='foot-contact-links'>
 
@@ -20,7 +20,7 @@ export const Footer = () => (
             </div>
 
             <div className='linkedin-link foot-single-link'>
-                <a href='https://www.linkedin.com/in/jason-kobuchi-5aa45811/'>
+                <a href='https://www.linkedin.com/in/jason-kobuchi/'>
                     <img 
                         src={ require('../Static/img/linkedin-icon-circle2.png') } 
                         className='linkedin-icon foot-icon' 

@@ -25,18 +25,15 @@ class Skills extends Component{
                         <ul>
                             <li className='skills-subhead'><h3>Data</h3></li>
                             <li className='skills-item'><p>MySQL</p></li>
-                            <li className='skills-item'><p>Tableau</p></li>
-                            <li className='skills-item'><p>MS Excel</p></li>
                             <li className='skills-item'><p>MongoDB</p></li>
                             <li className='skills-item'><p>GraphQL</p></li>
                         </ul>
                     </div>
                     <div className='BI-box skill-box'>
                         <ul>
-                            <li className='skills-subhead'><h3>BI</h3></li>
-                            <li className='skills-item'><p>Reporting</p></li>
-                            <li className='skills-item'><p>Analytics</p></li>
-                            <li className='skills-item'><p>Dashboards</p></li>
+                            <li className='skills-subhead'><h3>Analytics Reporting</h3></li>
+                            <li className='skills-item'><p>Tableau</p></li>
+                            <li className='skills-item'><p>Google Data Studio</p></li>
                         </ul>
                     </div>
                     <div className='languages-box skill-box'>

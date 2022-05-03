@@ -24,9 +24,6 @@ const IndecisiveEaters = (props) => {
   return (
     <div>
       <Card className={classes.card}>
-        <CardActionArea
-          onClick={handleImageZoom}
-        >
           <CardMedia
             className={classes.media}
             image={require("../Static/img/indecisive-eaters1.png")}
@@ -43,7 +40,6 @@ const IndecisiveEaters = (props) => {
               A web application made for those who can't decide where to eat. Search for restaurants with Yelp-Fusion API, and drag the desired restaurants to the list on the right. When you're ready to go, the computer will randomly chose one for you!
             </Typography>
           </CardContent>
-        </CardActionArea>
         <CardActions>
         <Button color='primary' href='https://github.com/kabocha23/Indecisive' target='blank'>
           View Source Code

@@ -31,7 +31,7 @@ class AboutMe extends Component{
                         </a>
                     </div>
                     <div className='linkedin-link single-link'>
-                        <a href='https://www.linkedin.com/in/jason-kobuchi-5aa45811/'>
+                        <a href='https://www.linkedin.com/in/jason-kobuchi/'>
                             <img 
                                 src={ require('../Static/img/linkedin-icon-circle2.png') } 
                                 className='linkedin-icon about-icon' 

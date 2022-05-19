@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './Projects.css';
 import { Parallax } from 'react-parallax';
+import IndecisiveEaters from './IndecisiveEaters';
+import SunnysideAgencyMock from './SunnysideAgencyMock';
 import NotesAppCard from './NotesAppCard';
 import FlashAppCard from './FlashAppCard';
 import WeatherAppCard from './WeatherAppCard';
 import DragonGoCraft from './DragonGoCraft';
 import AndroidCalculator from './AndroidCalculator';
 import AndroidCryptoTracker from './AndroidCryptoTracker';
-import IndecisiveEaters from './IndecisiveEaters';
+
 // import { MazeRunner } from './MazeRunner';
 
 
@@ -30,6 +32,9 @@ class Projects extends Component{
                 <div className='projects-content-box'>
                     <div className='eaters-app indi-proj'>
                         <IndecisiveEaters />
+                    </div>
+                    <div className='sunnyside-app indi-proj'>
+                        <SunnysideAgencyMock />
                     </div>
                     <div className='notes-app indi-proj'>
                         <NotesAppCard />

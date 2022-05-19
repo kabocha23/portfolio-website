@@ -18,29 +18,29 @@ const styles = {
   },
 };
 
-const AndroidCalculator = (props) => {
+const SunnysideAgencyMock = (props) => {
   const { classes } = props;
   return (
     <div>
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
-          image={require("../Static/img/react-native-calc.png")}
-          title="Android Calculator Preview"
+          image={require("../Static/img/desktop-preview.jpg")}
+          title="Sunnyside Agency Preview"
         />
         <CardContent>
           <Typography gutterBottom variant="headline" component="h1">
-            Android Calculator
+            Sunnyside Agency Website
           </Typography>
           <Typography component="h2">
-            Technologies: React & Android Studios
+            Technologies: React
           </Typography>
           <Typography component="p">
-            Android calculator built with React Native.
+          A responsive front end design for a fictional creative agency.
           </Typography>
         </CardContent>
         <CardActions>
-        <Button color='primary' href='https://github.com/kabocha23/React-Native-Calculator' target='blank'>
+        <Button color='primary' href='https://github.com/kabocha23/Sunnyside-Agency-Site' target='blank'>
           View Source Code
         </Button>
         </CardActions>
@@ -49,8 +49,8 @@ const AndroidCalculator = (props) => {
   );
 }
 
-AndroidCalculator.propTypes = {
+SunnysideAgencyMock.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(AndroidCalculator);
+export default withStyles(styles)(SunnysideAgencyMock);

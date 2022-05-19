@@ -105,7 +105,7 @@ class App extends Component {
                   onClick={this.scrollToTop} 
                   className='navbar-brand'
                 >
-                  JK
+                  <p>JK</p>
                 </Link>
               </div>
                 <button 
@@ -130,7 +130,7 @@ class App extends Component {
                       duration={650} 
                       offset={-63} 
                     >
-                      About
+                      <p>About</p>
                     </Link> 
                   </li>
                   <li> 
@@ -143,7 +143,7 @@ class App extends Component {
                       duration={650} 
                       offset={-63} 
                     >
-                      Projects
+                      <p>Projects</p>
                     </Link> 
                   </li>
                   <li> 
@@ -156,7 +156,7 @@ class App extends Component {
                       duration={650} 
                       offset={-63} 
                     >
-                      Skills
+                      <p>Skills</p>
                     </Link>
                   </li>
                 </ul>

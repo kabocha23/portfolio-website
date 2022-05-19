@@ -48,7 +48,11 @@ div#nb-collapse{
   font-weight: bolder;
 }
 .navbar-default .navbar-brand:hover {
-  color: rgb(155, 155, 155);
+  color: #FFCC66;
+  transition: color 1s ease 0s;
+}
+.navbar-default .navbar-brand p{
+  font-size: 1em;
 }
 .navbar-default .navbar-nav > li > a {
   color: white !important;
@@ -71,7 +75,7 @@ div.show#nb-collapse {
   font-weight: bolder;
 }
 .navbar.solid .navbar-brand:hover {
-  color: rgb(158, 158, 187);
+  color: #FFCC66;
   transition: color 1s ease 0s;
 }
 .navbar.solid div #nb-collapse{
@@ -120,16 +124,47 @@ div.show#nb-collapse {
 .main-body-box{
   height: auto;
 }
-
 .to-about{
   cursor: pointer;
+}
+.to-about p{
+  font-size: 1em;
+  font-weight: bold;
+}
+.to-about p:hover{
+  color: #FFCC66;
+  transition: color 1s ease 0s;
 }
 .to-projects{
   cursor: pointer;
 }
+.to-projects p{
+  font-size: 1em;
+  font-weight: bold;
+}
+.to-projects p:hover{
+  color: #FFCC66;
+  transition: color 1s ease 0s;
+}
 .to-skills{
   cursor: pointer;
 }
+.to-skills p{
+  font-size: 1em;
+  font-weight: bold;
+}
+.to-skills p:hover{
+  color: #FFCC66;
+  transition: color 1s ease 0s;
+}
 .to-experience{
   cursor: pointer;
+}
+.to-experience p{
+  font-size: 1em;
+  font-weight: bold;
+}
+.to-experience p:hover{
+  color: #FFCC66;
+  transition: color 1s ease 0s;
 }

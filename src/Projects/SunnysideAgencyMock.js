@@ -33,7 +33,7 @@ const SunnysideAgencyMock = (props) => {
             Sunnyside Agency Website
           </Typography>
           <Typography component="h2">
-            Technologies: React
+            React
           </Typography>
           <Typography component="p">
           A responsive front end design for a fictional creative agency.

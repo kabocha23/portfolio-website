@@ -34,7 +34,7 @@ const AndroidCryptoTracker = (props) => {
             Cryptocurrency Tracker for Android
           </Typography>
           <Typography component="h2">
-            Technologies: Coin Market Cap API, React Native, Android Studios
+            Coin Market Cap API, React Native, Android Studios
           </Typography>
           <Typography component="p">
             Android application built with React Native, calling the Coin Market Cap API for real-time quotes.

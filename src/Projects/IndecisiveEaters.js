@@ -34,7 +34,7 @@ const IndecisiveEaters = (props) => {
               Indecisive Eaters
             </Typography>
             <Typography component="h2">
-              Technologies: React, Node, Express, Yelp-Fusion API, Axios, React DnD, reactjs-popup
+              React, Node, Express, Yelp-Fusion API, Axios, React DnD, reactjs-popup
             </Typography>
             <Typography component="p">
               A web application made for those who can't decide where to eat. Search for restaurants with Yelp-Fusion API, and drag the desired restaurants to the list on the right. When you're ready to go, the computer will randomly chose one for you!

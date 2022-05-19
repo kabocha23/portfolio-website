@@ -34,7 +34,7 @@ const NotesAppCard = (props) => {
             Notes!
           </Typography>
           <Typography component="h2">
-            Technologies: React & Firebase
+            React, Firebase
           </Typography>
           <Typography component="p">
             Notes application built with React and Firebase to help you keep reminders.

@@ -34,7 +34,7 @@ const DragonGoCraft = (props) => {
             Dragon Go Craft
           </Typography>
           <Typography component="h2">
-            Technologies: Swift, XCode, Core Location, Google Maps API
+            Swift, XCode, Core Location, Google Maps API
           </Typography>
           <Typography component="p">
           An iOS application created for a 24-hour hackathon; Find Dragons to defeat and capture with GPS tracking your movement through Google Maps API.

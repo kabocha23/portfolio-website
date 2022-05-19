@@ -23,7 +23,7 @@ export const MazeRunner = () => (
     </CardMedia>
     <CardTitle 
       title="Maze Runner" 
-      subtitle="Technologies: Swift, XCode, Core Motion" 
+      subtitle="Swift, XCode, Core Motion" 
     />
     <CardText>
       An iOS application created for another 24-hour hackathon; Use core motion to move your runner through an endless guantlet of mazes, scoring points for every step. Run out of steps and it's game over.

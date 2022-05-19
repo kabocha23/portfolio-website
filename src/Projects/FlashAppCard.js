@@ -34,7 +34,7 @@ const FlashAppCard = (props) => {
             Learn in a Flash
           </Typography>
           <Typography component="h2">
-            Technologies: React & Firebase
+            React, Firebase
           </Typography>
           <Typography component="p">
             Web application utilizing React and Firebase to create virtual flashcards for studying (currently set up for Chinese).

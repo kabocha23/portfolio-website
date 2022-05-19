@@ -43,11 +43,28 @@
     width: 300px;
     cursor: default;
 }
+.indi-proj h1 {
+    font-size: 1.0em;
+    margin: 5px auto;    
+    font-weight: bold;
+    text-align: center;
+}
+.indi-proj h2 {
+    font-size: 0.9em;
+    margin: 5px auto;
+    font-style: italic;
+    text-align: center;
+}
+.indi-proj p {
+    font-size: 0.9em;
+    margin: 20px auto;
+    text-align: center;
+}
 
 .more-to-come {
     background-color: #eee;
     color: grey;
-    font-size: 0.8em;
+    font-size: 1.0em;
     display: block;
     text-align: center;
     font-style: italic;

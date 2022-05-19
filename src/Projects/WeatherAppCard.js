@@ -34,7 +34,7 @@ const WeatherAppCard = (props) => {
             Weather You Like It or Not
           </Typography>
           <Typography component="h2">
-            Technologies: React & Open Weather API
+            React, Open Weather API
           </Typography>
           <Typography component="p">
             Application created with React and OpenWeatherMap API to look up the current weather, or a five day forecast.

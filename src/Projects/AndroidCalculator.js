@@ -33,7 +33,7 @@ const AndroidCalculator = (props) => {
             Android Calculator
           </Typography>
           <Typography component="h2">
-            Technologies: React & Android Studios
+            React, Android Studios
           </Typography>
           <Typography component="p">
             Android calculator built with React Native.

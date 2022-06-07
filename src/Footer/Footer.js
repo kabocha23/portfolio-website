@@ -1,8 +1,11 @@
 import React from 'react';
+import emailIcon from '../Static/img/email-icon2.png';
+import linkedInIcon from '../Static/img/linkedin-icon-circle2.png';
+import githubIcon from '../Static/img/github-icon2.png';
 import './Footer.css';
 
 
-export const Footer = () => (
+const Footer = () => (
     <div className='footer-container'>
         <div className='footer-subtitle'>
             <p>2022 - Jason Kobuchi</p>
@@ -12,7 +15,7 @@ export const Footer = () => (
             <div className='email-link foot-single-link'>
                 <a href='mailto:jekobuchi@gmail.com'>
                     <img 
-                        src={ require('../Static/img/email-icon2.png') } 
+                        src={emailIcon} 
                         className='email-icon foot-icon' 
                         alt='email-icon' 
                     />
@@ -22,7 +25,7 @@ export const Footer = () => (
             <div className='linkedin-link foot-single-link'>
                 <a href='https://www.linkedin.com/in/jason-kobuchi/'>
                     <img 
-                        src={ require('../Static/img/linkedin-icon-circle2.png') } 
+                        src={linkedInIcon} 
                         className='linkedin-icon foot-icon' 
                         alt='linkedin-icon' 
                     />
@@ -32,7 +35,7 @@ export const Footer = () => (
             <div className='github-link foot-single-link'>
                 <a href='https://github.com/kabocha23'>
                     <img 
-                        src={ require('../Static/img/github-icon2.png') } 
+                        src={githubIcon} 
                         className='github-icon2 foot-icon' 
                         alt='github-icon2' 
                     />
@@ -42,3 +45,5 @@ export const Footer = () => (
     </div>
 
 )
+
+export default Footer;

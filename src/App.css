@@ -2,101 +2,79 @@
   height: 100vh;
   width: 100%;
 }
-.navbar{
-  background-color: transparent;
+
+/* navbar begin */
+.nav-container{
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #313131d0;
   border: none;
   color: white;
   z-index: 100;
-  transition: background-color 1s ease 0s;
   height: 65px;
 }
-.container-fluid{
-  align-items: center;
-}
-.container-fluid button{
-  border: none;
-  background-color: transparent;
-  margin: 12px 0px 0px 0px;
-}
-.container-fluid button .icon-bar{
-  height: 3px;
-}
-.container-fluid button.navbar-toggle:hover{
-  background-color: transparent;
-}
-.container-fluid button.navbar-toggle:active{
-  background-color: transparent;
-}
-.container-fluid button.navbar-toggle:focus{
-  background-color: transparent;
-}
+
+/* JK logo /home  */
 .navbar-home{
-  margin: 8px 0px 0px 10px;
-  display: inline-block;
+  display: flex;
+  height: 100%; 
+  position: relative;
+  margin-right: auto;
   cursor: pointer;
   font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
-.navbar-default .navbar-nav > a, .navbar-default .navbar-nav > a:hover, .navbar-default .navbar-nav > a:focus {
+.navbar-home button{
+  border: none;
   background-color: transparent;
+  margin-top: auto;
+  margin-left: 25px;;
+  margin-bottom: auto;
 }
-div#nb-collapse{
-  float: right;
-  border-color: transparent;
-}
-.navbar-default .navbar-brand {
-  color: white;
-  font-weight: bolder;
-}
-.navbar-default .navbar-brand:hover {
+.navbar-home button:hover {
+  transition: color 0.4s ease-in-out;
   color: #FFCC66;
-  transition: color 1s ease 0s;
-}
-.navbar-default .navbar-brand p{
-  font-size: 1em;
-}
-.navbar-default .navbar-nav > li > a {
-  color: white !important;
-  margin: 8px 5px 5px 5px;
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
-  color: rgb(91, 148, 255);
-}
-div.show#nb-collapse {
-  float: none;
 }
 
-/* after navbar transitions to color */
-.navbar.solid {
-  background-color: #313131d0;
-  transition: background-color 0.75s ease 0s;
-}
-.navbar.solid .navbar-brand {
-  color: white;
-  font-weight: bolder;
-}
-.navbar.solid .navbar-brand:hover {
-  color: #FFCC66;
-  transition: color 1s ease 0s;
-}
-.navbar.solid div #nb-collapse{
-  background-color: transparent;
-  transition: background-color 0.75s ease 0s;
-}
-.navbar.solid div.show#nb-collapse{
-  background-color: #313131d0;
-  transition: background-color 0.75s ease 0s;
-}
-.navbar.solid .navbar-nav > li > a{
-  color: white !important;
-  transition: color 1s ease 0s;
-}
-.navbar.solid .navbar-nav > li{
-  background-color: transparent;
-}
-.navbar-static-top .navbar-collapse.in {
-  overflow-y: visible; 
+/* hide toggle button */
+.toggle-button {
+  display: none;
 }
 
+/* collapsible menu */
+.nav-menu {
+  display: none;
+}
+
+/* regular navbar menu */
+.nav-menu-fs {
+  height: 100%; 
+  position: relative;
+  margin-left: auto;
+}
+.nav-menu-fs-sub {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.nav-menu-fs-sub button {
+  text-decoration: none;
+  margin-right: 25px;
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+
+}
+.nav-menu-fs-sub button:hover {
+  transition: color 0.4s ease-in-out;
+  color: #FFCC66;
+}
+
+/* snow background and name/title */
 .intro-box{
   display: flex;
   text-align: center;
@@ -124,47 +102,77 @@ div.show#nb-collapse {
 .main-body-box{
   height: auto;
 }
-.to-about{
-  cursor: pointer;
-}
-.to-about p{
-  font-size: 1em;
-  font-weight: bold;
-}
-.to-about p:hover{
-  color: #FFCC66;
-  transition: color 1s ease 0s;
-}
-.to-projects{
-  cursor: pointer;
-}
-.to-projects p{
-  font-size: 1em;
-  font-weight: bold;
-}
-.to-projects p:hover{
-  color: #FFCC66;
-  transition: color 1s ease 0s;
-}
-.to-skills{
-  cursor: pointer;
-}
-.to-skills p{
-  font-size: 1em;
-  font-weight: bold;
-}
-.to-skills p:hover{
-  color: #FFCC66;
-  transition: color 1s ease 0s;
-}
-.to-experience{
-  cursor: pointer;
-}
-.to-experience p{
-  font-size: 1em;
-  font-weight: bold;
-}
-.to-experience p:hover{
-  color: #FFCC66;
-  transition: color 1s ease 0s;
+
+/* navbar collapses @ 900px */
+@media (max-width: 900px) {
+  .toggle-button {
+      display: flex;
+      height: 100%; 
+      position: relative;
+      width: 10%;
+      min-width: 50px;
+      margin-left: auto;
+  }
+  .toggle-button button {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+      transition: background-color 0.4s ease-in-out;
+      font-weight: bold;
+      font-size: 15px;
+      color: white;
+  }
+  .toggle-button button:hover {
+    transition: color 0.4s ease-in-out;
+    color: #FFCC66;
+  }
+
+  /* nav expanded menu */
+  .nav-menu-fs {
+      display: none;
+  }
+  .nav-menu {
+      display: block;
+  }
+  .nav-menu ul {
+      display: flex;
+      position: absolute;
+      height: calc(100vh - 65px);
+      width: 30%;
+      top: 65px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      padding: 0;
+      flex-direction: column;
+      background-color: #313131d0;
+  }
+  .nav-menu li {
+      list-style-type: none;
+      margin-top: 20px;
+      margin-left: 20px;
+      text-align: left;
+  }
+  .nav-menu li button {
+      text-decoration: none;
+      font-weight: bold;
+      background-color: transparent;
+      border: none;
+      width: 10%;
+  }
+  .nav-menu li:hover {
+      transition: color 0.4s ease-in-out;
+      color: #FFCC66;
+  }
+  .nav-menu ul {
+      display: none;
+  }
+  .nav-menu.expanded ul {
+      display: block;
+  }
 }

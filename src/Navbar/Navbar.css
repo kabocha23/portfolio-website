@@ -1,0 +1,162 @@
+/* navbar begin */
+.nav-container{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    z-index: 100;
+    height: 65px;
+  }
+  .nav-container.transpBg{
+    transition: all 0.4s ease-in-out;
+    background-color: transparent;
+  }
+  .nav-container.colorBg{
+    transition: all 0.4s ease-in-out;
+    background-color: #313131d0;
+  }
+  
+  /* JK logo /home  */
+  .navbar-home{
+    display: flex;
+    height: 100%; 
+    position: relative;
+    margin-right: auto;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+  }
+  .navbar-home button{
+    border: none;
+    background-color: transparent;
+    margin-top: auto;
+    margin-left: 25px;;
+    margin-bottom: auto;
+  }
+  .navbar-home button:hover {
+    transition: color 0.4s ease-in-out;
+    color: #FFCC66;
+  }
+  
+  /* hide toggle button */
+  .toggle-button {
+    display: none;
+  }
+  
+  /* collapsible menu */
+  .nav-menu {
+    display: none;
+  }
+  
+  /* regular navbar menu */
+  .nav-menu-fs {
+    height: 100%; 
+    position: relative;
+    margin-left: auto;
+  }
+  .nav-menu-fs-sub {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-menu-fs-sub button {
+    text-decoration: none;
+    margin-right: 25px;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+  
+  }
+  .nav-menu-fs-sub button:hover {
+    transition: all 0.4s ease-in-out;
+    color: #FFCC66;
+  }
+
+  /* navbar collapses @ 900px */
+@media (max-width: 900px) {
+    .toggle-button {
+        display: flex;
+        height: 100%; 
+        position: relative;
+        width: 10%;
+        min-width: 50px;
+        margin-left: auto;
+    }
+    .toggle-button button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+    }
+    .toggle-button button:hover {
+      transition: all 0.4s ease-in-out;
+      color: #FFCC66;
+    }
+  
+    /* nav expanded menu */
+    .nav-menu-fs {
+        display: none;
+    }
+    .nav-menu {
+        display: block;
+    }
+    .nav-menu ul {
+        display: flex;
+        position: fixed;
+        height: calc(100vh - 65px);
+        width: 20%;
+        min-width: 150px;
+        top: 65px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .nav-menu li {
+        list-style-type: none;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: left;
+    }
+    .nav-menu li button {
+        text-decoration: none;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        width: 10%;
+    }
+    .nav-menu li:hover {
+        transition: color 0.4s ease-in-out;
+        color: #FFCC66;
+    }
+    .nav-menu ul {
+        transform: translate3d(-100vw, 0, 0);
+        transition: all 0.4s cubic-bezier(0, .52, 0, 1);
+    }
+    .nav-menu.expanded ul {
+        transform: translate3d(0vw, 0, 0);
+        transition: all 0.4s cubic-bezier(0, .52, 0, 1);
+    }
+    .nav-ul.transpBg{
+      transition: all 0.4s ease-in-out;
+      background-color: transparent;
+    }
+    .nav-ul.colorBg{
+      transition: all 0.4s ease-in-out;
+      background-color: #313131d0;
+    }
+}

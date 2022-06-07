@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import $ from 'jquery';
 import bootstrap from 'bootstrap';
+import Navbar from './Navbar/Navbar';
 import Intro from './Intro/Intro';
 import Projects from './Projects/Projects';
 import AboutMe from './AboutMe/AboutMe';
@@ -17,31 +18,30 @@ window.jQuery = $;
 const App = () => {
 
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [navBgColor, setNavBgColor] = useState(false);
 
   const homeRef = useRef();
   const aboutMeRef = useRef();
   const projectsRef = useRef(); 
   const skillsRef = useRef();
 
-  const toggleIsNav = () => {
-    setIsNavExpanded(!isNavExpanded)
-    console.log(isNavExpanded)
-  }
-
   const handleHomeClick = () => {
-    homeRef.current.scrollIntoView({ top: -65, behavior: 'smooth' });
+    homeRef.current.scrollIntoView({ behavior: 'smooth' });
   }
 
   const handleAboutClick = () => {
-    aboutMeRef.current.scrollIntoView({ top: -65, behavior: 'smooth' });
+    aboutMeRef.current.scrollIntoView({ behavior: 'smooth' });
+    setIsNavExpanded(!isNavExpanded)
   }
 
   const handleProjectsClick = () => {
     projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+    setIsNavExpanded(!isNavExpanded)
   }
 
   const handleSkillsClick = () => {
     skillsRef.current.scrollIntoView({ behavior: 'smooth' });
+    setIsNavExpanded(!isNavExpanded)
   }
 
   const imageZoom = () => {
@@ -50,37 +50,16 @@ const App = () => {
     
   return (
     <div className='main-container' ref={homeRef}>
-      {/* navbar begin */}
-      <div className='nav-container'>
-        <div className='navbar-home'>
-            <button onClick={handleHomeClick}>JK</button>
-        </div>
-        <div className='toggle-button'>
-          <button
-            type='button'
-            title='col-nav-btn'
-            onClick={toggleIsNav}
-          >
-            ☰
-          </button>
-        </div>
-        <div className={isNavExpanded ? 'nav-menu expanded' : 'nav-menu'}>
-          <ul>
-            <li><button onClick={handleAboutClick}>About</button></li>
-            <li><button onClick={handleProjectsClick}>Projects</button></li>
-            <li><button onClick={handleSkillsClick}>Skills</button></li>
-          </ul>
-        </div>
-        <div className='nav-menu-fs'>
-          <div className='nav-menu-fs-sub'>
-            <button onClick={handleAboutClick}>About</button>
-            <button onClick={handleProjectsClick}>Projects</button>
-            <button onClick={handleSkillsClick}>Skills</button>
-          </div>                
-        </div>
-      </div>
-      {/* navbar end */}
-
+      <Navbar 
+        isNavExpanded={isNavExpanded}
+        setIsNavExpanded={setIsNavExpanded}
+        navBgColor={navBgColor}
+        setNavBgColor={setNavBgColor}
+        handleHomeClick={handleHomeClick}
+        handleAboutClick={handleAboutClick}
+        handleProjectsClick={handleProjectsClick}
+        handleSkillsClick={handleSkillsClick}
+      />
       <Parallax
         blur={0}
         bgImage={nycSnowBg}

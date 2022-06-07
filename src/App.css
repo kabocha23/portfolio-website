@@ -9,11 +9,19 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #313131d0;
+  background-color: transparent;
   border: none;
   color: white;
   z-index: 100;
   height: 65px;
+}
+.nav-container.transpBg{
+  transition: all 0.4s ease-in-out;
+  background-color: transparent;
+}
+.nav-container.colorBg{
+  transition: all 0.4s ease-in-out;
+  background-color: #313131d0;
 }
 
 /* JK logo /home  */
@@ -70,7 +78,7 @@
 
 }
 .nav-menu-fs-sub button:hover {
-  transition: color 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   color: #FFCC66;
 }
 
@@ -122,13 +130,13 @@
       border: 0;
       background-color: transparent;
       cursor: pointer;
-      transition: background-color 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
       font-weight: bold;
       font-size: 15px;
       color: white;
   }
   .toggle-button button:hover {
-    transition: color 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     color: #FFCC66;
   }
 
@@ -141,16 +149,16 @@
   }
   .nav-menu ul {
       display: flex;
-      position: absolute;
+      position: fixed;
       height: calc(100vh - 65px);
-      width: 30%;
+      width: 20%;
+      min-width: 150px;
       top: 65px;
       right: 0;
       left: 0;
       bottom: 0;
       padding: 0;
       flex-direction: column;
-      background-color: #313131d0;
   }
   .nav-menu li {
       list-style-type: none;
@@ -170,9 +178,19 @@
       color: #FFCC66;
   }
   .nav-menu ul {
-      display: none;
+      transform: translate3d(-100vw, 0, 0);
+      transition: all 0.4s cubic-bezier(0, .52, 0, 1);
   }
   .nav-menu.expanded ul {
-      display: block;
+      transform: translate3d(0vw, 0, 0);
+      transition: all 0.4s cubic-bezier(0, .52, 0, 1);
+  }
+  .nav-ul.transpBg{
+    transition: all 0.4s ease-in-out;
+    background-color: transparent;
+  }
+  .nav-ul.colorBg{
+    transition: all 0.4s ease-in-out;
+    background-color: #313131d0;
   }
 }

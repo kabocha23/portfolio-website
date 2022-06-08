@@ -1,10 +1,10 @@
-.main-container{
+.main-container {
   height: 100vh;
   width: 100%;
 }
 
 /* navbar begin */
-.nav-container{
+.nav-container {
   display: flex;
   position: fixed;
   top: 0;
@@ -15,17 +15,17 @@
   z-index: 100;
   height: 65px;
 }
-.nav-container.transpBg{
+.nav-container.transpBg {
   transition: all 0.4s ease-in-out;
   background-color: transparent;
 }
-.nav-container.colorBg{
+.nav-container.colorBg {
   transition: all 0.4s ease-in-out;
   background-color: #313131d0;
 }
 
 /* JK logo /home  */
-.navbar-home{
+.navbar-home {
   display: flex;
   height: 100%; 
   position: relative;
@@ -34,7 +34,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
 }
-.navbar-home button{
+.navbar-home button {
   border: none;
   background-color: transparent;
   margin-top: auto;
@@ -83,7 +83,7 @@
 }
 
 /* snow background and name/title */
-.intro-box{
+.intro-box {
   display: flex;
   text-align: center;
   height: 100vh;
@@ -101,14 +101,26 @@
 .intro-container {
   width: 100%;
 }
-.intro-name{
+.intro-name {
   font-size: 3.5em;
 }
-.intro-title{
+.intro-title {
   font-size: 2.0em;
 }
-.main-body-box{
+.main-body-box {
   height: auto;
+}
+.about-box {
+  scroll-margin-top: 65px;
+}
+.projects-box {
+  scroll-margin-top: 65px;
+}
+.skills-box {
+  scroll-margin-top: 65px;
+}
+.footer-box {
+  scroll-margin-top: 65px;
 }
 
 /* navbar collapses @ 900px */

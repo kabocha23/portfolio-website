@@ -1,13 +1,8 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './Navbar.css';
 
 const Navbar = ({ isNavExpanded, setIsNavExpanded, navBgColor, setNavBgColor, handleHomeClick, handleAboutClick, handleProjectsClick, handleSkillsClick }) => {
 
-    const homeRef = useRef();
-    const aboutMeRef = useRef();
-    const projectsRef = useRef(); 
-    const skillsRef = useRef();
-  
     const toggleIsNav = () => {
       setIsNavExpanded(!isNavExpanded)
       console.log(isNavExpanded)

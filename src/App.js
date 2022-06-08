@@ -13,7 +13,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import './App.css';
 
-window.jQuery = $;
+
 
 const App = () => {
 
@@ -31,17 +31,17 @@ const App = () => {
 
   const handleAboutClick = () => {
     aboutMeRef.current.scrollIntoView({ behavior: 'smooth' });
-    setIsNavExpanded(!isNavExpanded)
+    setIsNavExpanded(false);
   }
 
   const handleProjectsClick = () => {
     projectsRef.current.scrollIntoView({ behavior: 'smooth' });
-    setIsNavExpanded(!isNavExpanded)
+    setIsNavExpanded(false);
   }
 
   const handleSkillsClick = () => {
     skillsRef.current.scrollIntoView({ behavior: 'smooth' });
-    setIsNavExpanded(!isNavExpanded)
+    setIsNavExpanded(false);
   }
 
   const imageZoom = () => {

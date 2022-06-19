@@ -111,16 +111,13 @@
   height: auto;
 }
 .about-box {
-  scroll-margin-top: 65px;
+  scroll-margin-top: 64px;
 }
 .projects-box {
-  scroll-margin-top: 65px;
+  scroll-margin-top: 64px;
 }
 .skills-box {
-  scroll-margin-top: 65px;
-}
-.footer-box {
-  scroll-margin-top: 65px;
+  scroll-margin-top: 64px;
 }
 
 /* navbar collapses @ 900px */

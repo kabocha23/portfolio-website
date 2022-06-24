@@ -43,6 +43,9 @@ const EcommerceProductPage = (props) => {
         <Button color='primary' href='https://github.com/kabocha23/Ecommerce-Product-Page' target='blank'>
           View Source Code
         </Button>
+        <Button color='primary' href='https://kabocha23.github.io/Ecommerce-Product-Page' target='blank'>
+          Live Demo
+        </Button>
         </CardActions>
       </Card>
     </div>

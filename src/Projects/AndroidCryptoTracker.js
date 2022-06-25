@@ -17,6 +17,9 @@ const styles = {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
+  cardActions: {
+    justifyContent: 'center'
+  }
 };
 
 const AndroidCryptoTracker = (props) => {
@@ -40,8 +43,8 @@ const AndroidCryptoTracker = (props) => {
             Android application built with React Native, calling the Coin Market Cap API for real-time quotes.
           </Typography>
         </CardContent>
-        <CardActions>
-        <Button color='primary' href='https://github.com/kabocha23/React-Native-Crypto-Tracker' target='blank'>
+        <CardActions className={classes.cardActions}>
+        <Button size='large' color='primary' href='https://github.com/kabocha23/React-Native-Crypto-Tracker' target='blank'>
           View Source Code
         </Button>
         </CardActions>

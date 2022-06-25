@@ -17,6 +17,9 @@ const styles = {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
+  cardActions: {
+    justifyContent: 'center'
+  }
 };
 
 const DragonGoCraft = (props) => {
@@ -40,8 +43,8 @@ const DragonGoCraft = (props) => {
           An iOS application created for a 24-hour hackathon; Find Dragons to defeat and capture with GPS tracking your movement through Google Maps API.
           </Typography>
         </CardContent>
-        <CardActions>
-        <Button color='primary' target='blank'>
+        <CardActions className={classes.cardActions}>
+        <Button size='large' color='primary' target='blank'>
           Private Repo
         </Button>
         </CardActions>

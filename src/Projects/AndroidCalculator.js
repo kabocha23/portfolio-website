@@ -16,6 +16,9 @@ const styles = {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
+  cardActions: {
+    justifyContent: 'center'
+  }
 };
 
 const AndroidCalculator = (props) => {
@@ -39,8 +42,8 @@ const AndroidCalculator = (props) => {
             Android calculator built with React Native.
           </Typography>
         </CardContent>
-        <CardActions>
-        <Button color='primary' href='https://github.com/kabocha23/React-Native-Calculator' target='blank'>
+        <CardActions className={classes.cardActions}>
+        <Button size='large' color='primary' href='https://github.com/kabocha23/React-Native-Calculator' target='blank'>
           View Source Code
         </Button>
         </CardActions>

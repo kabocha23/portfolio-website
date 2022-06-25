@@ -16,6 +16,9 @@ const styles = {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
+  cardActions: {
+    justifyContent: 'center'
+  }
 };
 
 const SunnysideAgencyMock = (props) => {
@@ -39,8 +42,8 @@ const SunnysideAgencyMock = (props) => {
           A responsive front end design for a fictional creative agency.
           </Typography>
         </CardContent>
-        <CardActions>
-        <Button color='primary' href='https://github.com/kabocha23/Sunnyside-Agency-Site' target='blank'>
+        <CardActions className={classes.cardActions}>
+        <Button size='large' color='primary' href='https://github.com/kabocha23/Sunnyside-Agency-Site' target='blank'>
           View Source Code
         </Button>
         </CardActions>

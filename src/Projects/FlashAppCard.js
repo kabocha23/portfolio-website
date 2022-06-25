@@ -17,6 +17,9 @@ const styles = {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
+  cardActions: {
+    justifyContent: 'center'
+  }
 };
 
 const FlashAppCard = (props) => {
@@ -40,11 +43,11 @@ const FlashAppCard = (props) => {
             Web application utilizing React and Firebase to create virtual flashcards for studying (currently set up for Chinese).
           </Typography>
         </CardContent>
-        <CardActions>
+        <CardActions className={classes.cardActions}>
         <Button color='primary' href='https://bitbucket.org/Kabocha23/react-flashcards/src/master/' target='blank'>
           View Source Code
         </Button>
-        <Button color='primary' href='https://reactflashcards-fb1d7.firebaseapp.com/' target='blank'>
+        <Button size='large' color='primary' href='https://reactflashcards-fb1d7.firebaseapp.com/' target='blank'>
           Live Demo
         </Button>
         </CardActions>

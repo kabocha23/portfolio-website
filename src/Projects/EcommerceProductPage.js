@@ -10,12 +10,18 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
   card: {
-    maxWidth: 345,
+    maxWidth: 345
   },
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
+  cardActions: {
+    justifyContent: 'center'
+  },
+  cardActions: {
+    justifyContent: 'center'
+  }
 };
 
 const EcommerceProductPage = (props) => {
@@ -32,18 +38,18 @@ const EcommerceProductPage = (props) => {
           <Typography gutterBottom variant="headline" component="h1">
             Sneakers Product Page
           </Typography>
-          <Typography component="h2">
+          <Typography variant="caption" component="h2">
             React
           </Typography>
           <Typography component="p">
           A responsive product page web and mobile design for a fictional e-commerce website Sneakers Company. Features include navbar transitioning to collapsible sidebar, selectible photo gallery, cart with CRUD functionality, live cart quantity bubble.
           </Typography>
         </CardContent>
-        <CardActions>
-        <Button color='primary' href='https://github.com/kabocha23/Ecommerce-Product-Page' target='blank'>
+        <CardActions className={classes.cardActions}>
+        <Button size='large' color='primary' href='https://github.com/kabocha23/Ecommerce-Product-Page' target='blank'>
           View Source Code
         </Button>
-        <Button color='primary' href='https://kabocha23.github.io/Ecommerce-Product-Page' target='blank'>
+        <Button size='large' color='primary' href='https://kabocha23.github.io/Ecommerce-Product-Page' target='blank'>
           Live Demo
         </Button>
         </CardActions>

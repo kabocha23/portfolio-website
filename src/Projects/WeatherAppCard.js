@@ -17,6 +17,9 @@ const styles = {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
+  cardActions: {
+    justifyContent: 'center'
+  }
 };
 
 const WeatherAppCard = (props) => {
@@ -40,8 +43,8 @@ const WeatherAppCard = (props) => {
             Application created with React and OpenWeatherMap API to look up the current weather, or a five day forecast.
           </Typography>
         </CardContent>
-        <CardActions>
-        <Button color='primary' href='https://bitbucket.org/Kabocha23/react-weather/src/master/' target='blank'>
+        <CardActions className={classes.cardActions}>
+        <Button size='large' color='primary' href='https://bitbucket.org/Kabocha23/react-weather/src/master/' target='blank'>
           View Source Code
         </Button>
         </CardActions>

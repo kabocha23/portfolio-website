@@ -17,6 +17,9 @@ const styles = {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
+  cardActions: {
+    justifyContent: 'center'
+  }
 };
 
 const NotesAppCard = (props) => {
@@ -40,8 +43,8 @@ const NotesAppCard = (props) => {
             Notes application built with React and Firebase to help you keep reminders.
           </Typography>
         </CardContent>
-        <CardActions>
-        <Button color='primary' href='https://bitbucket.org/Kabocha23/react-notes/src/master/' target='blank'>
+        <CardActions className={classes.cardActions}>
+        <Button size='large' color='primary' href='https://bitbucket.org/Kabocha23/react-notes/src/master/' target='blank'>
           View Source Code
         </Button>
         </CardActions>

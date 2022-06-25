@@ -28,7 +28,7 @@ export const MazeRunner = () => (
     <CardText>
       An iOS application created for another 24-hour hackathon; Use core motion to move your runner through an endless guantlet of mazes, scoring points for every step. Run out of steps and it's game over.
     </CardText>
-    <CardActions>
+    <CardActions className={classes.cardActions}>
       <FlatButton label="View Source Code" href='https://github.com/kabocha23/Swift/tree/master/MazeRunner-master' target='blank' />
     </CardActions>
   </Card>

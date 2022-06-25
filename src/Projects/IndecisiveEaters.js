@@ -17,6 +17,9 @@ const styles = {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
+  cardActions: {
+    justifyContent: 'center'
+  }
 };
 
 const IndecisiveEaters = (props) => {
@@ -40,11 +43,11 @@ const IndecisiveEaters = (props) => {
               A web application made for those who can't decide where to eat. Search for restaurants with Yelp-Fusion API, and drag the desired restaurants to the list on the right. When you're ready to go, the computer will randomly chose one for you!
             </Typography>
           </CardContent>
-        <CardActions>
-        <Button color='primary' href='https://github.com/kabocha23/Indecisive' target='blank'>
+        <CardActions className={classes.cardActions}>
+        <Button size='large' color='primary' href='https://github.com/kabocha23/Indecisive' target='blank'>
           View Source Code
         </Button>
-        <Button color='primary' href='https://whispering-forest-79782.herokuapp.com' target='blank'>
+        <Button size='large' color='primary' href='https://whispering-forest-79782.herokuapp.com' target='blank'>
           Live Demo
         </Button>
         </CardActions>

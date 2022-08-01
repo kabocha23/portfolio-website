@@ -5,6 +5,7 @@ import nycMillOneBg from '../Static/img/nyc-mill-one2.jpg';
 import IndecisiveEaters from './IndecisiveEaters';
 import EcommerceProductPage from './EcommerceProductPage';
 import InsureLandingPage from './InsureLandingPage';
+import RoomHomepage from './RoomHomepage';
 import SunnysideAgencyMock from './SunnysideAgencyMock';
 import NotesAppCard from './NotesAppCard';
 import FlashAppCard from './FlashAppCard';
@@ -38,6 +39,9 @@ const Projects = ({ handleImageZoom }) => {
                 </div>
                 <div className='insurance-app indi-proj'>
                     <InsureLandingPage />
+                </div>
+                <div className='insurance-app indi-proj'>
+                    <RoomHomepage />
                 </div>
                 <div className='sunnyside-app indi-proj'>
                     <SunnysideAgencyMock />

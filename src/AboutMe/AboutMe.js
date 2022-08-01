@@ -18,9 +18,10 @@ const AboutMe = () => {
             </div>
             <div className='about-content'>
                 <h1 className='about-title'>About Me</h1>
-                <p>Hey there! I'm a self-taught web developer and Data Analyst</p>
-                <p>I've always had a strong curiosity to discover how things work behind the scenes. Whether it was breaking my toys apart to see the mechanics, building calluses on my fingertips so I could hold chords on the guitar, or submerging myself in documentation and stack overflow to integrate a small (but extremely important) feature on a project, I've always loved to give myself new challenges to conquer.</p>
-                <p>I now use that curiosity to draw insights from all of the fun and interesting data available to us today.</p>
+                <p>Hey there! Thanks for stopping by. I'm a self-taught Frontend developer and Data Analyst</p>
+                <p>I've always had a strong curiosity to discover how things work. Whether it was breaking my toys apart as a child to see the mechanics, building calluses on my fingertips so I could hold chords on the guitar, or integrating new features on a project, I've always loved solving new challenges.</p>
+                <p>I now use that curiosity to build web/mobile apps and draw insights from all of the fun and interesting data available to us today.</p>
+                <p>Please take a look at some of my work below, and feel free to contact me through email, linkedin, or github through the links below. I hope to hear from your soon!</p>
                 <p className='please-note'>*All Photos on this site are taken by me and not sourced from other sites.</p>
             </div>
             <div className='contact-links'>

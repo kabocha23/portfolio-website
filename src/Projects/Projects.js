@@ -3,6 +3,7 @@ import './Projects.css';
 import { Parallax } from 'react-parallax';
 import nycMillOneBg from '../Static/img/nyc-mill-one2.jpg';
 import IndecisiveEaters from './IndecisiveEaters';
+import URLShortener from './URLShortener';
 import EcommerceProductPage from './EcommerceProductPage';
 import InsureLandingPage from './InsureLandingPage';
 import RoomHomepage from './RoomHomepage';
@@ -10,9 +11,6 @@ import SunnysideAgencyMock from './SunnysideAgencyMock';
 import NotesAppCard from './NotesAppCard';
 import FlashAppCard from './FlashAppCard';
 import WeatherAppCard from './WeatherAppCard';
-import DragonGoCraft from './DragonGoCraft';
-import AndroidCalculator from './AndroidCalculator';
-import AndroidCryptoTracker from './AndroidCryptoTracker';
 
 
 
@@ -35,6 +33,9 @@ const Projects = ({ handleImageZoom }) => {
                     <IndecisiveEaters />
                 </div>
                 <div className='ecommerce-app indi-proj'>
+                    <URLShortener />
+                </div>
+                <div className='ecommerce-app indi-proj'>
                     <EcommerceProductPage />
                 </div>
                 <div className='insurance-app indi-proj'>
@@ -54,15 +55,6 @@ const Projects = ({ handleImageZoom }) => {
                 </div>
                 <div className='weather-app indi-proj'>
                     <WeatherAppCard />
-                </div>
-                <div className='dragon-go-craft-app indi-proj'>
-                    <DragonGoCraft />
-                </div>
-                <div className='crypto-app indi-proj'>
-                    <AndroidCryptoTracker />
-                </div>
-                <div className='calculator-app indi-proj'>
-                    <AndroidCalculator />
                 </div>
             </div>
             <div className='more-to-come'>

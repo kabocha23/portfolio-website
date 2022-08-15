@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
   card: {
-    maxWidth: 345,
+    maxWidth: 345
   },
   media: {
     height: 0,
@@ -18,33 +18,46 @@ const styles = {
   },
   cardActions: {
     justifyContent: 'center'
+  },
+  cardActions: {
+    justifyContent: 'center'
   }
 };
 
-const AndroidCalculator = (props) => {
+const URLShortener = (props) => {
   const { classes } = props;
   return (
     <div>
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
-          image={require("../Static/img/react-native-calc.png")}
-          title="Android Calculator Preview"
+          image={require("../Static/img/shortly-preview.png")}
+          title="Shortly, URL Shortening Application"
         />
         <CardContent>
           <Typography gutterBottom variant="headline" component="h1">
-            Android Calculator
+            Shortly
           </Typography>
-          <Typography component="h2">
-            React, Android Studios
+          <Typography variant="caption" component="h2">
+            React, Shrtcode API
           </Typography>
           <Typography component="p">
-            Android calculator built with React Native.
+            A responsive web/mobile application that shortens the user's URL by tapping into the Shrtcode API.
+
+            Features include:
+
+            input allowing user to make API call and shorten any url
+            dynamically generated search history list with copy to clipboard button
+            navbar transitioning to hidden menu (sliding in from top)
+            responsive design for web and mobile
           </Typography>
         </CardContent>
         <CardActions className={classes.cardActions}>
-        <Button size='large' color='primary' href='https://github.com/kabocha23/React-Native-Calculator' target='blank'>
+        <Button size='large' color='primary' href='https://github.com/kabocha23/URL-Shortener' target='blank'>
           View Source Code
+        </Button>
+        <Button size='large' color='primary' href='https://kabocha23.github.io/URL-Shortener' target='blank'>
+          Live Demo
         </Button>
         </CardActions>
       </Card>
@@ -52,8 +65,8 @@ const AndroidCalculator = (props) => {
   );
 }
 
-AndroidCalculator.propTypes = {
+URLShortener.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(AndroidCalculator);
+export default withStyles(styles)(URLShortener);

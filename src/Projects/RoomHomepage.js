@@ -18,9 +18,6 @@ const styles = {
   },
   cardActions: {
     justifyContent: 'center'
-  },
-  cardActions: {
-    justifyContent: 'center'
   }
 };
 

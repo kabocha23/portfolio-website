@@ -18,9 +18,6 @@ const styles = {
   },
   cardActions: {
     justifyContent: 'center'
-  },
-  cardActions: {
-    justifyContent: 'center'
   }
 };
 
@@ -43,13 +40,13 @@ const URLShortener = (props) => {
           </Typography>
           <Typography component="p">
             A responsive web/mobile application that shortens the user's URL by tapping into the Shrtcode API.
-
+          </Typography>
+          <Typography component="p">
             Features include:
-
-            input allowing user to make API call and shorten any url
-            dynamically generated search history list with copy to clipboard button
-            navbar transitioning to hidden menu (sliding in from top)
-            responsive design for web and mobile
+            - input allowing user to make API call and shorten any url
+            - dynamically generated search history list with copy to clipboard button
+            - navbar transitioning to hidden menu (sliding in from top)
+            - responsive design for web and mobile
           </Typography>
         </CardContent>
         <CardActions className={classes.cardActions}>

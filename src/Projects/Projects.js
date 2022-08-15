@@ -2,8 +2,8 @@ import React from 'react';
 import './Projects.css';
 import { Parallax } from 'react-parallax';
 import nycMillOneBg from '../Static/img/nyc-mill-one2.jpg';
-import IndecisiveEaters from './IndecisiveEaters';
 import URLShortener from './URLShortener';
+import IndecisiveEaters from './IndecisiveEaters';
 import EcommerceProductPage from './EcommerceProductPage';
 import InsureLandingPage from './InsureLandingPage';
 import RoomHomepage from './RoomHomepage';
@@ -29,11 +29,11 @@ const Projects = ({ handleImageZoom }) => {
             </div>
         </Parallax>
             <div className='projects-content-box'>
-                <div className='eaters-app indi-proj'>
-                    <IndecisiveEaters />
-                </div>
                 <div className='ecommerce-app indi-proj'>
                     <URLShortener />
+                </div>                
+                <div className='eaters-app indi-proj'>
+                    <IndecisiveEaters />
                 </div>
                 <div className='ecommerce-app indi-proj'>
                     <EcommerceProductPage />
@@ -41,7 +41,7 @@ const Projects = ({ handleImageZoom }) => {
                 <div className='insurance-app indi-proj'>
                     <InsureLandingPage />
                 </div>
-                <div className='insurance-app indi-proj'>
+                <div className='room-app indi-proj'>
                     <RoomHomepage />
                 </div>
                 <div className='sunnyside-app indi-proj'>

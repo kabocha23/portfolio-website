@@ -1,6 +1,4 @@
 import React, { useState, useRef } from 'react';
-import $ from 'jquery';
-import bootstrap from 'bootstrap';
 import Navbar from './Navbar/Navbar';
 import Intro from './Intro/Intro';
 import Projects from './Projects/Projects';
@@ -9,7 +7,7 @@ import Skills from './Skills/Skills';
 import Footer from './Footer/Footer';
 import nycSnowBg from './Static/img/nyc-snow.jpg';
 import { Parallax } from 'react-parallax';
-import { Routes, Route, Link } from "react-router-dom";
+// import { Routes, Route, Link } from "react-router-dom";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import './App.css';
 

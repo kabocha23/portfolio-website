@@ -5,7 +5,6 @@ const Navbar = ({ isNavExpanded, setIsNavExpanded, navBgColor, setNavBgColor, ha
 
     const toggleIsNav = () => {
       setIsNavExpanded(!isNavExpanded)
-      console.log(isNavExpanded)
     }
   
     const changeNavbarColor = () =>{

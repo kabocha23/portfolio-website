@@ -25,6 +25,7 @@
     font-size: 20px;
 }
 
+/* Begin contact form, right side of contact section, wraps normal */
 .contact-form {
     display: flex;
     width: 50%;
@@ -42,21 +43,57 @@
     width: 100%;
     color: white;
 }
+
 .contact-name-email {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.contact-name {
+    width: 48%;
+}
+#contact-name-label {
+    width: 100%;
+}
+#contact-name-input {
     width: 100%;
     height: 50px;
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 10px;
+    font-size: 18px;
+}
+.contact-email {
+    width: 48%;
+}
+#contact-email-label {
+    width: 100%;
+}
+#contact-email-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
 }
 
-.contact-message {
+#contact-message {
     width: 100%;
     height: 200px;
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 10px;
+    font-size: 18px;
     overflow: auto;
+}
+#contact-submit {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #FFCC66;;
 }
 
 @media(max-width: 641px) {

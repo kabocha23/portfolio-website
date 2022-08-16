@@ -1,0 +1,21 @@
+.contact-container {
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    background-color: #363636;
+}
+
+.contact-text {
+    width: 50%;
+}
+
+.contact-form {
+    width: 50%;
+}
+.contact-form form {
+    display: flex;
+    flex-flow: column wrap;
+}
+.contact-form form input{
+    width: 90%;
+}

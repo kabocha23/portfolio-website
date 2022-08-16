@@ -4,6 +4,7 @@ import Intro from './Intro/Intro';
 import Projects from './Projects/Projects';
 import AboutMe from './AboutMe/AboutMe';
 import Skills from './Skills/Skills';
+import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import nycSnowBg from './Static/img/nyc-snow.jpg';
 import { Parallax } from 'react-parallax';
@@ -22,6 +23,7 @@ const App = () => {
   const aboutMeRef = useRef();
   const projectsRef = useRef(); 
   const skillsRef = useRef();
+  const contactRef = useRef();
 
   const handleHomeClick = () => {
     homeRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -42,9 +44,11 @@ const App = () => {
     setIsNavExpanded(false);
   }
 
-  const imageZoom = () => {
-    
+  const handleContactClick = () => {
+    contactRef.current.scrollIntoView({ behavior: 'smooth' });
+    setIsNavExpanded(false);
   }
+
     
   return (
     <div className='main-container' ref={homeRef}>
@@ -81,7 +85,6 @@ const App = () => {
         <div className='projects-box' ref={projectsRef}>
           <MuiThemeProvider>
             <Projects 
-              handleImageZoom={imageZoom}
             />
           </MuiThemeProvider>
         </div>
@@ -91,6 +94,11 @@ const App = () => {
           <Skills />
         </div>
         {/* Skills end */}
+
+        <div className='contact-box' ref={contactRef}>
+          <Contact />
+        </div>
+        {/* Contact end */}
 
         <div className='footer-box'>
           <Footer />

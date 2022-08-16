@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 
-const Navbar = ({ isNavExpanded, setIsNavExpanded, navBgColor, setNavBgColor, handleHomeClick, handleAboutClick, handleProjectsClick, handleSkillsClick }) => {
+const Navbar = ({ isNavExpanded, setIsNavExpanded, navBgColor, setNavBgColor, handleHomeClick, handleAboutClick, handleProjectsClick, handleSkillsClick, handleContactClick }) => {
 
     const toggleIsNav = () => {
       setIsNavExpanded(!isNavExpanded)
@@ -38,6 +38,7 @@ const Navbar = ({ isNavExpanded, setIsNavExpanded, navBgColor, setNavBgColor, ha
                     <li><button onClick={handleAboutClick}>About</button></li>
                     <li><button onClick={handleProjectsClick}>Projects</button></li>
                     <li><button onClick={handleSkillsClick}>Skills</button></li>
+                    <li><button onClick={handleContactClick}>Contact</button></li>
                 </ul>
             </div>
             <div className='nav-menu-fs'>
@@ -45,6 +46,7 @@ const Navbar = ({ isNavExpanded, setIsNavExpanded, navBgColor, setNavBgColor, ha
                     <button onClick={handleAboutClick}>About</button>
                     <button onClick={handleProjectsClick}>Projects</button>
                     <button onClick={handleSkillsClick}>Skills</button>
+                    <button onClick={handleContactClick}>Contact</button>
                 </div>                
             </div>
         </div>

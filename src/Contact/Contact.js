@@ -12,11 +12,11 @@ const Contact = () => {
             <div className='contact-form'>
                 <form>
                     <label>NAME</label>
-                    <input type='text'></input>
+                    <input type='text' className='contact-name-email'></input>
                     <label>EMAIL</label>
-                    <input type='text'></input>
+                    <input type='text' className='contact-name-email'></input>
                     <label>MESSAGE</label>
-                    <input type='text'></input>
+                    <textarea className='contact-message'></textarea>
                 </form>
             </div>
 

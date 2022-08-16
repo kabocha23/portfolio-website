@@ -61,6 +61,7 @@ const App = () => {
         handleAboutClick={handleAboutClick}
         handleProjectsClick={handleProjectsClick}
         handleSkillsClick={handleSkillsClick}
+        handleContactClick={handleContactClick}
       />
       <Parallax
         blur={0}

@@ -123,6 +123,9 @@ html {
 .skills-box {
   scroll-margin-top: 64px;
 }
+.contact-box {
+  scroll-margin-top: 64px;
+}
 
 /* navbar collapses @ 900px */
 @media (max-width: 900px) {

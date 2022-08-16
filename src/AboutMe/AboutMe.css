@@ -1,20 +1,21 @@
 .about-content-box{
     width: 100%;
+    min-height: calc(100vh - 65px);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 30px;
+    padding: 10% 0;
     background-color: #eee;
     cursor: default;
 }
 .profile-photo-box{
-    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-left: 6%;
 }
 .profile-photo{
-    border-radius: 50%;
-    margin-top: 30px;
+    border-radius: 25px;
+    width: auto;
 }
 .about-title{
     width: 100%;
@@ -23,13 +24,16 @@
 .about-content{
     display: flex;
     flex-flow: row wrap;
-    flex: 2 2 auto;
-    width: 50%;
+    align-items: center;
+    width: 65%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.8em;
-    margin-left: 5%;
-    margin-right: 6%;
+    font-size: 1em;
+    font-weight: 700;
+    margin-left: 50px;
+    margin-right: 20px;
     color: #636363;
+    line-height: 2.5em;
+    word-spacing: 0.25em;
 }
 .extreme {
     font-style: italic;
@@ -44,8 +48,10 @@
 .contact-links{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    height: 100%;
 }
 .about-icon{
     z-index: 2;
@@ -62,10 +68,8 @@
 }
 .email-link{
     display: flex;
-    align-items: center;
-    flex: 0 1 auto;
     font-size: 17px;
-    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
 }
 .email-icon{
     width: 2.5em;
@@ -74,40 +78,23 @@
 .email-text-link{
     color: grey;
 }
-.email-link :hover{
-    text-decoration: none;
-}
 .linkedin-link{
     display: flex;
-    align-items: center;
-    flex: 0 1 auto;
     font-size: 17px;
-    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-    margin-left: 8%;
 }
 .linkedin-icon{
     width: 3.5em;
     margin: 0px 0px 0px 0px;
 }
-.linkedin-link :hover{
-    text-decoration: none;
-}
 .github-link{
     display: flex;
-    align-items: center;
-    flex: 0 1 auto;
     font-size: 17px;
-    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-    margin-left: 8%;
 }
 .github-icon{
     width: 2.5em;
     margin: 0px 0px 0px 0px;
-}
-.github-link :hover{
-    text-decoration: none;
 }
 .git-text-link{
     color: black;

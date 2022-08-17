@@ -54,7 +54,9 @@ const App = () => {
     setIsNavExpanded(false);
   }
 
-  const handleContactFormSubmit = () => {
+  const handleContactFormSubmit = e => {
+    console.log(name, email, message)
+    if(e) e.preventDefault();
     if (name && email && message) {
        // TODO - send mail
 

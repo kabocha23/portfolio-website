@@ -36,12 +36,14 @@ const Contact = ({ name, setName, email, setEmail, message, setMessage, emailSen
                         </div>
                     </div>
                     <label>MESSAGE</label>
-                    <textarea id='contact-message'></textarea>
+                    <textarea 
+                        id='contact-message' 
+                        value={message} 
+                        onChange={e => setMessage(e.target.value)}
+                    ></textarea>
                     <button 
                         type='submit' 
                         id='contact-submit'
-                        value={message}
-                        onChange={e => setMessage(e.target.value)}
                         onClick={handleContactFormSubmit}
                     >Send Message!<img src={paperPlane} id='paper-plane' alt='paper-plane'></img></button>
                 </form>

@@ -3,34 +3,37 @@
     display: flex;
     flex-flow: row wrap;
     background-color: #363636;
-    font-family: 'Francois One', sans-serif;
 }
-
+/* left side of contact section */
 .contact-text {
     display: flex;
     flex-flow: column wrap;
-    width: 50%;
+    width: 45%;
     min-width: 312px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
-    
 }
 #contact-text-head {
     font-size: 50px;
+    font-family: 'Francois One', sans-serif;
 }
 #contact-text-subhead {
     width: 90%;
-    text-align: center;
+    text-align: flex-start;
     font-size: 20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-/* Begin contact form, right side of contact section, wraps normal */
+/* right side of contact section */
 .contact-form {
     display: flex;
     width: 50%;
     align-items: center;
     justify-content: center;
+    font-family: 'Francois One', sans-serif;
 }
 .contact-form form {
     display: flex;
@@ -43,7 +46,7 @@
     width: 100%;
     color: white;
 }
-
+/* name and email section of contact form */
 .contact-name-email {
     display: flex;
     flex-flow: row nowrap;
@@ -78,7 +81,7 @@
     padding: 10px;
     font-size: 18px;
 }
-
+/* send message button of contact form */
 #contact-message {
     width: 100%;
     height: 200px;
@@ -92,13 +95,24 @@
     width: 200px;
     height: 50px;
     border-radius: 10px;
-    font-size: 20px;
-    color: #FFCC66;;
+    font-size: 18px;
+    color: #363636;
 }
+#paper-plane {
+    height: 20px;
+    transform: translate(10px, -1.5px);
+    filter: invert(14%) sepia(1%) saturate(2245%) hue-rotate(348deg) brightness(92%) contrast(78%);
+}
+
 
 @media(max-width: 641px) {
     .contact-text {
         width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #contact-text-subhead {
+        text-align: center;
     }
     .contact-form {
         width: 100%;

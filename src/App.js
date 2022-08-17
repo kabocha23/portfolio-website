@@ -18,6 +18,11 @@ const App = () => {
 
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [navBgColor, setNavBgColor] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [emailSent, setEmailSent] = useState(false);
+
 
   const homeRef = useRef();
   const aboutMeRef = useRef();
@@ -47,6 +52,24 @@ const App = () => {
   const handleContactClick = () => {
     contactRef.current.scrollIntoView({ behavior: 'smooth' });
     setIsNavExpanded(false);
+  }
+
+  const handleContactFormSubmit = () => {
+    if (name && email && message) {
+       // TODO - send mail
+
+        setName('');
+        setEmail('');
+        setMessage('');
+        setEmailSent(true);
+    } else {
+        alert('Please fill in all fields');
+    }
+  }
+
+  const isValidEmail = email => {
+    const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return regex.test(String(email).toLowerCase());
   }
 
     
@@ -97,7 +120,17 @@ const App = () => {
         {/* Skills end */}
 
         <div className='contact-box' ref={contactRef}>
-          <Contact />
+          <Contact 
+            name={name} 
+            setName={setName}
+            email={email}
+            setEmail={setEmail}
+            message={message}
+            setMessage={setMessage}
+            emailSent={emailSent}
+            setEmailSent={setEmailSent}
+            handleContactFormSubmit={handleContactFormSubmit}
+          />
         </div>
         {/* Contact end */}
 

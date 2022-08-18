@@ -56,7 +56,7 @@ const App = () => {
   }
 
   const handleEmailStateChange = (e) => {
-    setMailerState((prevState) => ({
+    setMailerState(prevState => ({
       ...prevState,
       [e.target.name]: e.target.value,
     }))
@@ -65,6 +65,7 @@ const App = () => {
 
   const handleSubmitMessage = async (e) => {
     if(e) e.preventDefault();
+
     console.log({ mailerState });
     const response = await fetch('http://localhost:3001/send', {
       method: 'POST',

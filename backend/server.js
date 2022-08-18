@@ -42,7 +42,7 @@ app.post('/send', (req, res) => {
     const mailOptions = {
         from: `${req.body.mailerState.email}`,
         to: process.env.REACT_APP_NODEMAILER_RECIPIENT,
-        subject: `Message from: ${req.body.mailerState.email}`,
+        subject: `Message from ${req.body.mailerState.name}`,
         text: `${req.body.mailerState.message}`,
     };
 

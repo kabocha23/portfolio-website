@@ -60,7 +60,6 @@ const App = () => {
       ...prevState,
       [e.target.name]: e.target.value,
     }))
-    console.log(mailerState)
   }
 
   const handleSubmitMessage = async (e) => {

@@ -18,10 +18,11 @@ const App = () => {
 
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [navBgColor, setNavBgColor] = useState(false);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [emailSent, setEmailSent] = useState(false);
+  const [mailerState, setMailerState] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
 
   const homeRef = useRef();
@@ -54,19 +55,41 @@ const App = () => {
     setIsNavExpanded(false);
   }
 
-  const handleContactFormSubmit = e => {
-    console.log(name, email, message)
-    if(e) e.preventDefault();
-    if (name && email && message) {
-       // TODO - send mail
+  const handleEmailStateChange = (e) => {
+    setMailerState((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }))
+    console.log(mailerState)
+  }
 
-        setName('');
-        setEmail('');
-        setMessage('');
-        setEmailSent(true);
-    } else {
-        alert('Please fill in all fields');
-    }
+  const handleSubmitMessage = async (e) => {
+    if(e) e.preventDefault();
+    console.log({ mailerState });
+    const response = await fetch('http://localhost:3001/send', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify({ mailerState }),
+    })
+    .then((res) => res.json())
+    .then(async (res) => {
+      const resData = await res;
+      console.log(resData);
+      if (resData.status === 'success') {
+        alert('Message Sent');
+      } else if (resData.status === 'fail') {
+        alert('Message failed to send');
+      }
+    })
+    .then(() => {
+      setMailerState({
+        name: '',
+        email: '',
+        message: '',
+      })
+    })
   }
 
   const isValidEmail = email => {
@@ -123,15 +146,10 @@ const App = () => {
 
         <div className='contact-box' ref={contactRef}>
           <Contact 
-            name={name} 
-            setName={setName}
-            email={email}
-            setEmail={setEmail}
-            message={message}
-            setMessage={setMessage}
-            emailSent={emailSent}
-            setEmailSent={setEmailSent}
-            handleContactFormSubmit={handleContactFormSubmit}
+            mailerState={mailerState}
+            setMailerState={setMailerState} 
+            handleEmailStateChange={handleEmailStateChange}
+            handleSubmitMessage={handleSubmitMessage}
           />
         </div>
         {/* Contact end */}

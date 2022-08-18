@@ -2,7 +2,7 @@ import React from 'react';
 import paperPlane from '../Static/img/paper-plane.svg';
 import './Contact.css'
 
-const Contact = ({ name, setName, email, setEmail, message, setMessage, emailSent, setEmailSent, handleContactFormSubmit }) => {
+const Contact = ({ mailerState, setMailerState, handleEmailStateChange, handleSubmitMessage }) => {
     
 
     return (
@@ -12,7 +12,7 @@ const Contact = ({ name, setName, email, setEmail, message, setMessage, emailSen
                 <p id='contact-text-subhead'>I'm interested in job and freelance opportunities. However, if you have any other requests or questions please don't hesitate to reach out:</p>
             </div>
             <div className='contact-form'>
-                <form>
+                <form onSubmit={handleSubmitMessage}>
                     <div className='contact-name-email'>
                         <div className='contact-name'>
                             <label id='contact-name-label'>NAME</label>
@@ -20,8 +20,8 @@ const Contact = ({ name, setName, email, setEmail, message, setMessage, emailSen
                                 type='text' 
                                 name='name' 
                                 id='contact-name-input'
-                                value={name}
-                                onChange={e => setName(e.target.value)}
+                                value={mailerState.name}
+                                onChange={handleEmailStateChange}
                             ></input>
                         </div>
                         <div className='contact-email'>
@@ -30,21 +30,21 @@ const Contact = ({ name, setName, email, setEmail, message, setMessage, emailSen
                                 type='email' 
                                 name='email' 
                                 id='contact-email-input'
-                                value={email}
-                                onChange={e => setEmail(e.target.value)}
+                                value={mailerState.email}
+                                onChange={handleEmailStateChange}
                             ></input>                              
                         </div>
                     </div>
                     <label>MESSAGE</label>
                     <textarea 
-                        id='contact-message' 
-                        value={message} 
-                        onChange={e => setMessage(e.target.value)}
+                        id='contact-message'
+                        name='message'
+                        value={mailerState.message} 
+                        onChange={handleEmailStateChange}
                     ></textarea>
                     <button 
                         type='submit' 
                         id='contact-submit'
-                        onClick={handleContactFormSubmit}
                     >Send Message!<img src={paperPlane} id='paper-plane' alt='paper-plane'></img></button>
                 </form>
             </div>

@@ -130,8 +130,7 @@ const App = () => {
         {/* AboutMe end */}
 
         <div className='projects-box' ref={projectsRef}>
-            <Projects 
-            />
+            <Projects />
         </div>
         {/* Projects end */}
 

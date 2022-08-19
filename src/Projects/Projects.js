@@ -29,7 +29,7 @@ const Projects = ({ }) => {
             </div>
         </Parallax>
             <div className='projects-content-box'>
-                <div className='ecommerce-app indi-proj'>
+                <div className='url-app indi-proj'>
                     <URLShortener />
                 </div>                
                 <div className='eaters-app indi-proj'>

@@ -9,12 +9,11 @@ import Footer from './Footer/Footer';
 import nycSnowBg from './Static/img/nyc-snow.jpg';
 import { Parallax } from 'react-parallax';
 // import { Routes, Route, Link } from "react-router-dom";
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import './App.css';
 
 
-
 const App = () => {
+
 
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [navBgColor, setNavBgColor] = useState(false);
@@ -23,7 +22,6 @@ const App = () => {
     email: '',
     message: '',
   });
-
 
   const homeRef = useRef();
   const aboutMeRef = useRef();
@@ -132,10 +130,8 @@ const App = () => {
         {/* AboutMe end */}
 
         <div className='projects-box' ref={projectsRef}>
-          <MuiThemeProvider>
             <Projects 
             />
-          </MuiThemeProvider>
         </div>
         {/* Projects end */}
 

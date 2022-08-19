@@ -14,7 +14,7 @@ import WeatherAppCard from './WeatherAppCard';
 
 
 
-const Projects = ({ handleImageZoom }) => {
+const Projects = ({ }) => {
 
     return(
         <div className='projects-container'>

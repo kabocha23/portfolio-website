@@ -111,7 +111,7 @@
         display: block;
     }
     .nav-menu ul {
-        display: flex;
+        display: block;
         position: fixed;
         height: calc(100vh - 65px);
         width: 20%;
@@ -121,7 +121,6 @@
         left: 0;
         bottom: 0;
         padding: 0;
-        flex-direction: column;
     }
     .nav-menu li {
         list-style-type: none;

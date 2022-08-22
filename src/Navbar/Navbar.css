@@ -123,17 +123,11 @@
         padding: 0;
     }
     .nav-menu li {
-        list-style-type: none;
-        margin-top: 20px;
-        margin-left: 20px;
         text-align: left;
     }
     .nav-menu li button {
-        text-decoration: none;
-        font-weight: bold;
         background-color: transparent;
-        border: none;
-        width: 10%;
+        width: 100%;
     }
     .nav-menu li:hover {
         transition: color 0.4s ease-in-out;

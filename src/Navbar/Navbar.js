@@ -34,18 +34,18 @@ const Navbar = ({ isNavExpanded, setIsNavExpanded, navBgColor, setNavBgColor, ha
             </div>
             <div className={isNavExpanded ? 'nav-menu expanded' : 'nav-menu'}>
                 <ul className={navBgColor ? 'nav-ul colorBg' : 'nav-ul transpBg'}>
-                    <li><button onClick={handleAboutClick}>About</button></li>
-                    <li><button onClick={handleProjectsClick}>Projects</button></li>
-                    <li><button onClick={handleSkillsClick}>Skills</button></li>
-                    <li><button onClick={handleContactClick}>Contact</button></li>
+                    <li><a onClick={handleAboutClick}>About</a></li>
+                    <li><a onClick={handleProjectsClick}>Projects</a></li>
+                    <li><a onClick={handleSkillsClick}>Skills</a></li>
+                    <li><a onClick={handleContactClick}>Contact</a></li>
                 </ul>
             </div>
             <div className='nav-menu-fs'>
                 <div className='nav-menu-fs-sub'>
-                    <button onClick={handleAboutClick}>About</button>
-                    <button onClick={handleProjectsClick}>Projects</button>
-                    <button onClick={handleSkillsClick}>Skills</button>
-                    <button onClick={handleContactClick}>Contact</button>
+                    <a onClick={handleAboutClick}>About</a>
+                    <a onClick={handleProjectsClick}>Projects</a>
+                    <a onClick={handleSkillsClick}>Skills</a>
+                    <a onClick={handleContactClick}>Contact</a>
                 </div>                
             </div>
         </div>

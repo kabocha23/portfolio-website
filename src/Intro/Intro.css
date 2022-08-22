@@ -1,5 +1,5 @@
 
-.intro-container{
+.intro-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,16 +8,20 @@
     margin: auto;
     color: aliceblue;
 }
-.intro-name{
-    margin: auto;
+.intro-name {
     display: block;
     font-size: 3.8em;
     font-family: 'Francois One', sans-serif;
     cursor: default;
 }
-.intro-title{
-    margin: auto;
+.intro-title {
     font-size: 2.8em;
     font-family: 'Francois One', sans-serif;
     cursor: default;
+}
+
+@media (max-width: 900px) {
+    .intro-title{
+        width: 90%;
+    }
 }

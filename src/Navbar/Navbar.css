@@ -21,7 +21,6 @@
 /* JK logo /home  */
 .navbar-home{
   display: flex;
-  height: 100%; 
   position: relative;
   margin-right: auto;
   cursor: pointer;
@@ -32,7 +31,7 @@
   border: none;
   background-color: transparent;
   margin-top: auto;
-  margin-left: 25px;;
+  margin-left: 25px;
   margin-bottom: auto;
 }
 .navbar-home button:hover {
@@ -52,7 +51,7 @@
 
 /* regular navbar menu */
 .nav-menu-fs {
-  height: 100%; 
+  /* height: 100%;  */
   position: relative;
   margin-left: auto;
 }
@@ -62,15 +61,16 @@
   justify-content: center;
   align-items: center;
 }
-.nav-menu-fs-sub button {
+.nav-menu-fs-sub a {
   text-decoration: none;
   margin-right: 25px;
   color: white;
   background-color: transparent;
   font-weight: bold;
   border: none;
+  cursor: pointer;
 }
-.nav-menu-fs-sub button:hover {
+.nav-menu-fs-sub a:hover {
   transition: color 0.4s ease-in-out;
   color: #FFCC66;
 }
@@ -123,15 +123,20 @@
         padding: 0;
     }
     .nav-menu li {
+        width: 100%;
+        display: block;
         text-align: left;
     }
-    .nav-menu li button {
+    .nav-menu li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
         background-color: transparent;
-        width: 100%;
     }
-    .nav-menu li:hover {
+    .nav-menu li a:hover {
         transition: color 0.4s ease-in-out;
         color: #FFCC66;
+        cursor: pointer;
     }
     .nav-menu ul {
         transform: translate3d(-100vw, 0, 0);

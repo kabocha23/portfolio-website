@@ -20,11 +20,13 @@ const AboutMe = () => {
                     <p className='please-note'>*All Photos on this site are taken by me and not sourced from other sites.</p>
                 </div>
                 <div className='profile-photo-box'>
-                    <img 
-                        src={profilePhoto} 
-                        className='profile-photo' 
-                        alt='profile' 
-                    />
+                    <div className='profile-photo'>
+                        <img 
+                            src={profilePhoto}  
+                            alt='profile' 
+                        />  
+                    </div>
+
                 </div>                
             </div>
 

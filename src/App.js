@@ -3,7 +3,6 @@ import Navbar from './Navbar/Navbar';
 import Intro from './Intro/Intro';
 import Projects from './Projects/Projects';
 import AboutMe from './AboutMe/AboutMe';
-import Skills from './Skills/Skills';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import nycSnowBg from './Static/img/nyc-snow.jpg';
@@ -26,7 +25,6 @@ const App = () => {
   const homeRef = useRef();
   const aboutMeRef = useRef();
   const projectsRef = useRef(); 
-  const skillsRef = useRef();
   const contactRef = useRef();
 
   const handleHomeClick = () => {
@@ -40,11 +38,6 @@ const App = () => {
 
   const handleProjectsClick = () => {
     projectsRef.current.scrollIntoView({ behavior: 'smooth' });
-    setIsNavExpanded(false);
-  }
-
-  const handleSkillsClick = () => {
-    skillsRef.current.scrollIntoView({ behavior: 'smooth' });
     setIsNavExpanded(false);
   }
 
@@ -106,7 +99,6 @@ const App = () => {
         handleHomeClick={handleHomeClick}
         handleAboutClick={handleAboutClick}
         handleProjectsClick={handleProjectsClick}
-        handleSkillsClick={handleSkillsClick}
         handleContactClick={handleContactClick}
       />
       <Parallax
@@ -133,11 +125,6 @@ const App = () => {
             <Projects />
         </div>
         {/* Projects end */}
-
-        <div className='skills-box' ref={skillsRef}>
-          <Skills />
-        </div>
-        {/* Skills end */}
 
         <div className='contact-box' ref={contactRef}>
           <Contact 

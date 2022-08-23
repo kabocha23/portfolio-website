@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import { Parallax } from 'react-parallax';
-import nycMillOneBg from '../Static/img/nyc-mill-one2.jpg';
+import koSamuiBg from '../Static/img/kosamui2.jpg';
 import URLShortener from './URLShortener';
 import IndecisiveEaters from './IndecisiveEaters';
 import EcommerceProductPage from './EcommerceProductPage';
@@ -20,7 +20,7 @@ const Projects = ({ }) => {
         <div className='projects-container'>
         <Parallax
             blur={0}
-            bgImage={nycMillOneBg}
+            bgImage={koSamuiBg}
             bgImageAlt="nyc-mill-one"
             strength={400}
         >
@@ -56,9 +56,7 @@ const Projects = ({ }) => {
                 <div className='weather-app indi-proj'>
                     <WeatherAppCard />
                 </div>
-            </div>
-            <div className='more-to-come'>
-                    <p>And more in the works...</p>
+                <p id='more-to-come'>And more in the works...</p>
             </div>
         </div>
     )

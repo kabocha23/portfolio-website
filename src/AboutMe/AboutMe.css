@@ -1,101 +1,136 @@
-.about-content-box{
+.about-container {
     width: 100%;
     min-height: calc(100vh - 65px);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 10% 0;
+    padding: 5% 0;
     background-color: #eee;
     cursor: default;
 }
-.profile-photo-box{
+.about-sub-container {
+    width: 100%;
     display: flex;
+    flex-flow: row wrap-reverse;
     align-items: center;
     justify-content: center;
 }
-.profile-photo{
-    border-radius: 25px;
+.profile-photo-box {
+    display: flex;
+    margin-top: auto;
+    margin-left: 5%;
+    margin-bottom: auto;
+}
+.profile-photo {
+    border-radius: 10px;
     width: auto;
+    outline: 2px solid #636363;
+    outline-offset: 15px;
 }
-.about-title{
-    width: 100%;
-    display: block;
-}
-.about-content{
+
+.about-content {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
-    width: 65%;
+    width: 55%;
+    max-width: 800px;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    font-weight: 700;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-right: 20px;
     color: #636363;
     line-height: 2.5em;
     word-spacing: 0.25em;
 }
-.extreme {
+.about-title {
+    width: 100%;
+    display: block;
+}
+.about-content h1  {
+    font-weight: 700;
+}
+.about-content p  {
+    font-weight: 700;
+    margin: 0px 0px 10px 0px;
+}
+.extreme  {
     font-style: italic;
 }
-.please-note{
+.please-note {
     font-size: 1.0em;
 }
 /* Email, LinkedIn, Github section begins */
-.single-link{
-    margin-bottom: 5%;
-}
-.contact-links{
+.contact-links {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
-.about-icon{
+.about-icon {
     z-index: 2;
     -webkit-transition: all 400ms ease;
     -ms-transition: all 400ms ease;
     -moz-transition: all 400ms ease;
     transition: all 400ms ease;
 }
-.about-icon:hover{
+.about-icon:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2); 
     -moz-transform: scale(1.2);
     transform: scale(1.2);
 }
-.email-link{
+.email-link {
     display: flex;
     font-size: 17px;
     text-decoration: none;
 }
-.email-icon{
+.email-icon {
     width: 2.5em;
     margin: 0px 0px 0px 0px;
 }
-.email-text-link{
+.email-text-link {
     color: grey;
 }
-.linkedin-link{
+.linkedin-link {
     display: flex;
     font-size: 17px;
     text-decoration: none;
 }
-.linkedin-icon{
+.linkedin-icon {
     width: 3.5em;
     margin: 0px 0px 0px 0px;
 }
-.github-link{
+.github-link {
     display: flex;
     font-size: 17px;
     text-decoration: none;
 }
-.github-icon{
+.github-icon {
     width: 2.5em;
     margin: 0px 0px 0px 0px;
 }
-.git-text-link{
+.git-text-link {
     color: black;
+}
+
+
+@media(max-width: 900px) {
+    .profile-photo-box {
+        margin-top: 10%;
+        margin-left: 0px;
+        margin-bottom: 10%;
+    }
+    .about-content {
+        width: 85%;
+        font-size: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-title {
+        text-align: center;
+    }
+    .contact-links {
+        width: 100%;
+    }
 }

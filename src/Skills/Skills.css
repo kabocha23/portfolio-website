@@ -1,81 +1,40 @@
 
 
-/* begin parallax image and title */
-.skills-header-box{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
+.skills-container {
     width: 100%;
-    background: 
-        linear-gradient(
-            -45deg, 
-            rgba(0,0,0,0.3),
-            rgba(0, 40, 105, 0.8)
-        );
-    background-attachment: fixed;
-    background-size: cover; 
+    line-height: normal;
+    font-size: 1em;
 }
-.skills-header{
-    color: aliceblue;
-    font-size: 3.0em;
-    font-family: 'Francois One', sans-serif;
-    cursor: default;
+.skills-container ul {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 150px);
+    padding: 0px;
+    margin-bottom: 20px;
+    padding: 0 1em;
+    list-style: none;
 }
-/* end parallax image and title */
-
-/* begin listing skills */
-.skills-content-box{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;    
-    height: calc(100vh - 350px);
-    width: 100%;
-    padding: 30px;
-    background-color: #eee;
-}
-.skills-content-box li{
-    width: 15em;
+.skills-item {
     list-style-type: none;
+    height: 3em;
 }
-.skills-content-box li p{
-    margin: 1px 0px 0px 0px;
-    padding: 4px 8px;
-    text-align: center;
-    background-color: #ffffff;
-    color: #636363;
-    font-family: 'Francois One', sans-serif;
-}
-.skills-content-box h3 {
-    margin: 10px 0px 10px 0px;
-    height: auto;
-    text-align: center;
-    font-family: 'Francois One', sans-serif;
-    font-size: 1.8em;
-}
-div.skill-box{
+.skills-item::before { 
+    content: "";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
     display: block;
-    cursor: default;
+    top: 35%;
+    position: relative;
 }
-.skills-subhead{
-    background-color: #363636;
-    color: white;
-    padding: 2px;
+.skills-container li p {
+    color: #636363;
+    margin: 0px 20px;
 }
-.skill-box ul{
-    padding-left: 0px;
-    margin-left: 10px;
-}
-.skills-item :hover{
-    box-shadow: 0px 0px 5px #7e7e7e77;
-    z-index: 2;
-    -webkit-transition: all 100ms ease-in;
-    -webkit-transform: scale(1.01);
-    -ms-transition: all 100ms ease-in;
-    -ms-transform: scale(1.01);   
-    -moz-transition: all 100ms ease-in;
-    -moz-transform: scale(1.01);
-    transition: all 100ms ease-in;
-    transform: scale(1.01);
+
+@media (max-width: 900px) {
+    .skills-container ul {
+        grid-template-columns: repeat(auto-fill, 120px);
+        margin-bottom: 50px;
+    }
 }

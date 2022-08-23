@@ -21,22 +21,20 @@ const Navbar = ({ isNavExpanded, setIsNavExpanded, navBgColor, setNavBgColor, ha
     return (
         <div className={navBgColor ? 'nav-container colorBg' : 'nav-container transpBg'}>
             <div className='navbar-home'>
-                <button onClick={handleHomeClick}>JK</button>
+                <a onClick={handleHomeClick}>JK</a>
             </div>
             <div className='toggle-button'>
-                <button
-                type='button'
+                <a
                 title='col-nav-btn'
                 onClick={toggleIsNav}
                 >
-                ☰
-                </button>
+                    ☰
+                </a>
             </div>
             <div className={isNavExpanded ? 'nav-menu expanded' : 'nav-menu'}>
                 <ul className={navBgColor ? 'nav-ul colorBg' : 'nav-ul transpBg'}>
                     <li><a onClick={handleAboutClick}>About</a></li>
                     <li><a onClick={handleProjectsClick}>Projects</a></li>
-                    <li><a onClick={handleSkillsClick}>Skills</a></li>
                     <li><a onClick={handleContactClick}>Contact</a></li>
                 </ul>
             </div>
@@ -44,7 +42,6 @@ const Navbar = ({ isNavExpanded, setIsNavExpanded, navBgColor, setNavBgColor, ha
                 <div className='nav-menu-fs-sub'>
                     <a onClick={handleAboutClick}>About</a>
                     <a onClick={handleProjectsClick}>Projects</a>
-                    <a onClick={handleSkillsClick}>Skills</a>
                     <a onClick={handleContactClick}>Contact</a>
                 </div>                
             </div>

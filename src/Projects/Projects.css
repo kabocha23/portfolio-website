@@ -15,10 +15,10 @@
     width: 100%;
     background: 
         linear-gradient(
-            -45deg, 
-            rgba(0,0,0,0.3), 
-            rgba(0, 40, 105, 0.3)
-        );
+            -20deg, 
+            rgba(0,0,0,0.3),
+            rgba(0, 40, 105, 0.8)
+    );
     background-attachment: fixed;
     background-size: cover; 
 }
@@ -37,7 +37,12 @@
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
-    background-color: #eee;
+    background: 
+    linear-gradient(
+        #eee,
+        #363636
+    );
+    /* background-color: #eee; */
 }
 
 .indi-proj {
@@ -63,19 +68,13 @@
     text-align: center;
 }
 
-.more-to-come {
-    background-color: #eee;
-    color: grey;
-    font-size: 1.0em;
+#more-to-come {
     display: block;
+    width: 100%;
     text-align: center;
+    padding: 10px 0px;    
+    color: white;
+    font-size: 1.5em;
     font-style: italic;
     cursor: default;
 }
-
-p {
-    margin: 0;
-    padding-bottom: 10px;
-    font-size: 1.5em;
-}
-

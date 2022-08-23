@@ -9,10 +9,10 @@
     display: flex;
     flex-flow: column wrap;
     width: 45%;
-    min-width: 312px;
+    /* min-width: 312px; */
     align-items: flex-start;
     justify-content: center;
-    margin-left: auto;
+    margin-left: 30px;
     margin-right: auto;
     color: white;
 }
@@ -30,10 +30,11 @@
 /* right side of contact section */
 .contact-form {
     display: flex;
-    width: 50%;
+    width: 45%;
     align-items: center;
     justify-content: center;
     font-family: 'Francois One', sans-serif;
+    margin-right: 30px;
 }
 .contact-form form {
     display: flex;
@@ -129,16 +130,25 @@
 
 
 
-@media(max-width: 641px) {
+@media(max-width: 900px) {
     .contact-text {
         width: 100%;
         align-items: center;
         justify-content: center;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contact-text-head {
+        text-align: center;
     }
     #contact-text-subhead {
         text-align: center;
     }
     .contact-form {
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
     }
 }

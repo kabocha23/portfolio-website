@@ -2,15 +2,20 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const app = express();
 const cors = require('cors');
+const PORT = process.env.PORT || 5000;
 // middleware
 app.use(express.json());
 app.use(cors());
+
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
-const port = 3001;
-app.listen(port, () => {
-    console.log(`Server is running on port: ${port}`)
+app.get('/', (req, res) => {
+    res.send("server.js is running on Heroku")
+})
+
+app.listen(PORT, () => {
+    console.log(`Server is running on ${ PORT }`)
 })
 
 const transporter = nodemailer.createTransport({

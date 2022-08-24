@@ -21,19 +21,17 @@ app.listen(PORT, () => {
 const transporter = nodemailer.createTransport({
     logger: true,
     debug: true,
-    service:'gmail',
+    service:'hotmail',
     port: 465,
     secure: false,
     auth: {
-        type: 'OAuth2',
+        // type: 'OAuth2',
         user: process.env.REACT_APP_NODEMAILER_USER,
         pass: process.env.REACT_APP_NODEMAILER_KEY,
-        clientId: process.env.REACT_APP_OAUTH_CLIENTID,
-        clientSecret: process.env.REACT_APP_OAUTH_CLIENT_SECRET,
-        refreshToken: process.env.REACT_APP_OAUTH_REFRESH_TOKEN,
-    },
-    debug: false,
-    logger: true
+        // clientId: process.env.REACT_APP_OAUTH_CLIENTID,
+        // clientSecret: process.env.REACT_APP_OAUTH_CLIENT_SECRET,
+        // refreshToken: process.env.REACT_APP_OAUTH_REFRESH_TOKEN,
+    }
 
 })
 
@@ -47,7 +45,7 @@ app.post('/send', (req, res) => {
     const mailOptions = {
         from: `${req.body.mailerState.email}`,
         to: process.env.REACT_APP_NODEMAILER_RECIPIENT,
-        subject: `Message from ${req.body.mailerState.name}`,
+        subject: `Message from ${req.body.mailerState.name} (${req.body.mailerState.email})`,
         text: `${req.body.mailerState.message}`,
     };
 

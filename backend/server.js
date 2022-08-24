@@ -21,16 +21,16 @@ app.listen(PORT, () => {
 const transporter = nodemailer.createTransport({
     logger: true,
     debug: true,
-    service:'hotmail',
+    host:'smtp.gmail.com',
     port: 465,
     secure: false,
     auth: {
-        // type: 'OAuth2',
+        type: 'OAuth2',
         user: process.env.REACT_APP_NODEMAILER_USER,
         pass: process.env.REACT_APP_NODEMAILER_KEY,
-        // clientId: process.env.REACT_APP_OAUTH_CLIENTID,
-        // clientSecret: process.env.REACT_APP_OAUTH_CLIENT_SECRET,
-        // refreshToken: process.env.REACT_APP_OAUTH_REFRESH_TOKEN,
+        clientId: process.env.REACT_APP_OAUTH_CLIENTID,
+        clientSecret: process.env.REACT_APP_OAUTH_CLIENT_SECRET,
+        refreshToken: process.env.REACT_APP_OAUTH_REFRESH_TOKEN,
     }
 
 })

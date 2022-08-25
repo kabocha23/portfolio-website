@@ -21,6 +21,7 @@ app.listen(PORT, () => {
 const transporter = nodemailer.createTransport({
     logger: true,
     debug: true,
+    host: 'smtp.gmail.com',
     service: 'gmail',
     port: 465,
     secure: false,
@@ -51,11 +52,12 @@ app.post('/send', (req, res) => {
 
     transporter.sendMail(mailOptions, (err, data) => {
         if(err) { 
+            console.log('Something went wrong, please try again later :(');
             res.json({
                 status: 'fail',
             })
         } else {
-            console.log('Message sent');
+            console.log('Message sent!');
             res.json({
                 status: 'success',
             })

@@ -8,8 +8,6 @@ import Footer from './Footer/Footer';
 import nycSnowBg from './Static/img/nyc-snow.jpg';
 import { Parallax } from 'react-parallax';
 import emailjs from '@emailjs/browser';
-const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 import './App.css';
 
 
@@ -90,7 +88,7 @@ const App = () => {
   const sendEmail = (e) => {
     if(e) e.preventDefault();
     
-    emailjs.sendForm('service_yk4f6h9', 'template_4lf4gms', formRef.current, 'pksF0_RCgF9X1xBNY')
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, formRef.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
           alert('Message sent! Thanks for reaching out');

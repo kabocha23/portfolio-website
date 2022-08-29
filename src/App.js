@@ -7,7 +7,9 @@ import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import nycSnowBg from './Static/img/nyc-snow.jpg';
 import { Parallax } from 'react-parallax';
-// import { Routes, Route, Link } from "react-router-dom";
+import emailjs from '@emailjs/browser';
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 import './App.css';
 
 
@@ -26,6 +28,7 @@ const App = () => {
   const aboutMeRef = useRef();
   const projectsRef = useRef(); 
   const contactRef = useRef();
+  const formRef = useRef();
 
   const handleHomeClick = () => {
     homeRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -53,34 +56,54 @@ const App = () => {
     }))
   }
 
-  const handleSubmitMessage = async (e) => {
-    if(e) e.preventDefault();
+  // const handleSubmitMessage = async (e) => {
+  //   if(e) e.preventDefault();
 
-    console.log({ mailerState });
-    const response = await fetch('https://jk-portfolio-app.herokuapp.com/send', {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-      },
-      body: JSON.stringify({ mailerState }),
-    })
-    .then((res) => res.json())
-    .then(async (res) => {
-      const resData = await res;
-      console.log(resData);
-      if (resData.status === 'success') {
-        alert('Message Sent');
-      } else if (resData.status === 'fail') {
-        alert('Message failed to send');
-      }
-    })
-    .then(() => {
-      setMailerState({
-        name: '',
-        email: '',
-        message: '',
-      })
-    })
+  //   console.log({ mailerState });
+  //   const response = await fetch('https://jk-portfolio-app.herokuapp.com/send', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-type': 'application/json',
+  //     },
+  //     body: JSON.stringify({ mailerState }),
+  //   })
+  //   .then((res) => res.json())
+  //   .then(async (res) => {
+  //     const resData = await res;
+  //     console.log(resData);
+  //     if (resData.status === 'success') {
+  //       alert('Message Sent');
+  //     } else if (resData.status === 'fail') {
+  //       alert('Message failed to send');
+  //     }
+  //   })
+  //   .then(() => {
+  //     setMailerState({
+  //       name: '',
+  //       email: '',
+  //       message: '',
+  //     })
+  //   })
+  // }
+
+  
+  const sendEmail = (e) => {
+    if(e) e.preventDefault();
+    
+    emailjs.sendForm('service_yk4f6h9', 'template_4lf4gms', formRef.current, 'pksF0_RCgF9X1xBNY')
+      .then((result) => {
+          console.log(result.text);
+          alert('Message sent! Thanks for reaching out');
+          setMailerState({
+            name: '',
+            email: '',
+            message: '',
+          })
+      }, (error) => {
+          console.log(error.text);
+          alert('There was an error sending the message, please try again later');
+      });
+
   }
 
   const isValidEmail = email => {
@@ -131,7 +154,8 @@ const App = () => {
             mailerState={mailerState}
             setMailerState={setMailerState} 
             handleEmailStateChange={handleEmailStateChange}
-            handleSubmitMessage={handleSubmitMessage}
+            sendEmail={sendEmail}
+            formRef={formRef}
           />
         </div>
         {/* Contact end */}

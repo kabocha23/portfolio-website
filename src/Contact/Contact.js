@@ -2,7 +2,7 @@ import React from 'react';
 import paperPlane from '../Static/img/paper-plane.svg';
 import './Contact.css'
 
-const Contact = ({ mailerState, setMailerState, handleEmailStateChange, handleSubmitMessage }) => {
+const Contact = ({ mailerState, handleEmailStateChange, sendEmail, formRef }) => {
     
 
     return (
@@ -12,7 +12,7 @@ const Contact = ({ mailerState, setMailerState, handleEmailStateChange, handleSu
                 <p id='contact-text-subhead'>I'm interested in job and freelance opportunities. However, if you have any other requests or questions please don't hesitate to reach out:</p>
             </div>
             <div className='contact-form'>
-                <form onSubmit={handleSubmitMessage}>
+                <form ref={formRef} onSubmit={sendEmail}>
                     <div className='contact-name-email'>
                         <div className='contact-name'>
                             <label id='contact-name-label'>NAME</label>

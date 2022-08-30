@@ -42,11 +42,7 @@ const URLShortener = (props) => {
             A responsive web/mobile application that shortens the user's URL by tapping into the Shrtcode API.
           </Typography>
           <Typography component="p">
-            Features include:
-            - input allowing user to make API call and shorten any url
-            - dynamically generated search history list with copy to clipboard button
-            - navbar transitioning to hidden menu (sliding in from top)
-            - responsive design for web and mobile
+            Features include: \n- input allowing user to make API call and shorten any url \n- dynamically generated search history list with copy to clipboard button \n- navbar transitioning to hidden menu (sliding in from top) \n- responsive design for web and mobile
           </Typography>
         </CardContent>
         <CardActions className={classes.cardActions}>

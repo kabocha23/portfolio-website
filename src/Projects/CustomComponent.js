@@ -14,11 +14,24 @@ const [projectDetails, setProjectDetails] = useState([
 ])
 
 
-const ProjectComponent = ({ projectDetails }) => {
+const ProjectComponent = ({ }) => {
 
     return (
         <div className='indi-proj'>
-            <img src={require(`..Static/img/${projectDetails.image}.png`)}></img>
+            <div>
+                <img src={require(`..Static/img/${projectDetails.image}.png`)}></img>                
+            </div>
+            <div>
+                <h1>{projectDetails.title}</h1>
+                <h2>{projectDetails.headline}</h2>
+                <h3>{projectDetails.caption}</h3>
+                <p>{projectDetails.description}</p>                
+            </div>
+            <div>
+                <a href={`${projectDetails.sourceCode}`}></a>
+                <a href={`${projectDetails.liveDemo}`}></a>             
+            </div>
+
         </div>
     )
 

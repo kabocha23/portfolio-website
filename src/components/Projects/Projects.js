@@ -15,7 +15,7 @@ import FeaturedProject from './FeaturedProject';
 
 
 
-const Projects = ({ projectDetails }) => {
+const Projects = ({ projectsData }) => {
 
     return(
         <div className='projects-container'>
@@ -59,16 +59,16 @@ const Projects = ({ projectDetails }) => {
                 </div>
                 <p id='more-to-come'>And more in the works...</p>
 
-                {projectDetails.map((projectDetails) => (
+                {projectsData.map((projectsData) => (
                     <FeaturedProject 
-                        key={projectDetails.id}
-                        image={projectDetails.image}
-                        title={projectDetails.title}
-                        headline={projectDetails.headline}
-                        caption={projectDetails.caption}
-                        description={projectDetails.description}
-                        sourceCode={projectDetails.sourceCode}
-                        liveDemo={projectDetails.liveDemo}
+                        key={projectsData.id}
+                        image={projectsData.image}
+                        title={projectsData.title}
+                        headline={projectsData.headline}
+                        caption={projectsData.caption}
+                        description={projectsData.description}
+                        sourceCode={projectsData.sourceCode}
+                        liveDemo={projectsData.liveDemo}
                     />
                 ))}                    
 

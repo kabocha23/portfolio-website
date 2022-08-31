@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import projectsData from './data/projectsData'
 import Navbar from './components/Navbar/Navbar';
 import Intro from './components/Intro/Intro';
 import Projects from './components/Projects/Projects';
@@ -21,28 +22,6 @@ const App = () => {
     email: '',
     message: '',
   });
-  const [projectDetails, setProjectDetails] = useState([
-    {
-        id: 1,
-        title: 'Shortly, URL Shortening Application',
-        headline: 'Shortly',
-        caption: 'React, Shrtcode API',
-        image: 'shortly-preview',
-        description: 'A responsive web/mobile application that shortens the user\'s URL by tapping into the Shrtcode API. \nFeatures include: \n- input allowing user to make API call and shorten any url \n- dynamically generated search history list with copy to clipboard button \n- navbar transitioning to hidden menu (sliding in from top) \n- responsive design for web and mobile',
-        sourceCode: 'https://github.com/kabocha23/URL-Shortener',
-        liveDemo: 'https://kabocha23.github.io/URL-Shortener'
-    },
-    {
-        id: 2,
-        title: 'Indecisive Eaters',
-        headline: 'Indecisive Eaters',
-        caption: 'React, Node, Express, Yelp-Fusion API, Axios, React DnD, reactjs-popup',
-        image: 'indecisive-eaters1',
-        description: 'A web application made for those who can\'t decide where to eat. Search for restaurants with Yelp-Fusion API, and drag the desired restaurants to the list on the right. When you\'re ready to go, the app will randomly chose one for you!',
-        sourceCode: 'https://github.com/kabocha23/Indecisive',
-        liveDemo: 'https://whispering-forest-79782.herokuapp.com'
-    },
-]);
 
   const homeRef = useRef();
   const aboutMeRef = useRef();
@@ -165,7 +144,7 @@ const App = () => {
         {/* AboutMe end */}
 
         <div className='projects-box' ref={projectsRef}>
-            <Projects projectDetails={projectDetails}/>
+            <Projects projectsData={projectsData}/>
         </div>
         {/* Projects end */}
 

@@ -11,12 +11,12 @@ import SunnysideAgencyMock from './SunnysideAgencyMock';
 import NotesAppCard from './NotesAppCard';
 import FlashAppCard from './FlashAppCard';
 import WeatherAppCard from './WeatherAppCard';
-import ProjectComponent from './ProjectComponent';
+import FeaturedProject from './FeaturedProject';
 
 
 
 const Projects = ({ projectDetails }) => {
-
+    console.log(projectDetails)
     return(
         <div className='projects-container'>
         <Parallax
@@ -58,9 +58,10 @@ const Projects = ({ projectDetails }) => {
                     <WeatherAppCard />
                 </div>
                 <p id='more-to-come'>And more in the works...</p>
-                {projectDetails.map((projectDetails, index) => {
-                    <ProjectComponent 
-                        key={index}
+
+                {projectDetails.map((projectDetails) => (
+                    <FeaturedProject 
+                        key={projectDetails.id}
                         image={projectDetails.image}
                         title={projectDetails.title}
                         headline={projectDetails.headline}
@@ -69,7 +70,9 @@ const Projects = ({ projectDetails }) => {
                         sourceCode={projectDetails.sourceCode}
                         liveDemo={projectDetails.liveDemo}
                     />
-                })}
+                ))}                    
+
+
             </div>
         </div>
     )

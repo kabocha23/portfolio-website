@@ -23,6 +23,7 @@ const App = () => {
   });
   const [projectDetails, setProjectDetails] = useState([
     {
+        id: 1,
         title: 'Shortly, URL Shortening Application',
         headline: 'Shortly',
         caption: 'React, Shrtcode API',
@@ -32,6 +33,7 @@ const App = () => {
         liveDemo: 'https://kabocha23.github.io/URL-Shortener'
     },
     {
+        id: 2,
         title: 'Indecisive Eaters',
         headline: 'Indecisive Eaters',
         caption: 'React, Node, Express, Yelp-Fusion API, Axios, React DnD, reactjs-popup',
@@ -40,7 +42,7 @@ const App = () => {
         sourceCode: 'https://github.com/kabocha23/Indecisive',
         liveDemo: 'https://whispering-forest-79782.herokuapp.com'
     },
-])
+]);
 
   const homeRef = useRef();
   const aboutMeRef = useRef();

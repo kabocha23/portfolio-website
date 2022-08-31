@@ -11,10 +11,11 @@ import SunnysideAgencyMock from './SunnysideAgencyMock';
 import NotesAppCard from './NotesAppCard';
 import FlashAppCard from './FlashAppCard';
 import WeatherAppCard from './WeatherAppCard';
+import ProjectComponent from './ProjectComponent';
 
 
 
-const Projects = ({ }) => {
+const Projects = ({ projectDetails }) => {
 
     return(
         <div className='projects-container'>
@@ -57,6 +58,18 @@ const Projects = ({ }) => {
                     <WeatherAppCard />
                 </div>
                 <p id='more-to-come'>And more in the works...</p>
+                {projectDetails.map((projectDetails, index) => {
+                    <ProjectComponent 
+                        key={index}
+                        image={projectDetails.image}
+                        title={projectDetails.title}
+                        headline={projectDetails.headline}
+                        caption={projectDetails.caption}
+                        description={projectDetails.description}
+                        sourceCode={projectDetails.sourceCode}
+                        liveDemo={projectDetails.liveDemo}
+                    />
+                })}
             </div>
         </div>
     )

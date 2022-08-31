@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@mui/styles';
@@ -10,7 +11,7 @@ import Typography from '@mui/material/Typography';
 
 const styles = {
   card: {
-    maxWidth: 345
+    maxWidth: 345,
   },
   media: {
     height: 0,
@@ -21,33 +22,30 @@ const styles = {
   }
 };
 
-const RoomHomepage = (props) => {
+const WeatherAppCard = (props) => {
   const { classes } = props;
   return (
     <div>
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
-          image={require('../Static/img/room-preview.png')}
-          title="Room Homepage"
+          image={require("../../Static/img/react-weather-app.png")}
+          title="Weather Preview"
         />
         <CardContent>
           <Typography gutterBottom variant="headline" component="h1">
-            Room Homepage
+            Weather You Like It or Not
           </Typography>
-          <Typography variant="caption" component="h2">
-            React
+          <Typography component="h2">
+            React, Open Weather API
           </Typography>
           <Typography component="p">
-          A responsive web/mobile design homepage for a fictional furniture company. Features include navbar transitioning to hidden menu (sliding in from top), selectable homepage components, modern design.
+            Application created with React and OpenWeatherMap API to look up the current weather, or a five day forecast.
           </Typography>
         </CardContent>
         <CardActions className={classes.cardActions}>
-        <Button size='large' color='primary' href='https://github.com/kabocha23/Room-Homepage/' target='blank'>
+        <Button size='large' color='primary' href='https://bitbucket.org/Kabocha23/react-weather/src/master/' target='blank'>
           View Source Code
-        </Button>
-        <Button size='large' color='primary' href='https://kabocha23.github.io/Room-Homepage/' target='blank'>
-          Live Demo
         </Button>
         </CardActions>
       </Card>
@@ -55,8 +53,8 @@ const RoomHomepage = (props) => {
   );
 }
 
-RoomHomepage.propTypes = {
+WeatherAppCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(RoomHomepage);
+export default withStyles(styles)(WeatherAppCard);

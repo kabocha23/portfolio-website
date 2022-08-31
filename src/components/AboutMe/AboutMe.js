@@ -1,9 +1,9 @@
 import React from 'react';
 import Skills from '../Skills/Skills';
-import profilePhoto from '../Static/img/profile-photo.jpg';
-import emailIcon from '../Static/img/email-icon2.png';
-import linkedInIcon from '../Static/img/linkedin-icon-circle2.png';
-import githubIcon from '../Static/img/github-icon.png';
+import profilePhoto from '../../Static/img/profile-photo.jpg';
+import emailIcon from '../../Static/img/email-icon2.png';
+import linkedInIcon from '../../Static/img/linkedin-icon-circle2.png';
+import githubIcon from '../../Static/img/github-icon.png';
 import './AboutMe.css';
 
 const AboutMe = () => {

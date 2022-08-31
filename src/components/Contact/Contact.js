@@ -1,5 +1,5 @@
 import React from 'react';
-import paperPlane from '../Static/img/paper-plane.svg';
+import paperPlane from '../../Static/img/paper-plane.svg';
 import './Contact.css'
 
 const Contact = ({ mailerState, handleEmailStateChange, sendEmail, formRef }) => {

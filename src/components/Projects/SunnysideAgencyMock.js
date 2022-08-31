@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 
 const styles = {
   card: {
-    maxWidth: 345
+    maxWidth: 345,
   },
   media: {
     height: 0,
@@ -21,33 +21,30 @@ const styles = {
   }
 };
 
-const EcommerceProductPage = (props) => {
+const SunnysideAgencyMock = (props) => {
   const { classes } = props;
   return (
     <div>
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
-          image={require("../Static/img/sneakers2.png")}
-          title="E-commerce Product Page"
+          image={require("../../Static/img/desktop-preview.jpg")}
+          title="Sunnyside Agency Website"
         />
         <CardContent>
           <Typography gutterBottom variant="headline" component="h1">
-            Sneakers Product Page
+            Sunnyside Agency Website
           </Typography>
-          <Typography variant="caption" component="h2">
+          <Typography component="h2">
             React
           </Typography>
           <Typography component="p">
-          A responsive product page web and mobile design for a fictional e-commerce website Sneakers Company. Features include navbar transitioning to collapsible sidebar, selectible photo gallery, cart with CRUD functionality, live cart quantity bubble.
+          A responsive front end design for a fictional creative agency.
           </Typography>
         </CardContent>
         <CardActions className={classes.cardActions}>
-        <Button size='large' color='primary' href='https://github.com/kabocha23/Ecommerce-Product-Page' target='blank'>
+        <Button size='large' color='primary' href='https://github.com/kabocha23/Sunnyside-Agency-Site' target='blank'>
           View Source Code
-        </Button>
-        <Button size='large' color='primary' href='https://kabocha23.github.io/Ecommerce-Product-Page' target='blank'>
-          Live Demo
         </Button>
         </CardActions>
       </Card>
@@ -55,8 +52,8 @@ const EcommerceProductPage = (props) => {
   );
 }
 
-EcommerceProductPage.propTypes = {
+SunnysideAgencyMock.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(EcommerceProductPage);
+export default withStyles(styles)(SunnysideAgencyMock);

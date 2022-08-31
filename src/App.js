@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react';
-import Navbar from './Navbar/Navbar';
-import Intro from './Intro/Intro';
-import Projects from './Projects/Projects';
-import AboutMe from './AboutMe/AboutMe';
-import Contact from './Contact/Contact';
-import Footer from './Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Intro from './components/Intro/Intro';
+import Projects from './components/Projects/Projects';
+import AboutMe from './components/AboutMe/AboutMe';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import nycSnowBg from './Static/img/nyc-snow.jpg';
 import { Parallax } from 'react-parallax';
 import emailjs from '@emailjs/browser';

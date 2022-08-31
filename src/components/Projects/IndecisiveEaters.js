@@ -28,7 +28,7 @@ const IndecisiveEaters = (props) => {
       <Card className={classes.card}>
           <CardMedia
             className={classes.media}
-            image={require("../Static/img/indecisive-eaters1.png")}
+            image={require("../../Static/img/indecisive-eaters1.png")}
             title="Indecisive Eaters"
           />
           <CardContent>

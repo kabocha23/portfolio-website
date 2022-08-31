@@ -22,30 +22,33 @@ const styles = {
   }
 };
 
-const WeatherAppCard = (props) => {
+const FlashAppCard = (props) => {
   const { classes } = props;
   return (
     <div>
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
-          image={require("../Static/img/react-weather-app.png")}
-          title="Weather Preview"
+          image={require('../../Static/img/react-flashcards-app.png')}
+          title="Flashcards Preview"
         />
         <CardContent>
           <Typography gutterBottom variant="headline" component="h1">
-            Weather You Like It or Not
+            Learn in a Flash
           </Typography>
           <Typography component="h2">
-            React, Open Weather API
+            React, Firebase
           </Typography>
           <Typography component="p">
-            Application created with React and OpenWeatherMap API to look up the current weather, or a five day forecast.
+            Web application utilizing React and Firebase to create virtual flashcards for studying (currently set up for Chinese).
           </Typography>
         </CardContent>
         <CardActions className={classes.cardActions}>
-        <Button size='large' color='primary' href='https://bitbucket.org/Kabocha23/react-weather/src/master/' target='blank'>
+        <Button color='primary' href='https://bitbucket.org/Kabocha23/react-flashcards/src/master/' target='blank'>
           View Source Code
+        </Button>
+        <Button size='large' color='primary' href='https://reactflashcards-fb1d7.firebaseapp.com/' target='blank'>
+          Live Demo
         </Button>
         </CardActions>
       </Card>
@@ -53,8 +56,8 @@ const WeatherAppCard = (props) => {
   );
 }
 
-WeatherAppCard.propTypes = {
+FlashAppCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(WeatherAppCard);
+export default withStyles(styles)(FlashAppCard);

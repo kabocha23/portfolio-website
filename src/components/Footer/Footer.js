@@ -1,7 +1,7 @@
 import React from 'react';
-import emailIcon from '../Static/img/email-icon2.png';
-import linkedInIcon from '../Static/img/linkedin-icon-circle2.png';
-import githubIcon from '../Static/img/github-icon2.png';
+import emailIcon from '../../Static/img/email-icon2.png';
+import linkedInIcon from '../../Static/img/linkedin-icon-circle2.png';
+import githubIcon from '../../Static/img/github-icon2.png';
 import './Footer.css';
 
 

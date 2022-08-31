@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@mui/styles';
@@ -11,7 +10,7 @@ import Typography from '@mui/material/Typography';
 
 const styles = {
   card: {
-    maxWidth: 345,
+    maxWidth: 345
   },
   media: {
     height: 0,
@@ -22,30 +21,33 @@ const styles = {
   }
 };
 
-const NotesAppCard = (props) => {
+const InsureLandingPage = (props) => {
   const { classes } = props;
   return (
     <div>
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
-          image={require("../Static/img/react-notes-app.png")}
-          title="Notes Preview"
+          image={require("../../Static/img/insure-preview-1.png")}
+          title="Insurance Company Landing Page"
         />
         <CardContent>
           <Typography gutterBottom variant="headline" component="h1">
-            Notes!
+            Insurance Company Landing Page
           </Typography>
-          <Typography component="h2">
-            React, Firebase
+          <Typography variant="caption" component="h2">
+            React
           </Typography>
           <Typography component="p">
-            Notes application built with React and Firebase to help you keep reminders.
+            A responsive landing page for a fictional insurance company. No libraries imported for this project.
           </Typography>
         </CardContent>
         <CardActions className={classes.cardActions}>
-        <Button size='large' color='primary' href='https://bitbucket.org/Kabocha23/react-notes/src/master/' target='blank'>
+        <Button size='large' color='primary' href='https://github.com/kabocha23/Insure-Landing-Page' target='blank'>
           View Source Code
+        </Button>
+        <Button size='large' color='primary' href='https://kabocha23.github.io/Insure-Landing-Page' target='blank'>
+          Live Demo
         </Button>
         </CardActions>
       </Card>
@@ -53,8 +55,8 @@ const NotesAppCard = (props) => {
   );
 }
 
-NotesAppCard.propTypes = {
+InsureLandingPage.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(NotesAppCard);
+export default withStyles(styles)(InsureLandingPage);

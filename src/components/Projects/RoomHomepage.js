@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 
 const styles = {
   card: {
-    maxWidth: 345,
+    maxWidth: 345
   },
   media: {
     height: 0,
@@ -21,30 +21,33 @@ const styles = {
   }
 };
 
-const SunnysideAgencyMock = (props) => {
+const RoomHomepage = (props) => {
   const { classes } = props;
   return (
     <div>
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
-          image={require("../Static/img/desktop-preview.jpg")}
-          title="Sunnyside Agency Preview"
+          image={require('../../Static/img/room-preview.png')}
+          title="Room Homepage"
         />
         <CardContent>
           <Typography gutterBottom variant="headline" component="h1">
-            Sunnyside Agency Website
+            Room Homepage
           </Typography>
-          <Typography component="h2">
+          <Typography variant="caption" component="h2">
             React
           </Typography>
           <Typography component="p">
-          A responsive front end design for a fictional creative agency.
+          A responsive web/mobile design homepage for a fictional furniture company. Features include navbar transitioning to hidden menu (sliding in from top), selectable homepage components, modern design.
           </Typography>
         </CardContent>
         <CardActions className={classes.cardActions}>
-        <Button size='large' color='primary' href='https://github.com/kabocha23/Sunnyside-Agency-Site' target='blank'>
+        <Button size='large' color='primary' href='https://github.com/kabocha23/Room-Homepage/' target='blank'>
           View Source Code
+        </Button>
+        <Button size='large' color='primary' href='https://kabocha23.github.io/Room-Homepage/' target='blank'>
+          Live Demo
         </Button>
         </CardActions>
       </Card>
@@ -52,8 +55,8 @@ const SunnysideAgencyMock = (props) => {
   );
 }
 
-SunnysideAgencyMock.propTypes = {
+RoomHomepage.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(SunnysideAgencyMock);
+export default withStyles(styles)(RoomHomepage);

@@ -28,7 +28,7 @@ const URLShortener = (props) => {
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
-          image={require("../Static/img/shortly-preview.png")}
+          image={require("../../Static/img/shortly-preview.png")}
           title="Shortly, URL Shortening Application"
         />
         <CardContent>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import { Parallax } from 'react-parallax';
-import koSamuiBg from '../Static/img/kosamui2.jpg';
+import koSamuiBg from '../../Static/img/kosamui2.jpg';
 import URLShortener from './URLShortener';
 import IndecisiveEaters from './IndecisiveEaters';
 import EcommerceProductPage from './EcommerceProductPage';
@@ -16,7 +16,7 @@ import FeaturedProject from './FeaturedProject';
 
 
 const Projects = ({ projectDetails }) => {
-    console.log(projectDetails)
+
     return(
         <div className='projects-container'>
         <Parallax

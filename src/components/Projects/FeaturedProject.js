@@ -6,7 +6,7 @@ const FeaturedProject = ({ image, title, headline, caption, description, sourceC
 
     return (
         
-        <div className='project-container'>
+        <div className='project-container' style={{ backgroundImage: `url(../../Static/img/${image}.png)` }}>
             <div className='project-preview'>
                 <img src={require(`../../Static/img/${image}.png`)}></img>                
             </div>

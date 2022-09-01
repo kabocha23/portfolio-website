@@ -3,18 +3,38 @@
 .project-container {
     display: flex;
     flex-flow: row wrap;
-    height: 600px;
-    width: 95%;
+    height: 500px;
+    width: 90%;
+    max-width: 1281px;
+    /* background-color: white; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    border-radius: 5px;
 }
 
 .project-preview {
+    display: flex;
     width: 40%;
+    padding: 10px
 }
 .project-preview img {
     width: 100%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
 }
 
 .project-details {
+    display: flex;
     width: 55%;
     margin-left: auto;
+}
+.project-verbiage {
+    width: 90%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
 }

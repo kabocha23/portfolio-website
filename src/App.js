@@ -133,21 +133,15 @@ const App = () => {
           <Intro />
         </div>
       </Parallax>
-      {/* Intro end */}
-
-      {/* main body begin */}
       <div className='main-body-box'>
-
         <div className='about-box' ref={aboutMeRef}>
           <AboutMe /> 
         </div>
-        {/* AboutMe end */}
-
         <div className='projects-box' ref={projectsRef}>
-            <Projects projectsData={projectsData}/>
+            <Projects 
+              projectsData={projectsData}
+            />
         </div>
-        {/* Projects end */}
-
         <div className='contact-box' ref={contactRef}>
           <Contact 
             mailerState={mailerState}
@@ -157,8 +151,6 @@ const App = () => {
             formRef={formRef}
           />
         </div>
-        {/* Contact end */}
-
         <div className='footer-box'>
           <Footer />
         </div>

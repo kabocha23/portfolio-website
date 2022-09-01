@@ -28,7 +28,7 @@ const SunnysideAgencyMock = (props) => {
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
-          image={require("../../Static/img/desktop-preview.jpg")}
+          image={require("../../Static/img/sunnyside-preview.png")}
           title="Sunnyside Agency Website"
         />
         <CardContent>

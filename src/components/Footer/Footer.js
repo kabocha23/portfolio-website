@@ -8,7 +8,7 @@ import './Footer.css';
 const Footer = () => (
     <div className='footer-container'>
         <div className='footer-subtitle'>
-            <p>2022 - Jason Kobuchi</p>
+            <p>Designed and Built by Jason Kobuchi</p>
         </div>
         <div className='foot-contact-links'>
 

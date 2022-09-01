@@ -1,0 +1,20 @@
+ 
+
+.project-container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 600px;
+    width: 95%;
+}
+
+.project-preview {
+    width: 40%;
+}
+.project-preview img {
+    width: 100%;
+}
+
+.project-details {
+    width: 55%;
+    margin-left: auto;
+}

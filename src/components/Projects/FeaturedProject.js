@@ -13,9 +13,12 @@ const FeaturedProject = ({ image, title, headline, caption, description, sourceC
             <div className='project-details'>
                 <div className='project-verbiage'>
                     <h1>{title}</h1>
-                    <h2>{headline}</h2>
-                    <h3>{caption}</h3>
-                    <p>{description}</p>                
+                    <h3>{headline}</h3>
+                    <h4>{caption}</h4>
+                    <div className='project-description'>
+                        {description.split('\n').map(str => <p>{str}</p>)}
+                    </div>
+        
                     <button><a href={`${sourceCode}`} target='blank'>GIT REPO</a></button>
                     <button><a href={`${liveDemo}`} target='blank'>LIVE DEMO</a></button>             
                 </div>                

@@ -12,10 +12,10 @@ const projectsData = [
     {
         id: 2,
         title: 'Indecisive Eaters',
-        headline: 'An app for those who can\'t make a choice',
+        headline: 'An app for anyone that cannot make up their mind',
         caption: 'React, Node, Express, Yelp-Fusion API, Axios, React DnD, reactjs-popup',
         image: 'indecisive-eaters1',
-        description: 'A web application made for those who can\'t decide where to eat. Search for restaurants with Yelp-Fusion API, and drag the desired restaurants to the list on the right. When you\'re ready to go, the app will randomly chose one for you!',
+        description: 'A web application made for those who can\'t decide where to eat. \nSearch for restaurants with Yelp-Fusion API, and drag the desired restaurants to the list on the right. When you\'re ready to go, the app will randomly chose one for you!',
         sourceCode: 'https://github.com/kabocha23/Indecisive',
         liveDemo: 'https://whispering-forest-79782.herokuapp.com'
     },
@@ -25,7 +25,7 @@ const projectsData = [
         headline: 'E-commerce Product Page',
         caption: 'React',
         image: 'sneakers2',
-        description: 'A responsive product page web and mobile design for a fictional e-commerce website Sneakers Company. Features include navbar transitioning to collapsible sidebar, selectible photo gallery, cart with CRUD functionality, live cart quantity bubble.',
+        description: 'A responsive product page web and mobile design for a fictional e-commerce website Sneakers Company. \nFeatures include: \n- navbar transitioning to collapsible sidebar \n- selectible photo gallery \n- cart with CRUD functionality \n- live cart quantity bubble.',
         sourceCode: 'https://github.com/kabocha23/Ecommerce-Product-Page',
         liveDemo: 'https://kabocha23.github.io/Ecommerce-Product-Page'
     },
@@ -35,7 +35,7 @@ const projectsData = [
         headline: 'Insurance Company Landing Page',
         caption: 'React',
         image: 'insure-preview-1',
-        description: 'A responsive landing page for a fictional insurance company. No libraries imported for this project.',
+        description: 'A responsive landing page for a fictional insurance company. \nFeatures include: \n- navbar transitioning to hidden menu (sliding in from side)',
         sourceCode: 'https://github.com/kabocha23/Insure-Landing-Page',
         liveDemo: 'https://kabocha23.github.io/Insure-Landing-Page'
     },
@@ -45,7 +45,7 @@ const projectsData = [
         headline: 'Furniture Store Homepage',
         caption: 'React',
         image: 'room-preview',
-        description: 'A responsive web/mobile design homepage for a fictional furniture company. Features include navbar transitioning to hidden menu (sliding in from top), selectable homepage components, modern design.',
+        description: 'A responsive web/mobile design homepage for a fictional furniture company. \nFeatures include: \n- navbar transitioning to hidden menu (sliding in from top) \n- slideshow gallery component',
         sourceCode: 'https://github.com/kabocha23/Room-Homepage',
         liveDemo: 'https://kabocha23.github.io/Room-Homepage'
     },

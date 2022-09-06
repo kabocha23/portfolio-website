@@ -7,9 +7,7 @@ const FeaturedProject = ({ image, title, headline, caption, description, sourceC
     return (
         
         <div className='project-container' style={{ backgroundImage: `url(../../Static/img/${image}.png)` }}>
-            <div className='project-preview'>
-                <img src={require(`../../Static/img/${image}.png`)}></img>                
-            </div>
+
             <div className='project-details'>
                 <div className='project-verbiage'>
                     <h1>{title}</h1>
@@ -26,7 +24,9 @@ const FeaturedProject = ({ image, title, headline, caption, description, sourceC
                     }        
                 </div>                
             </div>
-
+            <div className='project-preview'>
+                <img src={require(`../../Static/img/${image}.png`)}></img>                
+            </div>
         </div>
     )
 

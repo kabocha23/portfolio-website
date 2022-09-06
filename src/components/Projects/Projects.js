@@ -30,7 +30,7 @@ const Projects = ({ projectsData }) => {
             </div>
         </Parallax>
             <div className='projects-content-box'>
-                <div className='url-app indi-proj'>
+                {/* <div className='url-app indi-proj'>
                     <URLShortener />
                 </div>                
                 <div className='eaters-app indi-proj'>
@@ -56,8 +56,7 @@ const Projects = ({ projectsData }) => {
                 </div>
                 <div className='weather-app indi-proj'>
                     <WeatherAppCard />
-                </div>
-                <p id='more-to-come'>And more in the works...</p>
+                </div> */}
 
                 {projectsData.map((projectsData) => (
                     <FeaturedProject 
@@ -71,7 +70,7 @@ const Projects = ({ projectsData }) => {
                         liveDemo={projectsData.liveDemo}
                     />
                 ))}                    
-
+                <p id='more-to-come'>And more in the works...</p>
 
             </div>
         </div>

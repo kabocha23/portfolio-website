@@ -16,10 +16,8 @@ const FeaturedProject = ({ image, title, headline, caption, description, sourceC
                     <h2>{headline}</h2>
                     <h3>{caption}</h3>
                     <p>{description}</p>                
-                </div>
-                <div className='project-links'>
-                    <a href={`${sourceCode}`} target='blank'></a>
-                    <a href={`${liveDemo}`} target='blank'></a>             
+                    <button><a href={`${sourceCode}`} target='blank'>GIT REPO</a></button>
+                    <button><a href={`${liveDemo}`} target='blank'>LIVE DEMO</a></button>             
                 </div>                
             </div>
 

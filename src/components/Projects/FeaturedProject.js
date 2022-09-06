@@ -20,7 +20,10 @@ const FeaturedProject = ({ image, title, headline, caption, description, sourceC
                     </div>
         
                     <button><a href={`${sourceCode}`} target='blank'>GIT REPO</a></button>
-                    <button><a href={`${liveDemo}`} target='blank'>LIVE DEMO</a></button>             
+                    { liveDemo 
+                        ? <button><a href={`${liveDemo}`} target='blank'>LIVE DEMO</a></button>     
+                        : ''
+                    }        
                 </div>                
             </div>
 

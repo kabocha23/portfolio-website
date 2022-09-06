@@ -129,11 +129,11 @@
 }
 
 
-@media(max-width: 900px) {
+@media(max-width: 961px) {
     .profile-photo-box {
-        margin-top: 10%;
+        margin-top: 0%;
         margin-left: 0px;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
     .about-content {
         width: 85%;

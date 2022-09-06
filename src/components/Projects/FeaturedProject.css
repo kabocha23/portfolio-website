@@ -5,6 +5,7 @@
     flex-flow: row wrap;
     height: 500px;
     width: 90%;
+    min-width: 325px;
     max-width: 1281px;
     background-color: #313131d0;
     color: white;
@@ -13,8 +14,8 @@
     margin-right: auto;
     margin-bottom: 5%;
     border-radius: 5px;
-    -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    /* -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
     border-radius: 4px;
     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
     overflow: hidden;
@@ -42,7 +43,8 @@
 }
 
 .project-verbiage button {
-    width: 150px;
+    min-width: 100px;
+    max-width: 150px;
     padding: 10px;
     border-radius: 10px;
     font-size: 14px;
@@ -54,6 +56,7 @@
     cursor: pointer;
     line-height: 1;
     transition: transform 200ms, background 200ms;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 }
 .project-verbiage button:hover {
     transform: translateY(-2px);
@@ -88,4 +91,25 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
+}
+
+@media(max-width: 801px) {
+    .project-verbiage {
+        width: 75%;
+    }
+}
+
+@media(max-width: 600px) {
+    .project-verbiage {
+        width: 85%;
+    }
+}
+
+@media(max-width: 500px) {
+    .project-container {
+        height: 550px;
+    }
+    .project-verbiage {
+        width: 95%;
+    }
 }

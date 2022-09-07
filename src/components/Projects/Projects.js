@@ -60,7 +60,8 @@ const Projects = ({ projectsData }) => {
 
                 {projectsData.map((projectsData) => (
                     <FeaturedProject 
-                        key={projectsData.id}
+                        key={`featured${projectsData.id}`}
+                        id={projectsData.id}
                         image={projectsData.image}
                         title={projectsData.title}
                         headline={projectsData.headline}

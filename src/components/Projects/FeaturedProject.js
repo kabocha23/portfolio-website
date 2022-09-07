@@ -2,11 +2,11 @@ import React from 'react';
 import './FeaturedProject.css'
 
 
-const FeaturedProject = ({ image, title, headline, caption, description, sourceCode, liveDemo }) => {
+const FeaturedProject = ({ id, image, title, headline, caption, description, sourceCode, liveDemo }) => {
 
     return (
         
-        <div className='project-container' style={{ backgroundImage: `url(../../Static/img/${image}.png)` }}>
+        <div className='project-container'>
 
             <div className='project-details'>
                 <div className='project-verbiage'>
@@ -14,7 +14,7 @@ const FeaturedProject = ({ image, title, headline, caption, description, sourceC
                     <h3>{headline}</h3>
                     <h4>{caption}</h4>
                     <div className='project-description'>
-                        {description.split('\n').map(str => <p>{str}</p>)}
+                        {description.split('\n').map(str => <p key={`${str}`}>{str}</p>)}
                     </div>
         
                     <button><a href={`${sourceCode}`} target='blank'>GIT REPO</a></button>

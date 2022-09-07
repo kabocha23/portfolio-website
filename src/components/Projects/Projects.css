@@ -42,7 +42,6 @@
         #eee,
         #363636
     );
-    /* background-color: #eee; */
 }
 
 .indi-proj {
@@ -77,4 +76,11 @@
     font-size: 1.5em;
     font-style: italic;
     cursor: default;
+}
+
+
+@media(max-width: 500px) {
+    .projects-content-box {
+        padding: 5% 0;
+    }
 }

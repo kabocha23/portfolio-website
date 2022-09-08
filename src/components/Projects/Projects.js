@@ -17,6 +17,13 @@ import FeaturedProject from './FeaturedProject';
 
 const Projects = ({ projectsData, featuredProjectRef }) => {
 
+    featuredProjectRef.current = [];
+    const addToRefs = (el) => {
+        if (el && !featuredProjectRef.current.includes(el)) {
+            featuredProjectRef.current.push(el);
+        }
+    };
+
     return(
         <div className='projects-container'>
         <Parallax
@@ -34,7 +41,7 @@ const Projects = ({ projectsData, featuredProjectRef }) => {
                 {projectsData.map((projectsData) => (
                     <FeaturedProject 
                         key={`key-${projectsData.id}`}
-                        featuredProjectRef={featuredProjectRef}
+                        ref={addToRefs}
                         pdId={projectsData.id}
                         image={projectsData.image}
                         title={projectsData.title}

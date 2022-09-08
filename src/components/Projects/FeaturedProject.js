@@ -5,10 +5,10 @@ import './FeaturedProject.css'
 
 const FeaturedProject = ({ pdId, image, title, headline, caption, description, sourceCode, liveDemo, featuredProjectRef }) => {
     
-    
+
     return (
         
-        <div className='project-container' id={`id-${pdId}`} ref={el => (featuredProjectRef.current[pdId] = el)}>
+        <div className='project-container' id={`id-${pdId}`}>
 
             <div className='project-details'>
                 <div className='project-verbiage'>
@@ -30,8 +30,8 @@ const FeaturedProject = ({ pdId, image, title, headline, caption, description, s
                 <img src={require(`../../Static/img/${image}.png`)}></img>                
             </div>
         </div>
-    )
 
+    )
 }
 
 export default FeaturedProject;   

@@ -25,7 +25,8 @@ const App = () => {
 
   const homeRef = useRef();
   const aboutMeRef = useRef();
-  const projectsRef = useRef(); 
+  const projectsRef = useRef();
+  const featuredProjectRef = useRef([]);
   const contactRef = useRef();
   const formRef = useRef();
 
@@ -55,41 +56,15 @@ const App = () => {
     }))
   }
 
-  // const handleSubmitMessage = async (e) => {
-  //   if(e) e.preventDefault();
-
-  //   console.log({ mailerState });
-  //   const response = await fetch('https://jk-portfolio-app.herokuapp.com/send', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-type': 'application/json',
-  //     },
-  //     body: JSON.stringify({ mailerState }),
-  //   })
-  //   .then((res) => res.json())
-  //   .then(async (res) => {
-  //     const resData = await res;
-  //     console.log(resData);
-  //     if (resData.status === 'success') {
-  //       alert('Message Sent');
-  //     } else if (resData.status === 'fail') {
-  //       alert('Message failed to send');
-  //     }
-  //   })
-  //   .then(() => {
-  //     setMailerState({
-  //       name: '',
-  //       email: '',
-  //       message: '',
-  //     })
-  //   })
-  // }
-
-  
   const sendEmail = (e) => {
     if(e) e.preventDefault();
     
-    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, formRef.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+    emailjs.sendForm(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
+      formRef.current, 
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    )
       .then((result) => {
           console.log(result.text);
           alert('Message sent! Thanks for reaching out');
@@ -140,6 +115,7 @@ const App = () => {
         <div className='projects-box' ref={projectsRef}>
             <Projects 
               projectsData={projectsData}
+              featuredProjectRef={featuredProjectRef}
             />
         </div>
         <div className='contact-box' ref={contactRef}>

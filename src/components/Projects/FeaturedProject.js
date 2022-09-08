@@ -1,12 +1,14 @@
 import React from 'react';
+import projectsData from '../../data/projectsData';
 import './FeaturedProject.css'
 
 
-const FeaturedProject = ({ id, image, title, headline, caption, description, sourceCode, liveDemo }) => {
-
+const FeaturedProject = ({ pdId, image, title, headline, caption, description, sourceCode, liveDemo, featuredProjectRef }) => {
+    
+    
     return (
         
-        <div className='project-container'>
+        <div className='project-container' id={`id-${pdId}`} ref={el => (featuredProjectRef.current[pdId] = el)}>
 
             <div className='project-details'>
                 <div className='project-verbiage'>

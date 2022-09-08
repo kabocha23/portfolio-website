@@ -15,7 +15,7 @@ import FeaturedProject from './FeaturedProject';
 
 
 
-const Projects = ({ projectsData }) => {
+const Projects = ({ projectsData, featuredProjectRef }) => {
 
     return(
         <div className='projects-container'>
@@ -30,6 +30,22 @@ const Projects = ({ projectsData }) => {
             </div>
         </Parallax>
             <div className='projects-content-box'>
+
+                {projectsData.map((projectsData) => (
+                    <FeaturedProject 
+                        key={`key-${projectsData.id}`}
+                        featuredProjectRef={featuredProjectRef}
+                        pdId={projectsData.id}
+                        image={projectsData.image}
+                        title={projectsData.title}
+                        headline={projectsData.headline}
+                        caption={projectsData.caption}
+                        description={projectsData.description}
+                        sourceCode={projectsData.sourceCode}
+                        liveDemo={projectsData.liveDemo}
+                    />
+                ))}
+
                 {/* <div className='url-app indi-proj'>
                     <URLShortener />
                 </div>                
@@ -58,19 +74,6 @@ const Projects = ({ projectsData }) => {
                     <WeatherAppCard />
                 </div> */}
 
-                {projectsData.map((projectsData) => (
-                    <FeaturedProject 
-                        key={`featured${projectsData.id}`}
-                        id={projectsData.id}
-                        image={projectsData.image}
-                        title={projectsData.title}
-                        headline={projectsData.headline}
-                        caption={projectsData.caption}
-                        description={projectsData.description}
-                        sourceCode={projectsData.sourceCode}
-                        liveDemo={projectsData.liveDemo}
-                    />
-                ))}                    
                 <p id='more-to-come'>And more in the works...</p>
 
             </div>

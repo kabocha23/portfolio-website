@@ -26,7 +26,7 @@ const App = () => {
   const homeRef = useRef();
   const aboutMeRef = useRef();
   const projectsRef = useRef();
-  const featuredProjectRef = useRef([]);
+  const featuredProjectRefs = useRef([]);
   const contactRef = useRef();
   const formRef = useRef();
 
@@ -115,7 +115,7 @@ const App = () => {
         <div className='projects-box' ref={projectsRef}>
             <Projects 
               projectsData={projectsData}
-              featuredProjectRef={featuredProjectRef}
+              featuredProjectRefs={featuredProjectRefs}
             />
         </div>
         <div className='contact-box' ref={contactRef}>

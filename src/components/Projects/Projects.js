@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createRef } from 'react';
 import './Projects.css';
 import { Parallax } from 'react-parallax';
 import koSamuiBg from '../../Static/img/kosamui2.jpg';
@@ -15,14 +15,10 @@ import FeaturedProject from './FeaturedProject';
 
 
 
-const Projects = ({ projectsData, featuredProjectRef }) => {
+const Projects = ({ projectsData, featuredProjectRefs }) => {
 
-    featuredProjectRef.current = [];
-    const addToRefs = (el) => {
-        if (el && !featuredProjectRef.current.includes(el)) {
-            featuredProjectRef.current.push(el);
-        }
-    };
+    featuredProjectRefs.current = projectsData.map((proj) => featuredProjectRefs.current[proj.id] ?? createRef());
+    console.log(featuredProjectRefs.current)
 
     return(
         <div className='projects-container'>
@@ -41,7 +37,7 @@ const Projects = ({ projectsData, featuredProjectRef }) => {
                 {projectsData.map((projectsData) => (
                     <FeaturedProject 
                         key={`key-${projectsData.id}`}
-                        ref={addToRefs}
+                        ref={featuredProjectRefs.current[projectsData.id]}
                         pdId={projectsData.id}
                         image={projectsData.image}
                         title={projectsData.title}

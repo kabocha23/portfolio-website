@@ -5,7 +5,7 @@ import './FeaturedProject.css'
 
 const FeaturedProject = React.forwardRef(({ pdId, image, title, headline, caption, description, sourceCode, liveDemo }, ref) => {
     
-    console.log(ref)
+    
     return (
         
         <div className='project-container' id={`id-${pdId}`} ref={ref}>

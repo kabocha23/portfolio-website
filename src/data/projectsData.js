@@ -1,6 +1,6 @@
 const projectsData = [
     {
-        id: 1,
+        id: 0,
         title: 'Shortly',
         headline: 'A URL Shortening Application',
         caption: 'React, Shrtcode API',
@@ -10,7 +10,7 @@ const projectsData = [
         liveDemo: 'https://kabocha23.github.io/URL-Shortener'
     },
     {
-        id: 2,
+        id: 1,
         title: 'Indecisive Eaters',
         headline: 'An app for anyone that cannot make up their mind',
         caption: 'React, Node, Express, Yelp-Fusion API, Axios, React DnD, reactjs-popup',
@@ -20,7 +20,7 @@ const projectsData = [
         liveDemo: 'https://whispering-forest-79782.herokuapp.com'
     },
     {
-        id: 3,
+        id: 2,
         title: 'Sneakers',
         headline: 'E-commerce Product Page',
         caption: 'React',
@@ -30,7 +30,7 @@ const projectsData = [
         liveDemo: 'https://kabocha23.github.io/Ecommerce-Product-Page'
     },
     {
-        id: 4,
+        id: 3,
         title: 'Insure',
         headline: 'Insurance Company Landing Page',
         caption: 'React',
@@ -40,7 +40,7 @@ const projectsData = [
         liveDemo: 'https://kabocha23.github.io/Insure-Landing-Page'
     },
     {
-        id: 5,
+        id: 4,
         title: 'Room',
         headline: 'Furniture Store Homepage',
         caption: 'React',
@@ -50,7 +50,7 @@ const projectsData = [
         liveDemo: 'https://kabocha23.github.io/Room-Homepage'
     },
     {
-        id: 6,
+        id: 5,
         title: 'Sunnyside Agency',
         headline: 'Graphic Design Company Homepage',
         caption: 'React',
@@ -60,7 +60,7 @@ const projectsData = [
         liveDemo: ''
     },
     {
-        id: 7,
+        id: 6,
         title: 'Notes!',
         headline: 'Note keeping app',
         caption: 'React, Firebase Realtime Database',
@@ -70,7 +70,7 @@ const projectsData = [
         liveDemo: ''
     },
     {
-        id: 8,
+        id: 7,
         title: 'Learn in a Flash',
         headline: 'Flashcard App',
         caption: 'React, Firebase Realtime Database',
@@ -80,7 +80,7 @@ const projectsData = [
         liveDemo: 'https://reactflashcards-fb1d7.firebaseapp.com/'
     },
     {
-        id: 9,
+        id: 8,
         title: 'Weather You Like It or Not',
         headline: 'A Weather Lookup App',
         caption: 'React, Firebase Realtime Database',

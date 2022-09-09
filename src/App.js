@@ -65,19 +65,18 @@ const App = () => {
       formRef.current, 
       process.env.REACT_APP_EMAILJS_PUBLIC_KEY
     )
-      .then((result) => {
-          console.log(result.text);
-          alert('Message sent! Thanks for reaching out');
-          setMailerState({
-            name: '',
-            email: '',
-            message: '',
-          })
-      }, (error) => {
-          console.log(error.text);
-          alert('There was an error sending the message, please try again later');
-      });
-
+    .then((result) => {
+        console.log(result.text);
+        alert('Message sent! Thanks for reaching out');
+        setMailerState({
+          name: '',
+          email: '',
+          message: '',
+        })
+    }, (error) => {
+        console.log(error.text);
+        alert('There was an error sending the message, please try again later');
+    });
   }
 
   const isValidEmail = email => {

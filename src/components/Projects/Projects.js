@@ -1,7 +1,8 @@
-import React, { createRef } from 'react';
-import './Projects.css';
+import React, { useState, createRef } from 'react';
+import useIntersection from '../../hooks/useIntersection'
 import { Parallax } from 'react-parallax';
 import koSamuiBg from '../../Static/img/kosamui2.jpg';
+import FeaturedProject from './FeaturedProject';
 // import URLShortener from './URLShortener';
 // import IndecisiveEaters from './IndecisiveEaters';
 // import EcommerceProductPage from './EcommerceProductPage';
@@ -11,14 +12,28 @@ import koSamuiBg from '../../Static/img/kosamui2.jpg';
 // import NotesAppCard from './NotesAppCard';
 // import FlashAppCard from './FlashAppCard';
 // import WeatherAppCard from './WeatherAppCard';
-import FeaturedProject from './FeaturedProject';
+import './Projects.css';
 
 
 
 const Projects = ({ projectsData, featuredProjectRefs }) => {
 
-    featuredProjectRefs.current = projectsData.map((proj) => featuredProjectRefs.current[proj.id] ?? createRef());
-    console.log(featuredProjectRefs.current)
+    featuredProjectRefs.current = projectsData.map((proj) => 
+        featuredProjectRefs.current[proj.id] 
+        ?? createRef()
+    );
+    
+    projectsData ?? console.log(projectsData.id);
+
+    for(let ind in projectsData){
+        const inViewport = useIntersection(featuredProjectRefs.current[ind], '-250px');
+        
+        if (inViewport) {
+            console.log('in viewport:', featuredProjectRefs.current[ind].current);
+        }
+    }
+
+
 
     return(
         <div className='projects-container'>

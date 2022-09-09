@@ -22,17 +22,44 @@ const Projects = ({ projectsData, featuredProjectRefs }) => {
         featuredProjectRefs.current[proj.id] 
         ?? createRef()
     );
-    
-    projectsData ?? console.log(projectsData.id);
 
-    for(let ind in projectsData){
-        const inViewport = useIntersection(featuredProjectRefs.current[ind], '-250px');
-        
-        if (inViewport) {
-            console.log('in viewport:', featuredProjectRefs.current[ind].current);
-        }
+
+    const inViewport0 = useIntersection(featuredProjectRefs.current[0], '-250px');
+    const inViewport1 = useIntersection(featuredProjectRefs.current[1], '-250px');
+    const inViewport2 = useIntersection(featuredProjectRefs.current[2], '-250px');
+    const inViewport3 = useIntersection(featuredProjectRefs.current[3], '-250px');
+    const inViewport4 = useIntersection(featuredProjectRefs.current[4], '-250px');
+    const inViewport5 = useIntersection(featuredProjectRefs.current[5], '-250px');
+    const inViewport6 = useIntersection(featuredProjectRefs.current[6], '-250px');
+    const inViewport7 = useIntersection(featuredProjectRefs.current[7], '-250px');
+    const inViewport8 = useIntersection(featuredProjectRefs.current[8], '-250px');
+    if (inViewport0) {
+        console.log('in viewport:', featuredProjectRefs.current[0].current);
     }
-
+    if (inViewport1) {
+        console.log('in viewport:', featuredProjectRefs.current[1].current);
+    }
+    if (inViewport2) {
+        console.log('in viewport:', featuredProjectRefs.current[2].current);
+    }
+    if (inViewport3) {
+        console.log('in viewport:', featuredProjectRefs.current[3].current);
+    }
+    if (inViewport4) {
+        console.log('in viewport:', featuredProjectRefs.current[4].current);
+    }
+    if (inViewport5) {
+        console.log('in viewport:', featuredProjectRefs.current[5].current);
+    }
+    if (inViewport6) {
+        console.log('in viewport:', featuredProjectRefs.current[6].current);
+    }
+    if (inViewport7) {
+        console.log('in viewport:', featuredProjectRefs.current[7].current);
+    }
+    if (inViewport8) {
+        console.log('in viewport:', featuredProjectRefs.current[8].current);
+    }
 
 
     return(

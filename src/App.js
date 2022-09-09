@@ -14,7 +14,6 @@ import './App.css';
 
 const App = () => {
 
-
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [navBgColor, setNavBgColor] = useState(false);
   const [mailerState, setMailerState] = useState({
@@ -112,10 +111,10 @@ const App = () => {
           <AboutMe /> 
         </div>
         <div className='projects-box' ref={projectsRef}>
-            <Projects 
-              projectsData={projectsData}
-              featuredProjectRefs={featuredProjectRefs}
-            />
+          <Projects 
+            projectsData={projectsData}
+            featuredProjectRefs={featuredProjectRefs}
+          />
         </div>
         <div className='contact-box' ref={contactRef}>
           <Contact 

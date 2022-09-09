@@ -1,5 +1,6 @@
-html {
+html, :root {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .main-container {

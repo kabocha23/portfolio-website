@@ -3,15 +3,6 @@ import useIntersection from '../../hooks/useIntersection'
 import { Parallax } from 'react-parallax';
 import koSamuiBg from '../../Static/img/kosamui2.jpg';
 import FeaturedProject from './FeaturedProject';
-// import URLShortener from './URLShortener';
-// import IndecisiveEaters from './IndecisiveEaters';
-// import EcommerceProductPage from './EcommerceProductPage';
-// import InsureLandingPage from './InsureLandingPage';
-// import RoomHomepage from './RoomHomepage';
-// import SunnysideAgencyMock from './SunnysideAgencyMock';
-// import NotesAppCard from './NotesAppCard';
-// import FlashAppCard from './FlashAppCard';
-// import WeatherAppCard from './WeatherAppCard';
 import './Projects.css';
 
 
@@ -24,41 +15,69 @@ const Projects = ({ projectsData, featuredProjectRefs }) => {
     );
 
 
-    const inViewport0 = useIntersection(featuredProjectRefs.current[0], '-250px');
-    const inViewport1 = useIntersection(featuredProjectRefs.current[1], '-250px');
-    const inViewport2 = useIntersection(featuredProjectRefs.current[2], '-250px');
-    const inViewport3 = useIntersection(featuredProjectRefs.current[3], '-250px');
-    const inViewport4 = useIntersection(featuredProjectRefs.current[4], '-250px');
-    const inViewport5 = useIntersection(featuredProjectRefs.current[5], '-250px');
-    const inViewport6 = useIntersection(featuredProjectRefs.current[6], '-250px');
-    const inViewport7 = useIntersection(featuredProjectRefs.current[7], '-250px');
-    const inViewport8 = useIntersection(featuredProjectRefs.current[8], '-250px');
+    const inViewport0 = useIntersection(featuredProjectRefs.current[0], '-100px');
+    const inViewport1 = useIntersection(featuredProjectRefs.current[1], '-100px');
+    const inViewport2 = useIntersection(featuredProjectRefs.current[2], '-100px');
+    const inViewport3 = useIntersection(featuredProjectRefs.current[3], '-100px');
+    const inViewport4 = useIntersection(featuredProjectRefs.current[4], '-100px');
+    const inViewport5 = useIntersection(featuredProjectRefs.current[5], '-100px');
+    const inViewport6 = useIntersection(featuredProjectRefs.current[6], '-100px');
+    const inViewport7 = useIntersection(featuredProjectRefs.current[7], '-100px');
+    const inViewport8 = useIntersection(featuredProjectRefs.current[8], '-100px');
+    
     if (inViewport0) {
-        console.log('in viewport:', featuredProjectRefs.current[0].current);
+        let el = document.getElementById('id-0')
+        if(el.className === 'project-container isNotVisibleLeft'){
+            el.className = 'project-container isVisibleLeft'
+        }
     }
     if (inViewport1) {
-        console.log('in viewport:', featuredProjectRefs.current[1].current);
+        let el = document.getElementById('id-1')
+        if(el.className === 'project-container isNotVisibleRight'){
+            el.className = 'project-container isVisibleRight'
+        }
     }
     if (inViewport2) {
-        console.log('in viewport:', featuredProjectRefs.current[2].current);
+        let el = document.getElementById('id-2')
+        if(el.className === 'project-container isNotVisibleLeft'){
+            el.className = 'project-container isVisibleLeft'
+        }
     }
     if (inViewport3) {
-        console.log('in viewport:', featuredProjectRefs.current[3].current);
+        let el = document.getElementById('id-3')
+        if(el.className === 'project-container isNotVisibleRight'){
+            el.className = 'project-container isVisibleRight'
+        }
     }
     if (inViewport4) {
-        console.log('in viewport:', featuredProjectRefs.current[4].current);
+        let el = document.getElementById('id-4')
+        if(el.className === 'project-container isNotVisibleLeft'){
+            el.className = 'project-container isVisibleLeft'
+        }
     }
     if (inViewport5) {
-        console.log('in viewport:', featuredProjectRefs.current[5].current);
+        let el = document.getElementById('id-5')
+        if(el.className === 'project-container isNotVisibleRight'){
+            el.className = 'project-container isVisibleRight'
+        }
     }
     if (inViewport6) {
-        console.log('in viewport:', featuredProjectRefs.current[6].current);
+        let el = document.getElementById('id-6')
+        if(el.className === 'project-container isNotVisibleLeft'){
+            el.className = 'project-container isVisibleLeft'
+        }
     }
     if (inViewport7) {
-        console.log('in viewport:', featuredProjectRefs.current[7].current);
+        let el = document.getElementById('id-7')
+        if(el.className === 'project-container isNotVisibleRight'){
+            el.className = 'project-container isVisibleRight'
+        }
     }
     if (inViewport8) {
-        console.log('in viewport:', featuredProjectRefs.current[8].current);
+        let el = document.getElementById('id-8')
+        if(el.className === 'project-container isNotVisibleLeft'){
+            el.className = 'project-container isVisibleLeft'
+        }
     }
 
 
@@ -90,34 +109,6 @@ const Projects = ({ projectsData, featuredProjectRefs }) => {
                         liveDemo={projectsData.liveDemo}
                     />
                 ))}
-
-                {/* <div className='url-app indi-proj'>
-                    <URLShortener />
-                </div>                
-                <div className='eaters-app indi-proj'>
-                    <IndecisiveEaters />
-                </div>
-                <div className='ecommerce-app indi-proj'>
-                    <EcommerceProductPage />
-                </div>
-                <div className='insurance-app indi-proj'>
-                    <InsureLandingPage />
-                </div>
-                <div className='room-app indi-proj'>
-                    <RoomHomepage />
-                </div>
-                <div className='sunnyside-app indi-proj'>
-                    <SunnysideAgencyMock />
-                </div>
-                <div className='notes-app indi-proj'>
-                    <NotesAppCard />
-                </div>
-                <div className='flashcard-app indi-proj'>
-                    <FlashAppCard />
-                </div>
-                <div className='weather-app indi-proj'>
-                    <WeatherAppCard />
-                </div> */}
 
                 <p id='more-to-come'>And more in the works...</p>
 

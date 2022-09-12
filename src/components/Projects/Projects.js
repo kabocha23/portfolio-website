@@ -15,15 +15,15 @@ const Projects = ({ projectsData, featuredProjectRefs }) => {
     );
 
 
-    const inViewport0 = useIntersection(featuredProjectRefs.current[0], '-100px');
-    const inViewport1 = useIntersection(featuredProjectRefs.current[1], '-100px');
-    const inViewport2 = useIntersection(featuredProjectRefs.current[2], '-100px');
-    const inViewport3 = useIntersection(featuredProjectRefs.current[3], '-100px');
-    const inViewport4 = useIntersection(featuredProjectRefs.current[4], '-100px');
-    const inViewport5 = useIntersection(featuredProjectRefs.current[5], '-100px');
-    const inViewport6 = useIntersection(featuredProjectRefs.current[6], '-100px');
-    const inViewport7 = useIntersection(featuredProjectRefs.current[7], '-100px');
-    const inViewport8 = useIntersection(featuredProjectRefs.current[8], '-100px');
+    const inViewport0 = useIntersection(featuredProjectRefs.current[0], '-150px');
+    const inViewport1 = useIntersection(featuredProjectRefs.current[1], '-150px');
+    const inViewport2 = useIntersection(featuredProjectRefs.current[2], '-150px');
+    const inViewport3 = useIntersection(featuredProjectRefs.current[3], '-150px');
+    const inViewport4 = useIntersection(featuredProjectRefs.current[4], '-150px');
+    const inViewport5 = useIntersection(featuredProjectRefs.current[5], '-150px');
+    const inViewport6 = useIntersection(featuredProjectRefs.current[6], '-150px');
+    const inViewport7 = useIntersection(featuredProjectRefs.current[7], '-150px');
+    const inViewport8 = useIntersection(featuredProjectRefs.current[8], '-150px');
     
     if (inViewport0) {
         let el = document.getElementById('id-0')

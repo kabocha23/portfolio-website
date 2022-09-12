@@ -1,7 +1,7 @@
 /* navbar begin */
 .nav-container{
   display: flex;
-  position: fixed;
+  position: fixed!important;
   top: 0;
   width: 100vw;
   background-color: transparent;
@@ -69,7 +69,7 @@
 }
 .nav-menu-fs-sub a {
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 40px;
   color: white;
   background-color: transparent;
   font-weight: bold;
@@ -83,11 +83,14 @@
 
 /* navbar collapses @ 900px */
 @media (max-width: 900px) {
+  .nav-container{
+    position: fixed!important;
+  }
     .toggle-button {
         display: flex;
         height: 100%; 
         position: relative;
-        min-width: 50px;
+        min-width: 65px;
         margin-left: auto;
     }
     .toggle-button a {
@@ -114,7 +117,7 @@
     }
     .nav-menu ul {
         display: block;
-        position: fixed;
+        position: fixed!important;
         height: calc(100vh - 65px);
         width: 25%;
         min-width: 150px;
@@ -132,7 +135,6 @@
         list-style-type: none;
         margin-top: 20px;
         margin-left: 30px;
-        /* text-align: left; */
     }
     .nav-menu li a {
         text-decoration: none;

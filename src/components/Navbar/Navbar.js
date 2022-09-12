@@ -1,23 +1,22 @@
 import React from 'react';
 import './Navbar.css';
 
-const Navbar = ({ isNavExpanded, setIsNavExpanded, navBgColor, setNavBgColor, handleHomeClick, handleAboutClick, handleProjectsClick, handleSkillsClick, handleContactClick }) => {
+const Navbar = ({ isNavExpanded, setIsNavExpanded, navBgColor, setNavBgColor, handleHomeClick, handleAboutClick, handleProjectsClick, handleContactClick }) => {
 
     const toggleIsNav = () => {
       setIsNavExpanded(!isNavExpanded)
     }
-  
+
     const changeNavbarColor = () =>{
-      if(window.scrollY >= 50){
-        setNavBgColor(true);
-      }
-      else{
-        setNavBgColor(false);
-      }
+        if(window.scrollY >= 50){
+            setNavBgColor(true);
+        }
+        else{
+            setNavBgColor(false);
+        }
     }
     window.addEventListener('scroll', changeNavbarColor);
-
-
+  
     return (
         <div className={navBgColor ? 'nav-container colorBg' : 'nav-container transpBg'}>
             <div className='navbar-home'>

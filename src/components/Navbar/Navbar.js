@@ -27,7 +27,7 @@ const Navbar = ({ isNavExpanded, setIsNavExpanded, navBgColor, setNavBgColor, ha
                 title='col-nav-btn'
                 onClick={toggleIsNav}
                 >
-                    ☰
+                    {isNavExpanded ? 'X' : '☰'}
                 </a>
             </div>
             <div className={isNavExpanded ? 'nav-menu expanded' : 'nav-menu'}>

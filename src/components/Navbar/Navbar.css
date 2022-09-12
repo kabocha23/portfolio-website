@@ -115,11 +115,11 @@
     .nav-menu {
         display: block;
     }
-    .nav-menu ul {
+    .nav-ul {
         display: block;
         position: fixed!important;
         height: calc(100vh - 65px);
-        width: 25%;
+        width: 100%;
         min-width: 150px;
         top: 65px;
         right: 0;
@@ -129,35 +129,35 @@
         transform: translate3d(-100vw, 0, 0);
         transition: transform 0.4s cubic-bezier(0, .52, 0, 1);
     }
-    .nav-menu li {
+    .nav-menu ul li {
         width: 100%;
         display: block;
         list-style-type: none;
         margin-top: 20px;
         margin-left: 30px;
     }
-    .nav-menu li a {
+    .nav-menu ul li a {
         text-decoration: none;
         color: white;
         font-weight: bold;
         background-color: transparent;
         border: none;
     }
-    .nav-menu li a:hover {
+    .nav-menu ul li a:hover {
         transition: color 0.4s ease-in-out;
         color: #FFCC66;
         cursor: pointer;
     }
     .nav-menu.expanded ul {
         transform: translate3d(0vw, 0, 0);
-        transition: transform 0.4s cubic-bezier(0, .52, 0, 1);
+        transition: all 0.4s cubic-bezier(0, .52, 0, 1);
     }
     .nav-ul.transpBg{
-      transition: background-color 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
       background-color: transparent;
     }
     .nav-ul.colorBg{
-      transition: background-color 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
       background-color: #313131d0;
     }
 }

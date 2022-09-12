@@ -32,9 +32,9 @@
 .isVisibleLeft {
     opacity: 1;
     /* -webkit-transform: translateX(10vw); */
-    transform: translateX(10vw);
-    -webkit-transform: translateX(10vw);
-    -moz-transform: translateX(10vw) ;
+    transform: translateX(0vw);
+    -webkit-transform: translateX(0vw);
+    -moz-transform: translateX(0vw) ;
     transition: all 2.0s 0.1s;
 }
 .isNotVisibleRight {
@@ -48,9 +48,9 @@
 .isVisibleRight {
     opacity: 1;
     /* -webkit-transform: translateX(-10vw); */
-    transform: translateX(-10vw);
-    -webkit-transform: translateX(-10vw);
-    -moz-transform: translateX(-10vw) ;
+    transform: translateX(-0vw);
+    -webkit-transform: translateX(-0vw);
+    -moz-transform: translateX(-0vw) ;
     transition: all 2.0s 0.1s;
 }
 

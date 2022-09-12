@@ -1,7 +1,7 @@
-html, :root {
+html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  width: 100vw;
+  max-width: 100vw;
 }
 
 .main-container {
@@ -26,7 +26,7 @@ html, :root {
   ;
 }
 .intro-container {
-  width: 100%;
+  max-width: 100vw;
 }
 .intro-name {
   font-size: 3.5em;
@@ -48,4 +48,12 @@ html, :root {
 }
 .contact-box {
   scroll-margin-top: 64.5px;
+}
+
+@media (max-width: 900px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
 }

@@ -8,7 +8,7 @@ const Navbar = ({ isNavExpanded, setIsNavExpanded, navBgColor, setNavBgColor, ha
     }
 
     const changeNavbarColor = () =>{
-        if(window.scrollY >= 50){
+        if(window.scrollY >= 65){
             setNavBgColor(true);
         }
         else{

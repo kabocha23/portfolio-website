@@ -29,6 +29,7 @@ const App = () => {
   const contactRef = useRef();
   const formRef = useRef();
 
+
   const handleHomeClick = () => {
     homeRef.current.scrollIntoView({ behavior: 'smooth' });
   }

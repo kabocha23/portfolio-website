@@ -1,8 +1,8 @@
-body {
+/* body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: 100vw;
-}
+} */
 
 .main-container {
   height: 100vh;
@@ -50,10 +50,10 @@ body {
   scroll-margin-top: 64.5px;
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   body {
     overflow-x: hidden;
     max-width: 100vw;
   }
 
-}
+} */

@@ -17,7 +17,7 @@ const projectsData = [
         image: 'ip_finder_preview',
         description: 'A responsive web application that allows the user to extract general information from a public ip address. \n- Input allowing user to search for the location, timezone, and ISP of any public IP Address \n(Leaving the input blank will search the user\'s IP Address) \n- Have the IP geolocation pinned on an interactive map \n- Responsive web/mobile design',
         sourceCode: 'https://github.com/kabocha23/ip-address-tracker',
-        liveDemo: 'https://kabocha23.github.io/ip-address-tracker'
+        liveDemo: 'https://kabocha23.github.io/ip-finder/'
     },
     {
         id: 2,

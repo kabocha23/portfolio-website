@@ -1,4 +1,4 @@
-import React, { useState, createRef } from "react";
+import React, { createRef } from "react";
 import useIntersection from "../../hooks/useIntersection";
 import { Parallax } from "react-parallax";
 import koSamuiBg from "../../Static/img/kosamui2.jpg";
@@ -20,6 +20,10 @@ const Projects = ({ projectsData, featuredProjectRefs }) => {
   const inViewport7 = useIntersection(featuredProjectRefs.current[7], "-150px");
   const inViewport8 = useIntersection(featuredProjectRefs.current[8], "-150px");
   const inViewport9 = useIntersection(featuredProjectRefs.current[9], "-150px");
+  const inViewport10 = useIntersection(
+    featuredProjectRefs.current[10],
+    "-150px"
+  );
 
   if (inViewport0) {
     let el = document.getElementById("id-0");
@@ -81,6 +85,12 @@ const Projects = ({ projectsData, featuredProjectRefs }) => {
       el.className = "project-container isVisibleRight";
     }
   }
+  if (inViewport10) {
+    let el = document.getElementById("id-10");
+    if (el.className === "project-container isNotVisibleLeft") {
+      el.className = "project-container isVisibleLeft";
+    }
+  }
 
   return (
     <div className="projects-container">
@@ -95,20 +105,23 @@ const Projects = ({ projectsData, featuredProjectRefs }) => {
         </div>
       </Parallax>
       <div className="projects-content-box">
-        {projectsData.map((projectsData) => (
-          <FeaturedProject
-            key={`key-${projectsData.id}`}
-            ref={featuredProjectRefs.current[projectsData.id]}
-            pdId={projectsData.id}
-            image={projectsData.image}
-            title={projectsData.title}
-            headline={projectsData.headline}
-            caption={projectsData.caption}
-            description={projectsData.description}
-            sourceCode={projectsData.sourceCode}
-            liveDemo={projectsData.liveDemo}
-          />
-        ))}
+        {projectsData
+          .slice(0)
+          .reverse()
+          .map((projectsData) => (
+            <FeaturedProject
+              key={`key-${projectsData.id}`}
+              ref={featuredProjectRefs.current[projectsData.id]}
+              pdId={projectsData.id}
+              image={projectsData.image}
+              title={projectsData.title}
+              headline={projectsData.headline}
+              caption={projectsData.caption}
+              description={projectsData.description}
+              sourceCode={projectsData.sourceCode}
+              liveDemo={projectsData.liveDemo}
+            />
+          ))}
 
         <p id="more-to-come">And more in the works...</p>
       </div>

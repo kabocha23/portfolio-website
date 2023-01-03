@@ -2,7 +2,7 @@ import React, { createRef } from "react";
 import useIntersection from "../../hooks/useIntersection";
 import { Parallax } from "react-parallax";
 import koSamuiBg from "../../Static/img/kosamui2.jpg";
-import FeaturedProject from "./FeaturedProject";
+import FeaturedProject from "../FeaturedProject/FeaturedProject";
 import "./Projects.css";
 
 const Projects = ({ projectsData, featuredProjectRefs }) => {

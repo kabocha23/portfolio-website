@@ -1,8 +1,15 @@
 .contact-container {
     min-height: calc(100vh - 185px);
+    background-color: #363636;
+}
+.contact-sub-container {
     display: flex;
     flex-flow: row wrap;
-    background-color: #363636;
+    min-height: calc(100vh - 185px);
+    width: 100%;
+    max-width: 1281px;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* left side of contact section */
 .contact-text {
@@ -11,7 +18,7 @@
     width: 45%;
     align-items: flex-start;
     justify-content: center;
-    margin-left: 30px;
+    margin-left: auto;
     margin-right: auto;
     color: white;
 }
@@ -38,7 +45,7 @@
 .contact-form form {
     display: flex;
     flex-flow: column wrap;
-    width: 90%;
+    width: 100%;
 }
 .contact-form form label {
     display: flex;

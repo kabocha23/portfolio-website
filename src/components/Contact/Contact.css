@@ -104,6 +104,9 @@
     font-size: 18px;
     overflow: auto;
 }
+textarea {
+    resize: none;
+}
 /* send message button of contact form */
 #contact-submit {
     width: 200px;

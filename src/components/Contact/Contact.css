@@ -138,8 +138,11 @@
 
 
 @media(max-width: 900px) {
+    .contact-container {
+        max-width: 100%;
+    }
     .contact-text {
-        width: 100%;
+        width: 90%;
         align-items: center;
         justify-content: center;
         margin-top: 10%;
@@ -153,9 +156,12 @@
         text-align: center;
     }
     .contact-form {
-        width: 100%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 10%;
+    }
+    #contact-submit {
+        width: 100%;
     }
 }

@@ -49,7 +49,7 @@ const projectsData = [
     caption: "React",
     image: "room-preview",
     description:
-      "A responsive web design homepage for a fictional furniture company. \nFeatures include: \n- navbar transitioning to hidden menu (sliding in from top) \n- slideshow gallery component",
+      "A responsive web design homepage for a fictional furniture company. \nFeatures include: \n- Navbar transitioning to hidden menu (sliding in from top) \n- Slideshow gallery component",
     sourceCode: "https://github.com/kabocha23/Room-Homepage",
     liveDemo: "https://kabocha23.github.io/Room-Homepage",
   },
@@ -60,7 +60,7 @@ const projectsData = [
     caption: "React",
     image: "insure-preview-1",
     description:
-      "A responsive landing page for a fictional insurance company \nFeatures include: \n- navbar transitioning to hidden menu (sliding in from side)",
+      "A responsive landing page for a fictional insurance company \nFeatures include: \n- Navbar transitioning to hidden menu (sliding in from side)",
     sourceCode: "https://github.com/kabocha23/Insure-Landing-Page",
     liveDemo: "https://kabocha23.github.io/Insure-Landing-Page",
   },
@@ -71,14 +71,14 @@ const projectsData = [
     caption: "React",
     image: "sneakers2",
     description:
-      "A responsive product page web design for a fictional e-commerce website Sneakers Company. \nFeatures include: \n- navbar transitioning to collapsible sidebar \n- selectible photo gallery \n- cart with CRUD functionality \n- live cart quantity bubble",
+      "A responsive product page web design for a fictional e-commerce website Sneakers Company. \nFeatures include: \n- Navbar transitioning to collapsible sidebar \n- Selectable photo gallery \n- Cart with CRUD functionality \n- Live cart quantity bubble",
     sourceCode: "https://github.com/kabocha23/Ecommerce-Product-Page",
     liveDemo: "https://kabocha23.github.io/Ecommerce-Product-Page",
   },
   {
     id: 7,
     title: "Indecisive Eaters",
-    headline: "An app for anyone that cannot make up their mind",
+    headline: "An app for anyone that just can't decide",
     caption:
       "React, Node, Express, Yelp-Fusion API, Axios, React DnD, reactjs-popup",
     image: "indecisive-eaters1",
@@ -90,7 +90,7 @@ const projectsData = [
   {
     id: 8,
     title: "IP Finder",
-    headline: "An app for curious people locating IP addresses, or weirdos...",
+    headline: "An app for those curious of their IP Location",
     caption: "React, Leaflet Maps API, Ipify API, Axios",
     image: "ip_finder_preview",
     description:
@@ -105,18 +105,18 @@ const projectsData = [
     caption: "React, Shrtcode API, Axios",
     image: "shortly-preview",
     description:
-      "A responsive web application that shortens the user's URL by tapping into the Shrtcode API. \nFeatures include: \n- input allowing user to make API call and shorten any url \n- dynamically generated search history list with copy to clipboard button \n- navbar transitioning to hidden menu (sliding in from top) \n- responsive design for web and mobile",
+      "A responsive web application that shortens the user's URL by tapping into the Shrtcode API. \nFeatures include: \n- Input allowing user to make API call and shorten any url \n- Dynamically generated search history list with copy to clipboard button \n- Navbar transitioning to hidden menu (sliding in from top) \n- Responsive design for web and mobile",
     sourceCode: "https://github.com/kabocha23/URL-Shortener",
     liveDemo: "https://kabocha23.github.io/URL-Shortener",
   },
   {
     id: 10,
     title: "Space Tourism",
-    headline: "A Multi-page Space Tourism Application",
-    caption: "React, React Router",
+    headline: "A Multi-page Space Tourism Design",
+    caption: "TypeScript, React, React Router",
     image: "space-tourism-preview",
     description:
-      "A responsive web application design, created for a fictional space tourism company. \nFeatures include: \n- Multiple pages with custom nav menus within each page \n- Responsive design for Desktop, Tablet, and Mobile \n- navbar transitioning to hidden menu (sliding in from side)",
+      "A responsive web application design, created for a fictional space tourism company. \nFeatures include: \n- Responsive design for Desktop, Tablet, and Mobile \n- Multiple pages with custom nav menus within each page \n- Navbar transitioning to hidden menu (sliding in from side)",
     sourceCode: "https://github.com/kabocha23/space-tourism",
     liveDemo: "https://kabocha23.github.io/space-tourism",
   },

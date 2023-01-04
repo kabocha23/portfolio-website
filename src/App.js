@@ -56,30 +56,40 @@ const App = () => {
   const sendEmail = (e) => {
     if (e) e.preventDefault();
 
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        formRef.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Message sent! Thanks for reaching out");
-          setMailerState({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          console.log(error.text);
-          alert(
-            "There was an error sending the message, please try again later"
-          );
-        }
-      );
+    if (!mailerState.name) {
+      alert("Please enter your name");
+    } else if (!mailerState.email) {
+      alert("Please enter your email address");
+    } else if (!isValidEmail(mailerState.email)) {
+      alert("Please enter a valid email address");
+    } else if (mailerState.message.length < 25) {
+      alert("Please ensure your message is more than 25 characters");
+    } else {
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_EMAILJS_SERVICE_ID,
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+          formRef.current,
+          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert("Message sent! Thanks for reaching out");
+            setMailerState({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            console.log(error.text);
+            alert(
+              "There was an error sending the message, please try again later"
+            );
+          }
+        );
+    }
   };
 
   const isValidEmail = (email) => {

@@ -32,6 +32,17 @@ const Contact = ({
                   value={mailerState.name}
                   onChange={handleEmailStateChange}
                 ></input>
+                <p
+                  className={
+                    mailerState.name.length < 2
+                      ? "validation-entry entry-invalid"
+                      : "validation-entry entry-valid"
+                  }
+                >
+                  {mailerState.name
+                    ? `${mailerState.name.length} / 2 characters`
+                    : ""}
+                </p>
               </div>
               <div className="contact-email">
                 <label id="contact-email-label">EMAIL</label>
@@ -42,6 +53,17 @@ const Contact = ({
                   value={mailerState.email}
                   onChange={handleEmailStateChange}
                 ></input>
+                <p
+                  className={
+                    !isValidEmail(mailerState.email)
+                      ? "validation-entry entry-invalid"
+                      : "validation-entry entry-valid"
+                  }
+                >
+                  {mailerState.email && !isValidEmail(mailerState.email)
+                    ? "Invalid Email"
+                    : ""}
+                </p>
               </div>
             </div>
             <label>MESSAGE</label>
@@ -51,7 +73,27 @@ const Contact = ({
               value={mailerState.message}
               onChange={handleEmailStateChange}
             ></textarea>
-            <button type="submit" id="contact-submit">
+            <p
+              className={
+                mailerState.message.length < 25
+                  ? "validation-entry entry-invalid"
+                  : "validation-entry entry-valid"
+              }
+            >
+              {mailerState.message
+                ? `${mailerState.message.length} / 25 characters`
+                : ""}
+            </p>
+            <button
+              type="submit"
+              id="contact-submit"
+              disabled={
+                !mailerState.name ||
+                !mailerState.email ||
+                !isValidEmail(mailerState.email) ||
+                mailerState.message.length < 25
+              }
+            >
               Send Message!
               <img src={paperPlane} id="paper-plane" alt="paper-plane"></img>
             </button>

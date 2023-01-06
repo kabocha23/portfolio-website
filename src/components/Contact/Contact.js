@@ -13,7 +13,7 @@ const Contact = ({
     <div className="contact-container">
       <div className="contact-sub-container">
         <div className="contact-text">
-          <p id="contact-text-head">CONTACT ME</p>
+          <p id="contact-text-head">Get In Touch</p>
           <p id="contact-text-subhead">
             I'm interested in job and freelance opportunities. However, if you
             have any other requests or questions please don't hesitate to reach
@@ -24,7 +24,7 @@ const Contact = ({
           <form ref={formRef} onSubmit={sendEmail}>
             <div className="contact-name-email">
               <div className="contact-name">
-                <label id="contact-name-label">NAME</label>
+                <label id="contact-name-label">Name</label>
                 <input
                   type="text"
                   name="name"
@@ -45,7 +45,7 @@ const Contact = ({
                 </p>
               </div>
               <div className="contact-email">
-                <label id="contact-email-label">EMAIL</label>
+                <label id="contact-email-label">E-mail</label>
                 <input
                   type="email"
                   name="email"
@@ -66,7 +66,7 @@ const Contact = ({
                 </p>
               </div>
             </div>
-            <label>MESSAGE</label>
+            <label>Your Message</label>
             <textarea
               id="contact-message"
               name="message"

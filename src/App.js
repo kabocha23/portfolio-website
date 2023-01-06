@@ -29,6 +29,7 @@ const App = () => {
 
   const handleHomeClick = () => {
     homeRef.current.scrollIntoView({ behavior: "smooth" });
+    setIsNavExpanded(false);
   };
 
   const handleAboutClick = () => {

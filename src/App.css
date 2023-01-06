@@ -15,7 +15,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #a9a9a9c9;
+  background-color: #e6e9f0bd;
 }
 
 .main-container {
@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
   perspective: 2px;
   background: 
     linear-gradient(
-      -40deg,
+      /* 40deg, */
       rgba(0,0,0,0.3),
       rgba(0, 40, 105, 0.3)
     )

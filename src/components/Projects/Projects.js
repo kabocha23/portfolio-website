@@ -98,10 +98,10 @@ const Projects = ({ projectsData, featuredProjectRefs }) => {
         blur={0}
         bgImage={koSamuiBg}
         bgImageAlt="nyc-mill-one"
-        strength={400}
+        strength={500}
       >
         <div className="projects-header-box">
-          <h1 className="projects-header">Projects</h1>
+          <h1 className="projects-header">Latest Works</h1>
         </div>
       </Parallax>
       <div className="projects-content-box">

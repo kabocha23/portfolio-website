@@ -1,13 +1,14 @@
 .footer-container{
     border-top: 1px solid lightgrey;
     padding-top: 10px;
-    background-color: #363636;
+    /* background-color: rgb(45, 51, 176, 2.26701); */
+    background-color: #1c1d25;
     color: aliceblue;
 }
 .footer-subtitle{
     display: flex;
     justify-content: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "League Spartan", Helvetica, Arial, sans-serif;
     cursor: default;
 }
 .foot-contact-links{

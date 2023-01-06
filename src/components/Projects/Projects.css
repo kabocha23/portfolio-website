@@ -25,8 +25,9 @@
 
 .projects-header {
     color: aliceblue;
-    font-size: 3.5em;
-    font-family: 'Francois One', sans-serif;
+    font-size: 5em;
+    font-family: "League Spartan", Helvetica, Arial, sans-serif;
+    font-weight: 600;
     cursor: default;
 }
 
@@ -39,8 +40,8 @@
     padding: 50px 0px;
     background: 
     linear-gradient(
-        #eee,
-        #363636
+        rgb(243, 243, 243),
+        rgb(45, 51, 176, 2.26701)
     );
 }
 
@@ -80,6 +81,9 @@
 
 
 @media(max-width: 500px) {
+    .projects-header {
+        text-align: center;
+    }
     .projects-content-box {
         padding: 5% 0;
     }

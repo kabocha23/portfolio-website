@@ -4,19 +4,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: "League Spartan", Helvetica, Arial, sans-serif;
     margin: auto;
     color: aliceblue;
 }
 .intro-name {
     display: block;
-    font-size: 3.8em;
-    font-family: 'Francois One', sans-serif;
+    font-size: 6em!important;
+    font-weight: 800;
     cursor: default;
 }
 .intro-title {
-    font-size: 2.8em;
-    font-family: 'Francois One', sans-serif;
+    font-size: 2.5em!important;
+    font-weight: 700;
     cursor: default;
 }
 

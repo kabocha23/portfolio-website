@@ -13,12 +13,13 @@
     max-width: 900px;
     background-color: #313131d0;
     color: white;
-    font-family: 'Francois One', sans-serif;
+    font-family: "League Spartan", Helvetica, Arial, sans-serif;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
     border-radius: 4px;
-    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    /* box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%); */
+    box-shadow: 0 20px 80px 0 rgb(0 0 0 / 45%);
     overflow: hidden;
 }
 .isNotVisibleLeft {
@@ -58,6 +59,10 @@
     margin-right: auto;
     margin-bottom: auto;
     text-align: start;
+}
+.project-verbiage h1 {
+    font-size: 50px;
+    font-weight: 700;
 }
 .project-description {
     margin-bottom: 5%;

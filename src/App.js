@@ -117,11 +117,11 @@ const App = () => {
         bgImageAlt="nyc-snow"
         strength={300}
       >
-        <div className="intro-box">
+        <heading className="intro-box">
           <Intro />
-        </div>
+        </heading>
       </Parallax>
-      <div className="main-body-box">
+      <main className="main-body-box">
         <div className="about-box" ref={aboutMeRef}>
           <AboutMe />
         </div>
@@ -141,10 +141,10 @@ const App = () => {
             formRef={formRef}
           />
         </div>
-        <div className="footer-box">
-          <Footer />
-        </div>
-      </div>
+      </main>
+      <footer className="footer-box">
+        <Footer />
+      </footer>
     </div>
   );
 };

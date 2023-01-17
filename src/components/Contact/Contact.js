@@ -88,7 +88,7 @@ const Contact = ({
               type="submit"
               id="contact-submit"
               disabled={
-                !mailerState.name ||
+                mailerState.name.length < 2 ||
                 !mailerState.email ||
                 !isValidEmail(mailerState.email) ||
                 mailerState.message.length < 25

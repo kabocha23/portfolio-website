@@ -24,7 +24,9 @@ const Contact = ({
           <form ref={formRef} onSubmit={sendEmail}>
             <div className="contact-name-email">
               <div className="contact-name">
-                <label id="contact-name-label">Name*</label>
+                <label for="name" id="contact-name-label">
+                  Name*
+                </label>
                 <input
                   type="text"
                   name="name"
@@ -45,7 +47,9 @@ const Contact = ({
                 </p>
               </div>
               <div className="contact-email">
-                <label id="contact-email-label">E-mail*</label>
+                <label for="email" id="contact-email-label">
+                  E-mail*
+                </label>
                 <input
                   type="email"
                   name="email"
@@ -66,7 +70,7 @@ const Contact = ({
                 </p>
               </div>
             </div>
-            <label>Message*</label>
+            <label for="message">Message*</label>
             <textarea
               id="contact-message"
               name="message"

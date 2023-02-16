@@ -15,9 +15,9 @@ const Contact = ({
         <div className="contact-text">
           <p id="contact-text-head">Get In Touch</p>
           <p id="contact-text-subhead">
-            I'm interested in job and freelance opportunities. However, if you
-            have any other requests or questions please don't hesitate to reach
-            out:
+            I'm interested in career and freelance opportunities. However, if
+            you have any other requests or questions please don't hesitate to
+            reach out:
           </p>
         </div>
         <div className="contact-form">

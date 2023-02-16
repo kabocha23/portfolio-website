@@ -5,7 +5,14 @@ import koSamuiBg from "../../Static/img/kosamui2.jpg";
 import FeaturedProject from "../FeaturedProject/FeaturedProject";
 import "./Projects.css";
 
-const Projects = ({ projectsData, featuredProjectRefs }) => {
+const Projects = ({
+  projectsData,
+  featuredProjectRefs,
+  projectsOnLoad,
+  setProjectsOnLoad,
+  handleLoadMore,
+}) => {
+  const revProjectsData = projectsData.slice(0).reverse();
   featuredProjectRefs.current = projectsData.map(
     (proj) => featuredProjectRefs.current[proj.id] ?? createRef()
   );
@@ -105,9 +112,7 @@ const Projects = ({ projectsData, featuredProjectRefs }) => {
         </div>
       </Parallax>
       <div className="projects-content-box">
-        {projectsData
-          .slice(0)
-          .reverse()
+        {revProjectsData
           .map((projectsData) => (
             <FeaturedProject
               key={`key-${projectsData.id}`}
@@ -121,9 +126,13 @@ const Projects = ({ projectsData, featuredProjectRefs }) => {
               sourceCode={projectsData.sourceCode}
               liveDemo={projectsData.liveDemo}
             />
-          ))}
-
-        <p id="more-to-come">And more in the works...</p>
+          ))
+          .slice(0, projectsOnLoad)}
+        {projectsData?.length && (
+          <button className="mt-4" onClick={handleLoadMore}>
+            Load more
+          </button>
+        )}
       </div>
     </div>
   );

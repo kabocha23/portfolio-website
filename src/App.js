@@ -19,6 +19,7 @@ const App = () => {
     email: "",
     message: "",
   });
+  const [projectsOnLoad, setprojectsOnLoad] = useState(5);
 
   const homeRef = useRef();
   const aboutMeRef = useRef();
@@ -45,6 +46,17 @@ const App = () => {
   const handleContactClick = () => {
     contactRef.current.scrollIntoView({ behavior: "smooth" });
     setIsNavExpanded(false);
+  };
+
+  const handleLoadMore = () => {
+    if (projectsOnLoad + 3 <= projectsData.length) {
+      setprojectsOnLoad(projectsOnLoad + 3);
+    } else {
+      setprojectsOnLoad(
+        projectsOnLoad + (projectsData.length - projectsOnLoad)
+      );
+    }
+    console.log(projectsData.length, projectsOnLoad, projectsData);
   };
 
   const isValidEmail = (email) => {
@@ -129,6 +141,9 @@ const App = () => {
           <Projects
             projectsData={projectsData}
             featuredProjectRefs={featuredProjectRefs}
+            projectsOnLoad={projectsOnLoad}
+            setprojectsOnLoad={setprojectsOnLoad}
+            handleLoadMore={handleLoadMore}
           />
         </div>
         <div className="contact-box" ref={contactRef}>

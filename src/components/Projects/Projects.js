@@ -12,7 +12,6 @@ const Projects = ({
   setProjectsOnLoad,
   handleLoadMore,
 }) => {
-  const revProjectsData = projectsData.slice(0).reverse();
   featuredProjectRefs.current = projectsData.map(
     (proj) => featuredProjectRefs.current[proj.id] ?? createRef()
   );
@@ -112,7 +111,9 @@ const Projects = ({
         </div>
       </Parallax>
       <div className="projects-content-box">
-        {revProjectsData
+        {projectsData
+          .slice()
+          .reverse()
           .map((projectsData) => (
             <FeaturedProject
               key={`key-${projectsData.id}`}

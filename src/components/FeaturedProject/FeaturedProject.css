@@ -24,23 +24,23 @@
 }
 .isNotVisibleLeft {
     opacity: 0;
-    /* transform: translateX(-100vw); */
-    transition: all 2.0s 0.1s;
+    transform: translateX(-100vw);
+    transition: all 1.0s 0.1s;
 }
 .isVisibleLeft {
     opacity: 1;
-    /* transform: translateX(0vw); */
-    transition: all 2.0s 0.1s;
+    transform: translateX(0vw);
+    transition: all 1.0s 0.1s;
 }
 .isNotVisibleRight {
     opacity: 0;
-    /* transform: translateX(100vw); */
-    transition: all 2.0s 0.1s;
+    transform: translateX(100vw);
+    transition: all 1.0s 0.1s;
 }
 .isVisibleRight {
     opacity: 1;
-    /* transform: translateX(-0vw); */
-    transition: all 2.0s 0.1s;
+    transform: translateX(-0vw);
+    transition: all 1.0s 0.1s;
 }
 
 

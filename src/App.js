@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import projectsData from "./data/projectsData";
 import Navbar from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
@@ -56,8 +56,11 @@ const App = () => {
         projectsOnLoad + (projectsData.length - projectsOnLoad)
       );
     }
-    console.log(projectsData.length, projectsOnLoad, projectsData);
   };
+
+  useEffect(() => {
+    console.log(featuredProjectRefs.current);
+  }, [featuredProjectRefs.current]);
 
   const isValidEmail = (email) => {
     const regex =

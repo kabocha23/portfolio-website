@@ -18,12 +18,13 @@ const FeaturedProject = React.forwardRef(
     return (
       <div className="project-ref-detect" ref={ref}>
         <div
-          className="project-container"
-          // className={
-          //   pdId % 2 === 0
-          //     ? "project-container isNotVisibleLeft"
-          //     : "project-container isNotVisibleRight"
-          // }
+          className={
+            pdId < 6
+              ? "project-container isVisibleOnLoad"
+              : pdId % 2 === 0
+              ? "project-container isNotVisibleLeft"
+              : "project-container isNotVisibleRight"
+          }
           id={`id-${pdId}`}
         >
           <div className="project-details">

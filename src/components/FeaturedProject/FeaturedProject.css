@@ -23,24 +23,40 @@
 }
 .isNotVisibleLeft {
     opacity: 0;
-    transform: translateX(-100vw);
+    /* transform: translateX(-100vw); */
     transition: all 1.0s 0.1s;
 }
 .isVisibleLeft {
     opacity: 1;
-    transform: translateX(0vw);
+    /* transform: translateX(0vw); */
     transition: all 1.0s 0.1s;
 }
 .isNotVisibleRight {
     opacity: 0;
-    transform: translateX(100vw);
+    /* transform: translateX(100vw); */
     transition: all 1.0s 0.1s;
 }
 .isVisibleRight {
     opacity: 1;
-    transform: translateX(-0vw);
+    /* transform: translateX(-0vw); */
     transition: all 1.0s 0.1s;
 }
+.isVisibleOnLoad {
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 1.0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
 
 
 .project-details {

@@ -1,4 +1,4 @@
-import React, { createRef } from "react";
+import React, { createRef, useEffect, Children } from "react";
 import useIntersection from "../../hooks/useIntersection";
 import { Parallax } from "react-parallax";
 import koSamuiBg from "../../Static/img/kosamui2.jpg";
@@ -129,10 +129,12 @@ const Projects = ({
             />
           ))
           .slice(0, projectsOnLoad)}
-        {projectsData?.length && (
-          <button className="mt-4" onClick={handleLoadMore}>
+        {projectsOnLoad < 11 ? (
+          <button className="load-more-btn" onClick={handleLoadMore}>
             Load more
           </button>
+        ) : (
+          <p className="load-more-p">More projects are in the works!</p>
         )}
       </div>
     </div>

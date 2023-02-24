@@ -145,7 +145,6 @@ const App = () => {
             projectsData={projectsData}
             featuredProjectRefs={featuredProjectRefs}
             projectsOnLoad={projectsOnLoad}
-            setprojectsOnLoad={setprojectsOnLoad}
             handleLoadMore={handleLoadMore}
           />
         </div>

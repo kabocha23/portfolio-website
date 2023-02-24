@@ -9,7 +9,6 @@ const Projects = ({
   projectsData,
   featuredProjectRefs,
   projectsOnLoad,
-  setProjectsOnLoad,
   handleLoadMore,
 }) => {
   featuredProjectRefs.current = projectsData.map(

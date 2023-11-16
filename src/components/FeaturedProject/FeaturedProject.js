@@ -37,18 +37,13 @@ const FeaturedProject = React.forwardRef(
                   <p key={`${str}`}>{str}</p>
                 ))}
               </div>
-
-              <button>
-                <a href={`${sourceCode}`} target="blank">
-                  Git Repo
-                </a>
-              </button>
+              <a href={`${sourceCode}`} target="blank">
+                <button>Git Repo</button>
+              </a>
               {liveDemo ? (
-                <button>
-                  <a href={`${liveDemo}`} target="blank">
-                    Live Demo
-                  </a>
-                </button>
+                <a href={`${liveDemo}`} target="blank">
+                  <button>Live Demo</button>
+                </a>
               ) : (
                 ""
               )}

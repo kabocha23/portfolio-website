@@ -7,7 +7,7 @@
 .project-container {
     display: flex;
     flex-flow: row wrap;
-    height: 500px;
+    height: 100%;
     width: 90%;
     min-width: 325px;
     max-width: 900px;
@@ -87,7 +87,7 @@
     min-width: 150px;
     max-width: 200px;
     height: 40px;
-    padding: 10px;
+    padding: 0;
     border-radius: 10px;
     font-size: 18px;
     font-weight: 600;
@@ -138,6 +138,9 @@
 @media(max-width: 801px) {
     .project-verbiage {
         width: 75%;
+    }
+    .project-verbiage button {
+        min-width: 40%;
     }
     .isVisibleLeft {
         transform: translateX(0%);

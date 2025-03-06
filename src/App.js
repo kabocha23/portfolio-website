@@ -58,9 +58,9 @@ const App = () => {
     }
   };
 
-  useEffect(() => {
-    console.log(featuredProjectRefs.current);
-  }, [featuredProjectRefs.current]);
+  // useEffect(() => {
+  //   console.log(featuredProjectRefs.current);
+  // }, [featuredProjectRefs.current]);
 
   const isValidEmail = (email) => {
     const regex =
